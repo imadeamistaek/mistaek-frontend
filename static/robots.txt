@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private-data/
+Allow: /
+Sitemap: https://mistaek.com/sitemap.xml
