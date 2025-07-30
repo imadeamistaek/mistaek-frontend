@@ -1,5 +1,6 @@
 <script lang="ts">
   import Tag from '$lib/components/tag.svelte';
+  import SectionHeading from '$lib/components/sectionHeading.svelte';
 </script>
 
 <section>
@@ -19,6 +20,13 @@
 	<p class="body_text -small">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
 	<p class="body_text -micro">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
 	<p class="body_text -nano">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
+</section>
+
+<section>
+	<SectionHeading label="Test">
+		<h4>This is an example of a Section Heading component</h4>
+		<p class="body_text -large"><b>This component</b> allows me to add whatever I want on the inside, allowing me to defined which heading tag I should use to help me with accessibility concerns.</p>
+	</SectionHeading>
 </section>
 
 <style>

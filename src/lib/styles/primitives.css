@@ -106,16 +106,16 @@
 :root {
 	--typeface-size-base: 16px;
 	--typeface-size-heading-1: 7.5rem;
-	--typeface-size-heading-2: 4.5rem;
-	--typeface-size-heading-3: 4rem;
-	--typeface-size-heading-4: 3rem;
-	--typeface-size-heading-5: 2rem;
-	--typeface-size-heading-6: 1.5rem;
-	--typeface-size-body-large: 1.25rem;
-	--typeface-size-body-medium: 1.125rem;
-	--typeface-size-body-small: 1rem;
-	--typeface-size-body-micro: 0.875rem;
-	--typeface-size-body-nano: 0.75rem;
+	--typeface-size-heading-2: 6rem;
+	--typeface-size-heading-3: 5rem;
+	--typeface-size-heading-4: 4rem;
+	--typeface-size-heading-5: 3rem;
+	--typeface-size-heading-6: 2rem;
+	--typeface-size-body-large: 1.375rem;
+	--typeface-size-body-medium: 1.25rem;
+	--typeface-size-body-small: 1.125rem;
+	--typeface-size-body-micro: 1rem;
+	--typeface-size-body-nano: 0.875rem;
 }
 
 /* Font Weights */

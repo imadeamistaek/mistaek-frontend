@@ -9,20 +9,14 @@
 </section>
 
 <style>
-  	section {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
-		grid-row-gap: 64px;
-		padding-top: 160px;
-	}
 	:global(.tag) {
 		grid-row: 1;
 	}
-	section h2 {
+	h2 {
 		grid-column: 1 / span 4;
 		grid-row: 2;
 	}
-	section p {
+	p {
 		grid-column: 1 / span 3;
 		/* grid-row: 3; */
 	}
