@@ -5,13 +5,5 @@
 @import 'global';
 
 /* COMPONENT STYLES */
-/* @import 'components/action.css';
-@import 'components/articleCard.css';
-@import 'components/badge.css';
-@import 'components/collapsible.css';
-@import 'components/contentCard.css';
-@import 'components/footer.css';
-@import 'components/horizontalDivider.css';
-@import 'components/modal.css';
-@import 'components/navigationBar.css';
-@import 'components/tag.css'; */
+@import 'components/backgroundGrid.css';
+@import 'components/checkbox.css';

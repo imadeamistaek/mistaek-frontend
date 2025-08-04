@@ -3,7 +3,7 @@
 </script>
 
 <nav class="navbar">
-	<div class="navbar-container">
+	<div class="navbar-container col-4 col-start-2">
 		<div class="slot -left">
 			<a href="/" aria-label="Homepage">
 				<picture>
@@ -34,7 +34,6 @@
 	z-index: var(--zindex-sticky);
 }
 .navbar-container {
-	grid-column: 1 / span 3;
 	display: flex;
 	justify-content: space-between;
 	padding: var(--space-500);
@@ -45,9 +44,6 @@
 @media (min-width: 992px) {
 	.navbar {
 		grid-template-columns: repeat(6, 1fr);
-	}
-	.navbar-container {
-		grid-column: 2 / span 4;
 	}
 }
 

@@ -171,6 +171,8 @@
 /* 5. Z-Index */
 /*  -------------------------------------------------- */
 :root {
+	--zindex-background: 0;
+	--zindex-foreground: 100;
 	--zindex-dropdown: 1000;
 	--zindex-sticky: 1020;
 	--zindex-modal-backdrop: 1040;
@@ -196,6 +198,7 @@
 /* 7. Transitions */
 /*  -------------------------------------------------- */
 :root {
+	--transition-duration-nitro: 0.16s;
 	--transition-duration-fast: 0.24s;
 	--transition-duration-mid: 0.48s;
 	--transition-duration-slow: 0.8s;

@@ -1,19 +1,21 @@
 {
-  "Svelte component with TypeScript": {
-    "prefix": "svelte-ts",
-    "body": [
-      "<script lang=\"ts\">",
-      "  export let name: string;",
-      "</script>",
-      "",
-	  "Insert your component here",
-      "",
-      "<style>",
-      "  /* your styles here */",
-      "</style>",
-      "",
-      "<!-- your markup -->"
-    ],
-    "description": "New Svelte component with TypeScript"
-  }
+	"Svelte component with TypeScript": {
+		"prefix": "svelte-ts",
+		"body": [
+			"<script lang=\"ts\">",
+			"    export let name: string;",
+			"</script>",
+			"",
+			"Insert your component here",
+			"",
+			"<style>",
+			"/* your styles here */",
+			"    @media (min-width: 992px) {",
+			"    /* your styles here */",
+			"   }",
+			"</style>",
+			"",
+		],
+		"description": "New Svelte component with TypeScript"
+	}
 }

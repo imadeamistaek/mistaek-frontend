@@ -6,7 +6,7 @@
 </script>
 
 
-<a href={anchor} class={`action ${customClass}`}>
+<a href={anchor} class={`anchor ${customClass}`}>
 	<span>{label}</span>
 	{#if icon}
 	<i class="icon" aria-hidden="true">
@@ -16,9 +16,7 @@
 </a>
 
 <style>
-	.action {
-		/* width: fit-content; */
-		/* display: inline-flex; */
+	.anchor {
 		align-items: center;
 		padding: var(--space-500) var(--space-500);
 		color: var(--color-on-surface);
@@ -27,7 +25,7 @@
 		user-select: none;
 		text-decoration: none;
 		outline: none;
-		transition-property: background-color;
+		transition-property: background-color, border;
 		transition-duration: var(--transition-duration-fast);
 		transition-timing-function: var(--transition-timing-function);
 	}
@@ -35,49 +33,50 @@
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* ANCHOR Variant */
 	/* ---------------------------------------------------------------------------------------------------- */
-	.action.-anchor {
+	.anchor {
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
 	}
-	.action.-anchor:hover {
-		border: var(--border-width) solid var(--color-on-surface-darker);
+	.anchor:hover {
+		background-color: var(--color-surface-darker);
+		border: var(--border-width) solid var(--color-surface-darker);
 	}
-	.action.-anchor:focus-visible {
+	.anchor:focus-visible {
 		outline: 3px solid var(--color-neutral-400);
 		box-shadow: 0 0 0 6px var(--color-brand-accent);
 	}
-	.action.-anchor.-compressed { padding: var(--space-200) var(--space-100);}
+	.anchor.-compressed { padding: var(--space-200) var(--space-300);}
 
 	/* ---------------------------------------------------------------------------------------------------- */
-	/* Action Internal Components */
+	/* anchor Internal Components */
 	/* ---------------------------------------------------------------------------------------------------- */
-	.action span {
+	.anchor span {
 		font-family: var(--typeface-family-base);
-		font-weight: var(--typeface-weight-normal);
+		font-weight: var(--typeface-weight-bold);
 		font-size: var(--typeface-size-body-large);
 		line-height: var(--typeface-line-height-base);
 		letter-spacing: var(--typeface-tracking-base);
 		margin: 0;
 		padding: 0;
 	}
-	.action span + i {
+	.anchor span + i {
 		display: none;
 	}
 	@media (min-width: 992px) {
-		.action span + i {
+		.anchor span + i {
 			display: flex;
 			margin-left: var(--space-100);
 		}
 	}
 
-	.action i {
+	.anchor i {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: var(--space-300);
 		height: var(--space-300);
 	}
-	.action i img {
+	.anchor i img {
 		width: 100%;
 		height: auto !important;
 	}

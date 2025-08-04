@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<Tag label="Start the Checklist" />
+	<Tag customClass="" label="Start the Checklist" />
 	<h2>Design Systems can save your team <span class="highlight">— or slow it down</span>.</h2>
 	<p class="body_text -large">A Design System is a powerful tool. But only when it matches your product’s stage and your team’s needs. This quick checklist helps you understand if now is the right time, and what pieces you might be missing.</p>
 </section>

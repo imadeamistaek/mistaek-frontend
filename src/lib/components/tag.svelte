@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let label: string;
+	export let customClass: string | null | undefined;
 </script>
 
-<div class="tag">
-	<p class="body_text -large">{label}</p>
+<div class={`tag ${customClass}`}>
+	<p class={`body_text ${customClass}`}>{label}</p>
 </div>
 
 <style>
@@ -13,7 +14,7 @@
 	/* All the styles necessary to style the tag component
 	/* ---------------------------------------------------------------------------------------------------- */
 	.tag {
-		width: fit-content;
+		width: max-content;
 		display: inline-flex;
 		align-items: center;
 		text-align: center;
@@ -26,4 +27,14 @@
 		border: var(--border-width) solid var(--color-on-surface);
 		border-radius: var(--border-radius-max);
 	}
+
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* SIZE Variants */
+	/* ---------------------------------------------------------------------------------------------------- */
+	.-small {padding: var(--space-50) var(--space-100);}
+
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* VISUAL Variants */
+	/* ---------------------------------------------------------------------------------------------------- */
+	.tag.-subtle {border: var(--border-width) solid var(--color-on-surface-accent);}
 </style>
