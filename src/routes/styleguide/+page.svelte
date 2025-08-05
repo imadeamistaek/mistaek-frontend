@@ -8,7 +8,6 @@
     import Grid from '$lib/components/grid.svelte';
     import CardFounder from '$lib/components/cardFounder.svelte';
     import CtaSection from '$lib/components/ctaSection.svelte';
-    import Checkbox from '$lib/components/checkbox.svelte';
     import ChecklistStepper from '$lib/components/checklistStepper.svelte';
 </script>
 
@@ -136,9 +135,4 @@
 <section class="-flex">
 	<Tag customClass="-large" label="Checklist Cover" />
 	<ChecklistStepper/>
-</section>
-
-<section class="-flex">
-	<Tag customClass="-large" label="Checkbox" />
-	<Checkbox />
 </section>

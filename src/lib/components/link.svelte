@@ -9,12 +9,18 @@
 	{#if label}
     <p class="body_text -medium -bold">{label}</p>
 	{/if}
+	{#if icon}
 	<i class="icon" aria-hidden="true">
 		<img src={`/icons/mi-${icon}.webp`} alt="arrow-out">
 	</i>
+	{/if}
 </a>
 
 <style>
-    a {border-bottom: var(--border-width) solid var(--color-on-surface);}
-    i {display: none;}
+    a {
+		display: inline-flex;
+		justify-content: center;
+		gap: var(--space-200);
+		border-bottom: var(--border-width) solid var(--color-on-surface);
+	}
 </style>

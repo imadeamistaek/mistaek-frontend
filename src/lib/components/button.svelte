@@ -2,11 +2,17 @@
 	import Tag from "./tag.svelte";
 
 	export let buttonLabel: string;
+	export let icon: string | null | undefined;
 	export let tagLabel: string | undefined;
 	export let customClass: string | null | undefined;
 </script>
 
 <button class={`${customClass}`} aria-label="{buttonLabel}" on:click>
+	{#if icon}
+		<i class="icon" aria-hidden="true">
+			<img src={`/icons/mi-${icon}.webp`} alt="{icon}">
+		</i>
+	{/if}
 	<span>{buttonLabel}</span>
 	{#if tagLabel}
 		<Tag customClass="-small -subtle" label="{tagLabel}"/>
@@ -22,6 +28,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		gap: var(--space-200);
 		padding: var(--space-300) var(--space-400);
 		color: var(--color-on-surface);
 		cursor: pointer;
@@ -65,7 +72,7 @@
 	}
 
 	/* ---------------------------------------------------------------------------------------------------- */
-	/* Default Variant */
+	/* Border Variant */
 	/* ---------------------------------------------------------------------------------------------------- */
 	.border {
 		background-color: transparent;
@@ -73,6 +80,22 @@
 	}
 	.border:hover {
 		border: var(--border-width) solid var(--color-on-surface);
+	}
+
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Subtle Variant */
+	/* ---------------------------------------------------------------------------------------------------- */
+	.subtle {
+		padding: var(--space-100) var(--space-200);
+		background-color: transparent;
+		border: transparent;
+	}
+	.subtle span {
+		font-size: var(--typeface-size-body-medium);
+		font-weight: var(--typeface-weight-regular);
+	}
+	.subtle:hover {
+		background-color: var(--color-surface);
 	}
 
 	/* ---------------------------------------------------------------------------------------------------- */

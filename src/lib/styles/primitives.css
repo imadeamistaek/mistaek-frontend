@@ -202,6 +202,7 @@
 	--transition-duration-fast: 0.24s;
 	--transition-duration-mid: 0.48s;
 	--transition-duration-slow: 0.8s;
+	--transition-duration-drag: 1s;
 	--transition-timing-function: ease-in-out;
 }
 

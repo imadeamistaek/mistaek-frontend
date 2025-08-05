@@ -9,10 +9,10 @@ label input[type="checkbox"] {
 	-webkit-appearance: none;
 	appearance: none;
 	margin: 0;
-	width: var(--space-400);
-	height: var(--space-400);
+	min-width: var(--space-400);
+	min-height: var(--space-400);
 	background-color: var(--color-surface);
-	border: var(--border-width) solid var(--color-on-surface-accent);
+	border: var(--border-width) solid var(--color-on-surface);
 	border-radius: var(--border-radius-sm);
 	transition-property: background-color;
 	transition-duration: var(--transition-duration-nitro);
