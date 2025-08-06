@@ -1,4 +1,8 @@
-<div class="grid">
+<script lang="ts">
+	export let customClass: string | null | undefined;
+</script>
+
+<div class={`grid ${customClass}`}>
 	<slot />
 </div>
 

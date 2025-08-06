@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let vertical: boolean = false;
 	export let gapped: boolean = false;
+	export let customClass: string | null | undefined;
 </script>
 
-<ul class={`list ${vertical ? '-vertical' : ''} ${gapped ? '-gapped' : ''}`}>
+<ul class={`list ${customClass} ${vertical ? '-vertical' : ''} ${gapped ? '-gapped' : ''}`}>
 	<slot />
 </ul>
 

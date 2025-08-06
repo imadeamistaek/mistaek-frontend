@@ -9,6 +9,7 @@
     import CardFounder from '$lib/components/cardFounder.svelte';
     import CtaSection from '$lib/components/ctaSection.svelte';
     import ChecklistStepper from '$lib/components/checklistStepper.svelte';
+    import Footer from '$lib/components/footer.svelte';
 </script>
 
 <section class="-flex">
@@ -32,7 +33,7 @@
 
 <section class="-flex">
 	<Tag customClass="-large" label="Section Heading" />
-	<SectionHeading label="Test">
+	<SectionHeading sectionCustomClass="" label="Test">
 		<h4>This is an example of a Section Heading component</h4>
 		<p class="body_text -large"><b>This component</b> allows me to add whatever I want on the inside, allowing me to defined which heading tag I should use to help me with accessibility concerns.</p>
 	</SectionHeading>
@@ -48,12 +49,12 @@
 
 <section class="-flex">
 	<Tag customClass="-large" label="List Items" />
-	<List>
+	<List customClass="">
 		<ListItem as="li" icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 		<ListItem as="li" icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 		<ListItem as="li" icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 	</List>
-	<List>
+	<List customClass="">
 		<ListItem as="li" boxed icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 		<ListItem as="li" boxed icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 		<ListItem as="li" boxed icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
@@ -70,7 +71,7 @@
 		author="Beatriz Botão"
 		job="Co-Founder & Strategy Lead @ The Eggwhite"
 	/>
-	<Grid>
+	<Grid customClass="">
 		<Testimonial
 			customClass="col-2"
 			quote="“André blends creativity with clear thinking — every solution is user-centered and grounded in strategy. His work consistently elevates the quality of the project, and his reliability makes him someone you want on your team. If you’re looking for an experienced UX designer who truly makes a difference, he’s the one.”"
@@ -100,10 +101,10 @@
 
 <section class="-flex">
 	<Tag customClass="-large" label="Fit" />
-	<Grid>
+	<Grid customClass="">
 		<Box customClass="col-3 -space-m">
 			<p class="h6">We'll probably work well together if...</p>
-			<List vertical gapped>
+			<List customClass="" vertical gapped>
 				<ListItem as="li" icon="checkg" label="You’re building something meaningful in biotech, climate tech, accessibility, or sustainability — and want your brand and product to reflect that." customClass="-small"/>
 				<ListItem as="li" icon="checkg" label="You care about clarity, usability, accessibility, and doing things right — not just quickly." customClass="-small"/>
 				<ListItem as="li" icon="checkg" label="You want a design partner who brings structure, strategy, and clear thinking to your chaos." customClass="-small"/>
@@ -112,7 +113,7 @@
 		</Box>
 		<Box customClass="col-3 -space-m">
 			<p class="h6">We’re probably not a great fit if…</p>
-			<List vertical gapped>
+			<List customClass="" vertical gapped>
 				<ListItem as="li" icon="close-circle-r" label="You’re looking for the cheapest option or just want to “get something up” fast." customClass="-small"/>
 				<ListItem as="li" icon="close-circle-r" label="You want someone to take your brief and follow it exactly — no questions asked." customClass="-small"/>
 				<ListItem as="li" icon="close-circle-r" label="You see design as decoration, not as a way to solve real problems and support your business." customClass="-small"/>
@@ -135,4 +136,9 @@
 <section class="-flex">
 	<Tag customClass="-large" label="Checklist Cover" />
 	<ChecklistStepper/>
+</section>
+
+<section class="-flex">
+	<Tag customClass="-large" label="Footer" />
+	<Footer/>
 </section>

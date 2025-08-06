@@ -9,7 +9,7 @@
 	</div>
 	<p class="body_text -micro -subtle">or</p>
 	<div class="slot -right">
-		<Anchor label="Start the Checklist" customClass="-anchor -compressed" icon="" anchor=""/>
+		<Anchor label="Start the Checklist" customClass="-anchor -compressed" icon="" anchor="#checklist"/>
 	</div>
 </div>
 

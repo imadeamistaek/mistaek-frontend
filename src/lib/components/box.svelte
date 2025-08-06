@@ -1,13 +1,16 @@
 <script lang="ts">
+	export let as: string = 'div'; // default wrapper
 	export let customClass: string | null | undefined;
+	export let boxed: boolean = false;
 </script>
 
-<div class={`box ${customClass}`}>
-    <slot />
-</div>
+<svelte:element this={as} class={`box ${customClass} ${boxed ? '-boxed' : ''}`}>
+	<slot />
+</svelte:element>
 
 <style>
 	.box {
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-100);
@@ -15,6 +18,13 @@
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
 	}
+	.-boxed {
+		justify-content: center;
+		padding: var(--space-500);
+		background-color: var(--color-surface);
+		border: var(--border-width) solid var(--color-on-surface-accent);
+	}
+	
 	.-space-s {gap: var(--space-400);}
 	.-space-m {gap: var(--space-600);}
 	.-space-l {gap: var(--space-800);}
