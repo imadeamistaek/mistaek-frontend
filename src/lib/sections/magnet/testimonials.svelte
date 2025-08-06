@@ -27,7 +27,7 @@
 		<Testimonial
 			customClass="col-2"
 			quote="“André stands out in high-stakes environments with a rare mix of creativity, strategic thinking, and focus on real results. He works with autonomy, brings clarity to complex challenges, and always keeps business goals in sight. If you need someone who delivers great UX and elevates the whole team — André is that person.”"
-			photo="/people/beatrizbotao.jpeg"
+			photo="/people/michaelnunes.jpeg"
 			altText="Photo in black and white of Michael Nunes"
 			author="Michael Nunes"
 			job="Chied Design Officer @ Monday"
