@@ -10,6 +10,11 @@
     import CtaSection from '$lib/components/ctaSection.svelte';
     import ChecklistStepper from '$lib/components/checklistStepper.svelte';
     import Footer from '$lib/components/footer.svelte';
+	import Modal from '$lib/components/modal.svelte';
+
+	import Button from '$lib/components/button.svelte';
+    import InputEmail from '$lib/components/inputEmail.svelte';
+	let showModal = $state(false);
 </script>
 
 <section class="-flex">
@@ -141,4 +146,36 @@
 <section class="-flex">
 	<Tag customClass="-large" label="Footer" />
 	<Footer/>
+</section>
+
+<section class="-flex">
+	<Tag customClass="-large" label="Modal" />
+	<p class="h6">This is the modal that will appear once the user finishes the checklist and is to insert their data in order to get the pdf</p>
+	<Button customClass="default -full" buttonLabel="Open Modal" tagLabel="" icon="" on:click={() => (showModal = true)}/>
+
+	<Modal bind:showModal>
+		{#snippet header()}
+			<p class="h5">Get your custom action plan</p>
+			<p class="body_text -large -contained">Your personalized roadmap to design system success, delivered in minutes.</p>
+			<p class="body_text -micro -subtle -contained">I'll email you a complete breakdown of your assessment, including:</p>
+		{/snippet}
+
+		{#snippet body()}	
+			<List customClass="" vertical>
+				<ListItem as="li" icon="checkg" label="Your score explanation and what it really means for your product's future" customClass="-micro"/>
+				<ListItem as="li" icon="checkg" label="Specific, prioritised next steps you can tackle this week" customClass="-micro"/>
+				<ListItem as="li" icon="checkg" label="Bonus insights and strategies I've used helping startups avoid expensive mistakes" customClass="-micro"/>
+			</List>
+			<List customClass="" vertical>
+				<ListItem as="li" icon="checkw" label="This PDF isn't fully accessible yet. If you need a screen-reader friendly version, just email hello@mistaek.com and I'll send you one personally." customClass="-micro -subtle"/>
+			</List>
+		{/snippet}
+
+		{#snippet footer()}
+			<form method="POST">
+				<InputEmail />
+				<Button customClass="default -full" buttonLabel="Send me the report" tagLabel="" icon=""/>
+			</form>
+		{/snippet}
+	</Modal>
 </section>

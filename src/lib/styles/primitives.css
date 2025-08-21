@@ -25,6 +25,30 @@
 	--color-on-surface-brand: var(--color-brand-accent);
 }
 
+/* Opacity */
+:root {
+	--color-surface-opacity-10: rgba(20, 20, 21, 0.1);
+	--color-surface-opacity-20: rgba(20, 20, 21, 0.2);
+	--color-surface-opacity-30: rgba(20, 20, 21, 0.3);
+	--color-surface-opacity-40: rgba(20, 20, 21, 0.4);
+	--color-surface-opacity-50: rgba(20, 20, 21, 0.5);
+	--color-surface-opacity-60: rgba(20, 20, 21, 0.6);
+	--color-surface-opacity-70: rgba(20, 20, 21, 0.7);
+	--color-surface-opacity-80: rgba(20, 20, 21, 0.8);
+	--color-surface-opacity-90: rgba(20, 20, 21, 0.9);
+}
+:root {
+	--color-on-surface-opacity-10: rgba(244, 244, 245, 0.1);
+	--color-on-surface-opacity-20: rgba(244, 244, 245, 0.2);
+	--color-on-surface-opacity-30: rgba(244, 244, 245, 0.3);
+	--color-on-surface-opacity-40: rgba(244, 244, 245, 0.4);
+	--color-on-surface-opacity-50: rgba(244, 244, 245, 0.5);
+	--color-on-surface-opacity-60: rgba(244, 244, 245, 0.6);
+	--color-on-surface-opacity-70: rgba(244, 244, 245, 0.7);
+	--color-on-surface-opacity-80: rgba(244, 244, 245, 0.8);
+	--color-on-surface-opacity-90: rgba(244, 244, 245, 0.9);
+}
+
 /* Feedback */
 :root {
 	--color-surface-error: #781202;
@@ -192,6 +216,8 @@
 	--border-radius-xxlg: 24px;
 	--border-radius-max: 500px;
 	--border-width: 1px;
+	--border-width-m: 2px;
+	--border-width-l: 3px;
 }
 
 /*  -------------------------------------------------- */
