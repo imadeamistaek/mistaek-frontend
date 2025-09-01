@@ -1,6 +1,6 @@
 <footer>
-	<div class="slot -left"><p class="body_text -medium">© 2025 Mistaek Design Studio. All rights reserved.</p></div>
-	<div class="slot -right"><p class="body_text -medium">Let’s bring clarity to your design.</p></div>
+	<div class="slot -left"><p class="body_text -micro">© 2025 Mistaek. All rights reserved.</p></div>
+	<div class="slot -right"><p class="body_text -micro">Make it matter.</p></div>
 </footer>
 
 <style>

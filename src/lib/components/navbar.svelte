@@ -36,7 +36,7 @@
 .navbar-container {
 	display: flex;
 	justify-content: space-between;
-	padding: var(--space-500);
+	padding: var(--space-300) var(--space-500);
 	background-color: var(--color-surface);
 	border: var(--border-width) solid var(--color-on-surface-accent);
 }
