@@ -4,7 +4,7 @@
 </script>
 
 <section id="websiteHeader">
-	<h1 class="col-5 col-start-1">Removing barriers, making ideas matter.</h1>
+	<h2 class="col-4 col-start-1">Removing barriers, making ideas matter.</h2>
 	<div class="pairing col-3 col-start-4 -spaced">
 		<p class="h6">We believe good design should never come at the expense of people or the planet.</p>
 		<p class="h6">We help growing startups turn bold ideas into clear, accessible, and sustainable brands and products.</p>
@@ -18,6 +18,9 @@
 <Footer />
 
 <style>
+	section {
+		padding: var(--space-max) var(--space-400);
+	}
 	:global(footer) {
 		position: relative;
 		border-top: var(--border-width) solid var(--color-on-surface-opacity-10);

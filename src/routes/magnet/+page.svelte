@@ -6,8 +6,10 @@
     import Fit from '$lib/sections/magnet/fit.svelte';
     import Founder from '$lib/sections/magnet/founder.svelte';
     import Footer from '$lib/sections/magnet/footer.svelte';
+    import Navbar from '$lib/components/navbar.svelte';
 </script>
 
+<Navbar />
 <Header />
 <About />
 <Checklist />

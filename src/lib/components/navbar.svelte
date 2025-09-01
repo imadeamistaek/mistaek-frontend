@@ -1,9 +1,10 @@
 <script lang="ts">
+	export let full: boolean = false;
 	import Link from '$lib/components/link.svelte';
 </script>
 
 <nav class="navbar">
-	<div class="navbar-container col-4 col-start-2">
+	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
 		<div class="slot -left">
 			<a href="/" aria-label="Homepage">
 				<picture>
