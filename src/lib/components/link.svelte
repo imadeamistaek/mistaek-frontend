@@ -60,6 +60,11 @@
 		transition-property: transform;
 	}
 
+	a.-full { justify-content: space-between;}
+	@media (min-width: 992px) {
+		a.-full { justify-content: center;}
+	}
+
 	a.-small p { font-size: var(--font-size-200); }
 
 	a:hover p { color: var(--color-on-surface); }
