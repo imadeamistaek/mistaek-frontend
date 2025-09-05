@@ -4,6 +4,10 @@
 @import 'primitives';
 @import 'global';
 
+/* UTILITIEs */
+@import 'utilities/aspect-ratio.css';
+@import 'utilities/padding.css';
+
 /* COMPONENT STYLES */
 @import 'components/backgroundGrid.css';
 @import 'components/checkbox.css';

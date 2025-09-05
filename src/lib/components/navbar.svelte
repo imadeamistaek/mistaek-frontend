@@ -1,18 +1,13 @@
 <script lang="ts">
 	export let full: boolean = false;
 	import Link from '$lib/components/link.svelte';
+    import Logo from '$lib/components/logo.svelte';
 </script>
 
 <nav class="navbar">
 	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
 		<div class="slot -left">
-			<a href="/" aria-label="Homepage">
-				<picture>
-					<source media="(min-width:650px)" srcset="/logotype_w.webp">
-					<source media="(min-width:320px)" srcset="/logo.webp">
-					<img src="/logotype_w.webp" alt="Website Logo" />
-				</picture>
-			</a>
+			<Logo />
 		</div>
 		<div class="slot -right">
 			<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
