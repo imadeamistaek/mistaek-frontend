@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { checklistSections, type ChecklistResult, checklistResults } from '$lib/data/checklist';
 	import { selectedItems, totalScore } from '$lib/stores/checklist';
+	import { downloadPDF } from '$lib/utils/pdfClient';
 	import { blur } from 'svelte/transition';
 	import { get } from 'svelte/store';
 	import Button from "./button.svelte";
@@ -57,7 +58,8 @@
 			title: 'No Result Found',
 			message: 'There was a problem calculating your score.',
 			insights: '',
-			next: ''
+			next: '',
+			actions: [] // 👈 empty array to match type
 		};
 	}
 	
@@ -161,8 +163,8 @@
 				<p class="body_text -medium">{result.next}</p>
 				
 				<div class="row_group">
+					<Button customClass="border" buttonLabel="Download PDF Checklist" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
 					<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
-					<Link url="/pdf-checklist.pdf" customClass="" label="Download PDF Checklist" icon="downloadw" />
 				</div>
 			</div>
 			{:else}
