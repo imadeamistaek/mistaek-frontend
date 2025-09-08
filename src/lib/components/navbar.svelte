@@ -7,7 +7,7 @@
 <nav class="navbar">
 	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
 		<div class="slot -left">
-			<Logo />
+			<Logo small />
 		</div>
 		<div class="slot -right">
 			<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
@@ -41,16 +41,6 @@
 	.navbar {
 		grid-template-columns: repeat(6, 1fr);
 	}
-}
-
-
-/* ---------------------------------------------------------------------------------------------------- */
-/* Navigation Container Link */
-/*
-/* All the styles necessary to style the link inside the navigation container
-/* ---------------------------------------------------------------------------------------------------- */
-.navbar a picture img {
-	height: var(--space-500);
 }
 
 </style>

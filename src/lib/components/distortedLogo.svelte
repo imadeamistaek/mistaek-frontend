@@ -6,15 +6,15 @@
 <img src="/logoDistortedW.webp" alt="" class={`distortedLogo ${customClass} ${animated ? '-animated' : ''}`} />
 
 <style>
-    img { position: absolute; }
-
 	.tl{
+		position: absolute;
 		top: -32%;
         left: -24%;
 	} 
 	.tr{
-		top: -32%;
-		right: -24%;
+		position: fixed;
+		top: -16%;
+		right: 0%;
 	}
 
 	.-animated {
