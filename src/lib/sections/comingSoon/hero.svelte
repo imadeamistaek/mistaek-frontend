@@ -2,10 +2,17 @@
 	import DistortedLogo from '$lib/components/distortedLogo.svelte';
 	import Link from '$lib/components/link.svelte';
     import Logo from '$lib/components/logo.svelte';
+	import { browser } from "$app/environment";
+  	import Logo3D from '$lib/components/logo3D.svelte';
 </script>
 
+{#if browser}
+	<!-- Show 3D logo only in the browser -->
+	<Logo3D />
+{/if}
+
 <section id="websiteHeader">
-	<DistortedLogo customClass="tr" animated />
+	<!-- <DistortedLogo customClass="tr" animated /> -->
 	<Logo small />
 	<div class="heading pairing col-5 col-start-1">
 		<h1>We're building</h1>
