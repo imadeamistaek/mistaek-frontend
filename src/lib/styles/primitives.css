@@ -88,6 +88,7 @@
 /* Font Faces */
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
+	font-display: fallback;
 	src: url('/fonts/AtkinsonHyperlegible-Regular.otf') format('opentype'),
 	url('/fonts/AtkinsonHyperlegible-Regular.woff') format('woff');
 	font-weight: 400;
@@ -99,6 +100,7 @@
 }
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
+	font-display: fallback;
 	src: url('/fonts/AtkinsonHyperlegible-Bold.otf') format('opentype'),
 	url('/fonts/AtkinsonHyperlegible-Bold.woff') format('woff');
 	font-weight: 900;
@@ -111,6 +113,7 @@
 
 @font-face {
 	font-family: 'PPTelegraf';
+	font-display: fallback;
 	src: url('/fonts/PPTelegraf-Regular.otf') format('opentype'),
 	url('/fonts/PPTelegraf-Regular.woff') format('woff');
 	font-weight: 400;
@@ -123,6 +126,7 @@
 
 @font-face {
 	font-family: 'PPTelegraf';
+	font-display: fallback;
 	src: url('/fonts/PPTelegraf-Ultrabold.otf') format('opentype'),
 	url('/fonts/PPTelegraf-Ultrabold.woff') format('woff');
 	font-weight: 900;

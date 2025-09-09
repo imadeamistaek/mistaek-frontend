@@ -3,7 +3,7 @@
 	export let animated: boolean = false;
 </script>
 
-<img src="/logoDistortedW.webp" alt="" class={`distortedLogo ${customClass} ${animated ? '-animated' : ''}`} />
+<enhanced:img src="/static/logoDistortedW.webp" alt="" class={`distortedLogo ${customClass} ${animated ? '-animated' : ''}`} />
 
 <style>
 	.tl{
