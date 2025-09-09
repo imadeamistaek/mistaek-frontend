@@ -13,11 +13,13 @@
 			<List customClass="col-3 col-start-4" gapped vertical>
 				<li class="-hidden-xs"><Logo small /></li>
 				<li><p class="body_text -micro -subtle -contained">We remove the barriers that hold ideas back and create design that works for people, brands, and the planet.</p></li>
-                <List customClass="col-3 col-start-4 -gap-vnone" gapped>
-                    <Link url="https://cal.com/mistaek/15min" customClass="-small -full" label="Book a call" icon="arrow-out" />
-                    <Link url="https://www.linkedin.com/company/mistaek-studio/" customClass="-small -full" label="Follow the updates" icon="arrow-out" />
-                    <Link url="mailto:hello@mistaek.com" customClass="-small -full" label="hello@mistaek.com" icon="arrow-out" mail />
-                </List>
+				<li>
+					<List customClass="col-3 col-start-4 -gap-vnone" gapped>
+						<li><Link url="https://cal.com/mistaek/15min" customClass="-small -full" label="Book a call" icon="arrow-out" /></li>
+						<li><Link url="https://www.linkedin.com/company/mistaek-studio/" customClass="-small -full" label="Follow the updates" icon="arrow-out" /></li>
+						<li><Link url="mailto:hello@mistaek.com" customClass="-small -full" label="hello@mistaek.com" icon="arrow-out" mail /></li>
+					</List>
+				</li>
 			</List>
 		</Grid>
 	</Box>
