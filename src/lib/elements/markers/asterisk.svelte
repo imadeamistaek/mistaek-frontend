@@ -2,48 +2,47 @@
 	export let customClass: string | null | undefined;
 </script>
 
-<span class={`marker ${customClass}`}></span>
+<span class={`asterisk ${customClass}`}></span>
 
 <style>
 	/* ---------------------------------------------------------------------------------------------------- */
-	/* MARKER */
+	/* ASTERISK */
 	/*
-	/* All the styles necessary to style the Marker Pseudo component
+	/* All the styles necessary to style the Asterisk Pseudo component
 	/* ---------------------------------------------------------------------------------------------------- */
-	.marker {
-		position: absolute;
-		width: var(--space-400);
-		height: var(--space-400);
-		z-index: var(--zindex-dropdown);
+	.asterisk {
+		content: '';
+		background: url(/icons/mi-asteriskw.webp);
+		display: inline-block;
+		height: var(--space-300);
+		width: var(--space-300);
+		background-size: cover;
+		margin: 0 var(--space-100);
 	}
-	.marker:before, .marker:after {
-		position: absolute;
-		left: var(--space-200);
-		content: ' ';
-		height: var(--space-400);
-		width: 1px;
-		background-color: var(--color-on-surface-darker);
-	}
-	.marker:after {
-		transform: rotate(-90deg);
+    @media (min-width: 992px) {
+		.asterisk {
+			height: var(--space-900);
+			width: var(--space-900);
+			margin: 0 var(--space-200);
+		}
 	}
 
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* POSITION Variants */
 	/* ---------------------------------------------------------------------------------------------------- */
-	.marker.-tl {
+	.asterisk.-tl {
 		top: calc(var(--space-50) * -4.1);
 		left: calc(var(--space-50) * -4.2);
 	}
-	.marker.-tr {
+	.asterisk.-tr {
 		top: calc(var(--space-50) * -4.2);
 		right: calc(var(--space-50) * -4.1);
 	}
-	.marker.-bl {
+	.asterisk.-bl {
 		bottom: calc(var(--space-50) * -4.1);
 		left: calc(var(--space-50) * -4.2);
 	}
-	.marker.-br {
+	.asterisk.-br {
 		bottom: calc(var(--space-50) * -4.2);
 		right: calc(var(--space-50) * -4.1);
 	}

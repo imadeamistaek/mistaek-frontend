@@ -1,5 +1,5 @@
 <script>
-    import Tag from "$lib/components/tag.svelte";
+    import Tag from "$lib/elements/tag.svelte";
     import Grid from "$lib/components/grid.svelte";
     import Testimonial from "$lib/components/testimonial.svelte";
 </script>

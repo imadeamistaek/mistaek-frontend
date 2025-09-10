@@ -1,7 +1,7 @@
 <script>
     import ChecklistStepper from "$lib/components/checklistStepper.svelte";
     import List from "$lib/components/list.svelte";
-    import ListItem from "$lib/components/listItem.svelte";
+    import ListItem from "$lib/elements/listItem.svelte";
 </script>
 <section class="-flex -no-gap" id="checklist">
     <ChecklistStepper />

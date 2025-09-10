@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Anchor from "./anchor.svelte";
-	import Link from "./link.svelte";
+	import Anchor from "../elements/anchor.svelte";
+	import Link from "../elements/link.svelte";
 </script>
 
 <div class="button_pairing">

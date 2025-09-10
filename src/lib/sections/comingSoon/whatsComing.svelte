@@ -1,13 +1,13 @@
 <script>
-	import Tag from "$lib/components/tag.svelte";
+	import Tag from "$lib/elements/tag.svelte";
 	import List from '$lib/components/list.svelte';
-	import Box from '$lib/components/box.svelte';
-	import Marker from "$lib/components/marker.svelte";
+	import Box from '$lib/elements/box.svelte';
+	import Crosshair from "$lib/elements/markers/crosshair.svelte";
 </script>
 
-<section>
+<section aria-labelledby="timeline_title">
 	<Tag label="What's Coming" customClass="-nano" />
-	<h2 class="col-3 col-start-1">Built with purpose, launched in stages</h2>
+	<h2 id="timeline_title" class="col-3 col-start-1">Built with purpose, launched in stages</h2>
 	<p class="body_text -large -contained-xl col-2 col-start-5 -align-bottom">Why staged? Because good design takes time, and we'd rather be transparent about our process than rush something that doesn't meet our standards.</p>
 
 	<List customClass="stages col-6 col-start-1">
@@ -16,7 +16,7 @@
 				<p class="body_text -large">01</p>
 				<span class="dot"></span>
 				<Tag label="In Progress" customClass="-nano -progress" />
-				<Marker customClass="-tl" />
+				<Crosshair customClass="-tl" />
 			</div>
 			<p class="h6">Coming Soon</p>
 			<div class="box_body">

@@ -1,5 +1,5 @@
 <script>
-	import Anchor from '$lib/components/anchor.svelte';
+	import Anchor from '$lib/elements/anchor.svelte';
 </script>
 
 <section id="header">

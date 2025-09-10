@@ -1,13 +1,13 @@
 <script>
-    import Tag from "$lib/components/tag.svelte";
+    import Tag from "$lib/elements/tag.svelte";
 	import Grid from "$lib/components/grid.svelte";
-	import Link from '$lib/components/link.svelte';
+	import Link from '$lib/elements/link.svelte';
 </script>
 
-<section id="websiteHeader">
+<section aria-labelledby="fresh_title">
     <Tag label="Starting Fresh" customClass="-nano" />
 	<Grid customClass="col-6 col-start-1">
-		<h4 class="h2 col-2">Practice what we preach</h4>
+		<h4 id="fresh_title" class="h2 col-2">Practice what we preach</h4>
 		<div class="pairing col-3 col-start-4 -spaced">
 			<p class="h6 ">Our old site worked, but it didn't fully represent who we've become.</p>
 			<p class="h6 ">As Mistaek has evolved to focus on accessibility, sustainability, and barrier removal, our digital home should reflect those same principles.</p>

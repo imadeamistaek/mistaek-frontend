@@ -4,9 +4,9 @@
 
 <a href="/" aria-label="Homepage" class={`${small ? '-small' : ''}`}>
 	<picture>
-		<source media="(min-width:650px)" srcset="/logotype_w.webp">
-		<source media="(min-width:320px)" srcset="/logo.webp">
-		<img src="/logotype_w.webp" alt="Website Logo" />
+		<source media="(min-width:650px)" srcset="/brand/logotype_w.webp">
+		<source media="(min-width:320px)" srcset="/brand/logo.webp">
+		<img src="/brand/logotype_w.webp" alt="Website Logo" />
 	</picture>
 </a>
 

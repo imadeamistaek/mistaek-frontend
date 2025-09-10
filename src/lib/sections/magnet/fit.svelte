@@ -1,9 +1,9 @@
 <script lang="ts">
     import SectionHeading from "$lib/components/sectionHeading.svelte";
     import Grid from "$lib/components/grid.svelte";
-    import Box from "$lib/components/box.svelte";
+    import Box from "$lib/elements/box.svelte";
     import List from "$lib/components/list.svelte";
-    import ListItem from "$lib/components/listItem.svelte";
+    import ListItem from "$lib/elements/listItem.svelte";
 </script>
 
 <section>

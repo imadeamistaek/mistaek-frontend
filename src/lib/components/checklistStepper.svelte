@@ -4,9 +4,9 @@
 	import { downloadPDF } from '$lib/utils/pdfClient';
 	import { blur } from 'svelte/transition';
 	import { get } from 'svelte/store';
-	import Button from "./button.svelte";
-	import Tag from './tag.svelte';
-	import Link from './link.svelte';
+	import Button from "../elements/button.svelte";
+	import Tag from '../elements/tag.svelte';
+	import Link from '../elements/link.svelte';
 	
 	// STEPS --------------------------------------------------------------------------------------------------------
 	// Logic to deal with steps

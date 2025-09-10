@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Link from '$lib/components/link.svelte';
+	import Link from '$lib/elements/link.svelte';
 	export let customClass: string | null | undefined;
 	export let photo: string;
 	export let altText: string;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import List from '$lib/components/list.svelte';
-	import Box from '$lib/components/box.svelte';
-  	import Tag from '$lib/components/tag.svelte';
+	import Box from '$lib/elements/box.svelte';
+  	import Tag from '$lib/elements/tag.svelte';
 </script>
 
 <section id="about">

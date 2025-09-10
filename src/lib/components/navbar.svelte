@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let full: boolean = false;
-	import Link from '$lib/components/link.svelte';
-    import Logo from '$lib/components/logo.svelte';
+	import Link from '$lib/elements/link.svelte';
+    import Logo from '$lib/elements/logo.svelte';
 </script>
 
 <nav class="navbar">

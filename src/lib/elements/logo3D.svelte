@@ -90,7 +90,7 @@
 			// Load GLTF logo
 			const loader = new GLTFLoader();
 			loader.load(
-				"/logo3D.glb",
+				"/brand/logo3D.glb",
 				(gltf) => {
 					const logo = gltf.scene;
 

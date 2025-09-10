@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Tag from "$lib/components/tag.svelte";
+  import Tag from "$lib/elements/tag.svelte";
   export let label: string;
   export let sectionCustomClass: string | null | undefined;
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Tag from '$lib/components/tag.svelte';
+	import Tag from '$lib/elements/tag.svelte';
 	import SectionHeading from '$lib/components/sectionHeading.svelte';
-	import ListItem from '$lib/components/listItem.svelte';
-    import Box from '$lib/components/box.svelte';
+	import ListItem from '$lib/elements/listItem.svelte';
+    import Box from '$lib/elements/box.svelte';
     import List from '$lib/components/list.svelte';
     import Testimonial from '$lib/components/testimonial.svelte';
     import Grid from '$lib/components/grid.svelte';
@@ -12,8 +12,8 @@
     import Footer from '$lib/components/footer.svelte';
 	import Modal from '$lib/components/modal.svelte';
 
-	import Button from '$lib/components/button.svelte';
-    import InputEmail from '$lib/components/inputEmail.svelte';
+	import Button from '$lib/elements/button.svelte';
+    import InputEmail from '$lib/elements/inputEmail.svelte';
 	let showModal = $state(false);
 </script>
 
