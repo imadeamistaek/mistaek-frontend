@@ -31,9 +31,9 @@
 			<div class="pairing col-1 col-start-6 -spaced">
 				<h2 class="h6">What you might be looking for:</h2>
 				<List customClass="col-3 col-start-4 -gap-vnone" gapped>
-					<li><Link url="/" customClass="-small -full" label="Homepage" icon="arrow-right" /></li>
-					<li><Link url="https://www.linkedin.com/company/mistaek-studio/" customClass="-small -full" label="Follow the updates" icon="arrow-out" /></li>
-					<li><Link url="mailto:hello@mistaek.com" customClass="-small -full" label="hello@mistaek.com" icon="arrow-out" mail /></li>
+					<li><Link customClass="-small -full" label="Homepage" url="/" type="internal" /></li>
+					<li><Link customClass="-small -full" label="Follow the updates" url="https://www.linkedin.com/company/mistaek-studio/" type="external" /></li>
+					<li><Link customClass="-small -full" label="hello@mistaek.com" url="mailto:hello@mistaek.com" type="external" icon="send" /></li>
 				</List>
 			</div>
 		</Grid>
@@ -44,7 +44,7 @@
 			<div class="pairing col-3 col-start-1 -spaced">
 				<h1>Something went wrong</h1>
 				<p class="body_text -large -contained-xl">We're experiencing a technical issue. Our team has been notified.</p>
-				<li><Link url="/" customClass="-small -full" label="Go to Homepage" icon="arrow-right" /></li>
+				<li><Link customClass="-small -full" label="Go to Homepage" url="/" type="internal" /></li>
 			</div>
 		</Grid>
 	{/if}
