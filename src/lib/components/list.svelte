@@ -28,6 +28,9 @@
 		ul:not(.-vertical) :global(> :first-child) { border-right: none !important;}
 		ul:not(.-vertical) :global(> :last-child) { border-left: none !important;}
 
+		ul.-vertical :global(> :first-child) { border-bottom: none !important;}
+		ul.-vertical :global(> :last-child) { border-top: none !important;}
+
 		.-inverted-mobile {flex-direction: column;}
 	}
 </style>

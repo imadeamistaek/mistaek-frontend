@@ -21,7 +21,7 @@
 				</Box>
 				<Box as="li" customClass="-align-bl -padding-hl">
 					<p class="body_text -large -subtle">Ready to work together?</p>
-					<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+					<Link label="Book an intro call" url="https://cal.com/mistaek/15min" type="external" />
 				</Box>
 			</List>
 			<List customClass="col-3 col-start-4" vertical>

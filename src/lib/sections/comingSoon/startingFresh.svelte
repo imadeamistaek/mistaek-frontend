@@ -15,7 +15,7 @@
 		</div>
 		<div class="pairing col-3 col-start-4 -spaced">
 			<p class="body_text -large -contained-xl  -subtle">We'll be sharing the behind-the-scenes process on LinkedIn, including decisions, challenges, and wins. Because transparency builds trust.</p>
-			<Link url="https://www.linkedin.com/company/mistaek-studio/" customClass="" label="Follow the updates" icon="arrow-out" />
+			<Link label="Follow the updates" url="https://www.linkedin.com/company/mistaek-studio/" type="external" />
 		</div>
 	</Grid>
 </section>
