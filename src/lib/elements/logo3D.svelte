@@ -191,5 +191,5 @@
 	<img src="/logoDistortedW.webp" alt="Mistaek Logo" class="fallback" />
 {:else}
 	<!-- 3D container -->
-	<div class="canvas" bind:this={container}></div>
+	<div class="canvas" bind:this={container} role="presentation" aria-hidden="true"></div>
 {/if}
