@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/elements/link.svelte';
+	import List from './list.svelte';
 	export let customClass: string | null | undefined;
 	export let photo: string;
 	export let altText: string;
@@ -15,7 +16,10 @@
 			<p class="body_text -medium">I’ve spent over 10 years designing and building systems that actually work, not just look nice.</p>
 			<p class="body_text -medium">Whether you’re starting from scratch or scaling fast, I can help you make sense of what’s worth doing now, and what can wait.</p>
 		</div>
-		<Link url="https://cal.com/mistaek/15min" customClass="" label="Book a call with André" icon="arrow-out" />
+		<List customClass="-gap-vnone" gapped vertical>
+			<li><Link customClass="-small -full" label="Book a call" url="https://cal.com/mistaek/15min" type="external" /></li>
+			<li><Link customClass="-small -full" label="Follow me on LinkedIn" url="https://www.linkedin.com/in/andremsequeira/" type="external" /></li>
+		</List>
 	</div>
 </div>
 

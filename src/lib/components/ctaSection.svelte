@@ -14,9 +14,9 @@
 		<span class="col -hidden-xs"></span>
 	</div>
 	<div class="content">
-		<p class="h3">Need help setting up your Design System?</p>
-		<p class="h6">Let’s explore what’s next, together.</p>
-		<p class="body_text -medium">Book a quick call and I’ll help you figure out the smartest next move for your team.</p>
+		<p class="h3">Ready to build the right thing at the right time?</p>
+		<p class="h6">Let's figure out your smartest next move.</p>
+		<p class="body_text -medium">Book a quick call and we'll help you create a plan that actually matches where your product is right now, not where you think it should be.</p>
 		<ButtonPairing />
 	</div>
 </div>

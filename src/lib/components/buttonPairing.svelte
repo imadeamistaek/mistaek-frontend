@@ -5,11 +5,11 @@
 
 <div class="button_pairing">
 	<div class="slot -left">
-		<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+		<Link label="Book an intro call" url="https://cal.com/mistaek/15min" type="external" />
 	</div>
 	<p class="body_text -micro -subtle">or</p>
 	<div class="slot -right">
-		<Anchor label="Start the Checklist" customClass="-anchor -compressed" icon="" anchor="#checklist"/>
+		<Anchor label="Take the Assessment Again" customClass="-anchor -compressed" icon="" anchor="#checklist"/>
 	</div>
 </div>
 

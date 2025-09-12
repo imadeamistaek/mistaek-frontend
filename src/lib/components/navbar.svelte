@@ -7,10 +7,10 @@
 <nav class="navbar">
 	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
 		<div class="slot -left">
-			<Logo small />
+			<Logo small={true} />
 		</div>
 		<div class="slot -right">
-			<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+			<Link label="Book an intro call" url="https://cal.com/mistaek/15min" type="external" />
 		</div>
 	</div>
 </nav>

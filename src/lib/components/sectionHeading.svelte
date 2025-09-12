@@ -5,7 +5,7 @@
 </script>
 
 <div class={`section_heading ${sectionCustomClass}`}>
-	<Tag customClass="" label="{label}"/>
+	<Tag label="{label}" customClass="-nano" />
 	<slot />
 </div>
 

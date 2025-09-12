@@ -88,11 +88,11 @@
 		<div class="content" in:blur={{ duration: 800, delay: 200 }} out:blur={{ duration: 800 }}>
 			{#if step === 0}
 			<div class="content_group -middle">
-				<p class="h2">Take the 5-step readiness checklist</p>
-				<p class="h6 -contained">This 5-step checklist helps you assess how ready your startup is to build (or improve) a design system.</p>
-				<p class="body_text -medium -contained">You’ll reflect on product stage, design consistency, technical setup, accessibility, and maintainability, and get instant feedback after each step.</p>
+				<p class="h2">The 5-step design system reality check</p>
+				<p class="h6 -contained">Find out if you're ready, or if you need to solve other problems first.</p>
+				<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
 				<div class="row_group">
-					<Button customClass="default -full" buttonLabel="Start the Checklist" tagLabel="2-3 minutes" icon="" on:click={nextStep}/>
+					<Button customClass="default -full" buttonLabel="Start the Reality Check" tagLabel="" icon="" on:click={nextStep}/>
 				</div>
 			</div>
 			{:else if step >= 1 && step <= checklistSections.length}
@@ -163,8 +163,8 @@
 				<p class="body_text -medium">{result.next}</p>
 				
 				<div class="row_group">
-					<Button customClass="border" buttonLabel="Download PDF Checklist" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
-					<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+					<Button customClass="border" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
+					<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
 				</div>
 			</div>
 			{:else}
