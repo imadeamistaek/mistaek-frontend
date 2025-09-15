@@ -14,7 +14,7 @@
 		<span class="col -hidden-xs"></span>
 	</div>
 	<div class="content">
-		<p class="h3">Ready to build the right thing at the right time?</p>
+		<h6 class="h3">Ready to build the right thing at the right time?</h6>
 		<p class="h6">Let's figure out your smartest next move.</p>
 		<p class="body_text -medium">Book a quick call and we'll help you create a plan that actually matches where your product is right now, not where you think it should be.</p>
 		<ButtonPairing />

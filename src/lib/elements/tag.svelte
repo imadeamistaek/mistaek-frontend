@@ -40,6 +40,7 @@
 	/* ---------------------------------------------------------------------------------------------------- */
 	.tag {
 		width: max-content;
+		height: fit-content;
 		display: inline-flex;
 		align-items: center;
 		text-align: center;

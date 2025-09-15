@@ -1,5 +1,6 @@
 <script lang="ts">
     import SectionHeading from "$lib/components/sectionHeading.svelte";
+	import Tag from "$lib/elements/tag.svelte";
     import Grid from "$lib/components/grid.svelte";
     import Box from "$lib/elements/box.svelte";
     import List from "$lib/components/list.svelte";
@@ -7,12 +8,12 @@
 </script>
 
 <section>
-	<SectionHeading sectionCustomClass="col-4 col-start-1" label="Are we a good match?">
-		<h4 class="h3">Not every designer works with every founder.</h4>
-		<p class="body_text -large">Here's how to know if we should work together:</p>
-	</SectionHeading>
+	<Tag label="Are we a good match?" customClass="-nano col-6" />
+	<h4 class="h3 col-3">Not every designer works with every founder.</h4>
+	<p class="col-4 body_text -large">Here's how to know if we should work together:</p>
+
     <Grid customClass="col-6 col-start-1">
-		<Box customClass="col-3 -padding-s -space-m" boxed>
+		<Box customClass="-aspect-16-9 col-3 -padding-s -rgap-m" boxed>
 			<p class="h6">We'll work well together if:</p>
 			<List customClass="" vertical gapped>
 				<ListItem as="li" icon="checkg" label="You’re building something meaningful in biotech, climate tech, accessibility, sustainability or similar." customClass="-small"/>
@@ -21,7 +22,7 @@
 				<ListItem as="li" icon="checkg" label="You're ready to hear honest feedback, even when it's not what you expected" customClass="-small"/>
 			</List>
 		</Box>
-		<Box customClass="col-3 -padding-s -space-m" boxed>
+		<Box customClass="-aspect-16-9 col-3 -padding-s -rgap-m" boxed>
 			<p class="h6">We're probably not a fit if:</p>
 			<List customClass="" vertical gapped>
 				<ListItem as="li" icon="close-circle-r" label="You want the cheapest option or need something 'quick and dirty'" customClass="-small"/>

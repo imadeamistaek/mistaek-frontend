@@ -6,6 +6,7 @@
 
 /* UTILITIEs */
 @import 'utilities/aspect-ratio.css';
+@import 'utilities/grid.css';
 @import 'utilities/padding.css';
 
 /* COMPONENT STYLES */

@@ -7,6 +7,10 @@
 	import Button from "../elements/button.svelte";
 	import Tag from '../elements/tag.svelte';
 	import Link from '../elements/link.svelte';
+	import List from '$lib/components/list.svelte';
+	import Box from '$lib/elements/box.svelte';
+	import Crosshair from "$lib/elements/markers/crosshair.svelte";
+    import Grid from "$lib/components/grid.svelte";
 	
 	// STEPS --------------------------------------------------------------------------------------------------------
 	// Logic to deal with steps
@@ -72,87 +76,110 @@
 	$: result = getResult(score);
 </script>
 
-<div class={step >= 1 && step <= checklistSections.length ? "container -step" : "container"}>
-	{#if step === 0}
-	<div class="grid-container" in:blur out:blur>
-		<span class="col -hidden-xs"></span>
-		<span class="col -hidden-xs"></span>
-		<span class="col"></span>
-		<span class="col"></span>
-		<span class="col"></span>
-		<span class="col -hidden-xs"></span>
-	</div>
-	{/if}
-	<div class="content-container col-4 col-start-2">
+<Box as="div" customClass={`container -aspect-16-9 ${step >= 1 && step <= checklistSections.length ? "-step" : ""}`} boxed>
+	<Crosshair customClass="-tl" />
+	<Crosshair customClass="-tr" />
+	<Crosshair customClass="-bl" />
+	<Crosshair customClass="-br" />
+	<Box as="div" customClass="">
 		{#key step}
 		<div class="content" in:blur={{ duration: 800, delay: 200 }} out:blur={{ duration: 800 }}>
 			{#if step === 0}
-			<div class="content_group -middle">
-				<p class="h2">The 5-step design system reality check</p>
-				<p class="h6 -contained">Find out if you're ready, or if you need to solve other problems first.</p>
-				<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
-				<div class="row_group">
-					<Button customClass="default -full" buttonLabel="Start the Reality Check" tagLabel="" icon="" on:click={nextStep}/>
-				</div>
-			</div>
+			<Grid customClass="col-6 grid-rows-4 custom-grid">
+				<Box as="div" customClass="col-5 cell-row-span-2 -padding-l">
+					<p id="available_title" class="h1">The 5-step design system reality check</p>
+				</Box>
+				<Box as="div" customClass="col-3 col-start-1 cell-row-span-2 -align-bl -padding-hl -rgap-xs">
+					<p class="h6 -contained-xl">Find out if you're ready, or if you need to solve other problems first.</p>
+					<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
+				</Box>
+				<Box as="div" customClass="col-3 col-start-4  cell-row-span-2">
+					<Button customClass="default -padding-m -full" buttonLabel="Start the Reality Check" tagLabel="" icon="" on:click={nextStep}/>
+				</Box>
+			</Grid>
 			{:else if step >= 1 && step <= checklistSections.length}
-			<div class="content_group">
-				<div class="row_group">
-					<Tag customClass="" label="{checklistSections[step - 1].id}"/>
+			<Grid customClass="col-6 grid-rows-6 custom-grid">
+				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -cgap-xs">
+					<Tag label="{checklistSections[step - 1].id}" customClass="-nano" />
 					<p class="body_text -nano">{checklistSections[step - 1].completion}</p>
-				</div>
-				<div class="heading_group">
+				</Box>
+				<Box as="div" customClass="col-6  cell-row-span-4 -padding-hl -rgap-s">
 					<p class="h3">{checklistSections[step - 1].title}</p>
 					<p class="body_text -medium -contained">{checklistSections[step - 1].description}</p>
-				</div>
-				<ul class="-spaced">
-					{#each checklistSections[step - 1].items as item}
-					<li>
-						<label class="checkbox">
-							<input
-							type="checkbox"
-							checked={$selectedItems.has(item.id)}
-							on:change={() => toggleItem(item.id)}
-							/>
-							<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkb.webp`} alt="check icon"></i>
-							<p class="body_text -medium">{item.label}</p>
-						</label>
-					</li>
-					{/each}
-				</ul>
-				<div class="row_group -bottom">
+					<List customClass="" vertical gapped>
+						{#each checklistSections[step - 1].items as item}
+						<li>
+							<label class="checkbox">
+								<input
+								type="checkbox"
+								checked={$selectedItems.has(item.id)}
+								on:change={() => toggleItem(item.id)}
+								/>
+								<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkb.webp`} alt="check icon"></i>
+								<p class="body_text -medium">{item.label}</p>
+							</label>
+						</li>
+						{/each}
+					</List>
+				</Box>
+				<Box as="div" customClass="col-6 cell-row-span-1 -horizontal -cgap-none -align-br">
 					{#if step > 1 && step < checklistSections.length}
-					<Button customClass="border -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
-					<Button customClass="default -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
+					<Button customClass="border -padding-m -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
+					<Button customClass="default -padding-m -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
 					{:else if step === 1}
-					<Button customClass="border -full" buttonLabel="Cancel" tagLabel="" icon="" on:click={restart}/>
-					<Button customClass="default -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
+					<Button customClass="border -padding-m -full" buttonLabel="Cancel" tagLabel="" icon="" on:click={restart}/>
+					<Button customClass="default -padding-m -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
 					{:else if step === checklistSections.length}
-					<Button customClass="border -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
-					<Button customClass="default -full" buttonLabel="{checklistSections[step - 1].next}" tagLabel="" icon="" on:click={finishChecklist}/>
+					<Button customClass="border -padding-m -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
+					<Button customClass="default -padding-m -full" buttonLabel="{checklistSections[step - 1].next}" tagLabel="" icon="" on:click={finishChecklist}/>
 					{/if}
-				</div>
-			</div>
+				</Box>
+			</Grid>
 			{:else}
 			<!-- Final Step: Result -->
 			{#if isThinking}
 			<!-- Thinking transition -->
-			<div class="thinking fade-out-after" on:animationend={handleThinkingEnd}>
-				<span class="line line-1">
-					<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
-					<p class="body_text -medium -subtle">Calculating your results...</p>
-				</span>
-				<span class="line line-2">
-					<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
-					<p class="body_text -medium -subtle">Analysing your responses...</p>
-				</span>
-				<span class="line line-3">
-					<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
-					<p class="body_text -medium -subtle">Almost done...</p>
-				</span>
-			</div>
+			<Box as="div" customClass="col-6 -padding-hl -rgap-s">
+				<div class="thinking fade-out-after" on:animationend={handleThinkingEnd}>
+					<span class="line line-1">
+						<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
+						<p class="body_text -medium -subtle">Calculating your results...</p>
+					</span>
+					<span class="line line-2">
+						<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
+						<p class="body_text -medium -subtle">Analysing your responses...</p>
+					</span>
+					<span class="line line-3">
+						<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
+						<p class="body_text -medium -subtle">Almost done...</p>
+					</span>
+				</div>
+			</Box>
 			{:else if showResults && result}
-			<div class="content_group" in:blur>
+			<Grid customClass="col-6 grid-rows-6 custom-grid">
+				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -cgap-xs">
+					<Tag label="Score: {score} / 25" customClass="" />
+					<Button customClass="subtle -padding-m" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
+				</Box>
+				<Grid customClass="col-6 cell-row-span-2 -padding-l -space-l">
+					<p class="h2 col-3">{result.title}</p>
+					<p class="h6 col-2 col-start-5">{result.message}</p>
+				</Grid>
+				<Grid customClass="col-6 cell-row-span-3 -padding-none -space-l">
+					<Box as="div" customClass="col-2 -space-s -horizontal -padding-hl">
+						<p class="body_text -medium">{result.insights}</p>
+					</Box>
+					<List customClass="col-3 col-start-4" vertical>
+						<Box as="li" customClass="">
+							<Button customClass="border -full -padding-m" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
+						</Box>
+						<Box as="li" customClass="-space-s -padding-s" boxed>
+							<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
+						</Box>
+					</List>
+				</Grid>
+			</Grid>
+			<!-- <div class="content_group" in:blur>
 				<div class="row_group">
 					<Tag customClass="" label="Score: {score} / 25"/>
 					<Button customClass="subtle" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
@@ -166,29 +193,26 @@
 					<Button customClass="border" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
 					<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
 				</div>
-			</div>
+			</div> -->
 			{:else}
 			<p>Something went wrong calculating your result.</p>
 			{/if}
 			{/if}
 		</div>
 		{/key}
-	</div>
-</div>
+	</Box>
+</Box>
 
 <style>
-	div.container {
+	:global(.box.container) {
 		position: relative;
-		height: 880px;
-		display: grid;
-		grid-template-columns: repeat(6, minmax(0, 1fr));
-		column-gap: var(--space-400);
-		padding: var(--space-700);
 		background-color: var(--color-surface-darker);
-		border: var(--border-width) solid var(--color-on-surface-accent);
+		border-bottom: 0px;
 	}
-	@media (min-width: 992px) {
-		div.container {padding: var(--space-700) var(--space-200);}
+
+	:global(.custom-grid) {
+    	height: 100%;
+		width: 100%;
 	}
 
 	/* ---------------------------------------------------------------------------------------------------- */
@@ -196,11 +220,8 @@
 	/*
 	/* All the styles related to the content of the checklist
 	/* ---------------------------------------------------------------------------------------------------- */
-	.content-container {
-		position: relative;
-		z-index: var(--zindex-foreground);
-	}
 	.content {
+		width: 100%;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -208,46 +229,6 @@
 		align-items: flex-start;
 		flex-direction: column;
 	}
-	.content_group {
-		height: 100%;
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		justify-content: center;
-	}
-	
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* ROW GROUP */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.row_group {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-		gap: var(--space-200);
-	}
-	.row_group.-bottom {
-		height: 100%;
-		align-items: flex-end;
-	}
-
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* HEADING GROUP */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.heading_group {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-300);
-		margin-top: var(--space-300);
-	}
-
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Specific margins */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.row_group ~ .h2 {margin-top: var(--space-600);}
-	.h2 ~ .h6 {margin-top: var(--space-500); max-width: 540px;}
-	.h6 ~ .body_text {margin-top: var(--space-300);}
-	.body_text ~ .row_group {margin-top: var(--space-600);}
 	
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* THINKING STAGE */

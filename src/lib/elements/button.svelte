@@ -8,12 +8,12 @@
 </script>
 
 <button class={`${customClass}`} aria-label="{buttonLabel}" on:click>
+	<span>{buttonLabel}</span>
 	{#if icon}
 		<i class="icon" aria-hidden="true">
 			<img src={`/icons/mi-${icon}.webp`} alt="{icon}">
 		</i>
 	{/if}
-	<span>{buttonLabel}</span>
 	{#if tagLabel}
 		<Tag customClass="-small -subtle" label="{tagLabel}"/>
 	{/if}
@@ -29,7 +29,7 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: var(--space-200);
-		padding: var(--space-300) var(--space-400);
+		/* padding: var(--space-300) var(--space-400); */
 		color: var(--color-on-surface);
 		cursor: pointer;
 		text-align: left;

@@ -14,8 +14,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-100);
-		/* background-color: var(--color-surface); */
+		/* gap: var(--space-100); */
 	}
 	.-boxed {
 		background-color: var(--color-surface);
@@ -28,9 +27,4 @@
 	@media (min-width: 992px) {
 		.-horizontal {flex-direction: row;}
 	}
-
-	.-space-s {gap: var(--space-400);}
-	.-space-m {gap: var(--space-600);}
-	.-space-l {gap: var(--space-800);}
-	.-space-xl {gap: var(--space-1000);}
 </style>
