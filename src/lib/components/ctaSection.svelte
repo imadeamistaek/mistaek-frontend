@@ -1,56 +1,25 @@
 <script lang="ts">
     import ButtonPairing from "./buttonPairing.svelte";
-
-	export let customClass: string | null | undefined;
+	import Anchor from "$lib/elements/anchor.svelte";
+	import Link from "$lib/elements/link.svelte";
+	import Grid from "./grid.svelte";
+	import Box from "$lib/elements/box.svelte";
+    import BackgroundColumns from "$lib/elements/backgroundColumns.svelte";
 </script>
 
-<div class={`container ${customClass}`}>
-	<div class="grid-container">
-		<span class="col -hidden-xs"></span>
-		<span class="col -hidden-xs"></span>
-		<span class="col"></span>
-		<span class="col"></span>
-		<span class="col"></span>
-		<span class="col -hidden-xs"></span>
-	</div>
-	<div class="content">
-		<h6 class="h3">Ready to build the right thing at the right time?</h6>
-		<p class="h6">Let's figure out your smartest next move.</p>
-		<p class="body_text -medium">Book a quick call and we'll help you create a plan that actually matches where your product is right now, not where you think it should be.</p>
-		<ButtonPairing />
-	</div>
-</div>
-
-<style>
-	div.container {
-		position: relative;
-		padding: var(--space-700);
-		background-color: var(--color-surface);
-		border: var(--border-width) solid var(--color-on-surface-accent);
-	}
-	@media (min-width: 992px) {
-		div.container {padding: var(--space-max);}
-	}
-
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* CONTENT */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.content {
-		position: relative;
-		display: flex;
-		justify-self: center;
-		align-items: center;
-		flex-direction: column;
-		padding: 0 var(--space-400);
-		text-align: center;
-		z-index: var(--zindex-foreground);
-	}
-	.h3 ~ .h6 {margin-top: var(--space-700);}
-	.h6 ~ .body_text {margin-top: var(--space-200); max-width: 540px;}
-	:global(.button_pairing) {margin-top: var(--space-700);}
-
-	@media (min-width: 992px) {
-		.content {padding: 0 var(--space-max);}
-	}
-
-</style>
+<Box as="div" customClass="" boxed>
+	<Grid customClass="-aspect-21-9 grid-rows-2">
+		<BackgroundColumns />
+		<Box as="div" customClass="col-3 col-start-1 cell-row-span-1 -padding-xl -rgap-s">
+			<h6 class="h2">Ready to build the right thing at the right time?</h6>
+		</Box>
+		<Box as="div" customClass="col-2 col-start-4  cell-row-span-2 -padding-xl -rgap-s -items-vend -alignhcenter">
+			<p class="h6 -contained">Let's figure out your smartest next move.</p>
+			<p class="body_text -medium -contained">Book a quick call and we'll help you create a plan that actually matches where your product is right now, not where you think it should be.</p>
+			<ButtonPairing>
+				<Anchor slot="left" variant="default" size="medium" label="Take the Reality Check" href="#checklist"/>
+				<Link slot="right" label="Book an intro call" url="https://cal.com/mistaek/15min" type="external" />
+			</ButtonPairing>
+		</Box>
+	</Grid>
+</Box>

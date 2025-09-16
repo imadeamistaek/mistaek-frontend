@@ -16,7 +16,7 @@
 		</Grid>
 		<Grid customClass="col-6 col-start-1 -padding-none -space-l">
 			<List customClass="col-3 col-start-1 -inverted-mobile" gapped>
-				<Box as="li" customClass="-space-s -horizontal -padding-hl">
+				<Box as="li" customClass="-horizontal -padding-hl">
 					<p class="body_text -large">What we're working on:</p>
 				</Box>
 				<Box as="li" customClass="-align-bl -padding-hl">
@@ -25,16 +25,16 @@
 				</Box>
 			</List>
 			<List customClass="col-3 col-start-4" vertical>
-				<Box as="li" customClass="-space-s -horizontal -padding-s" boxed>
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs" boxed>
 					<Crosshair customClass="-tl" />
 					<p class="body_text -large">(01)</p>
 					<p class="h6">Accessible web experiences that work for everyone</p>
 				</Box>
-				<Box as="li" customClass="-space-s -horizontal -padding-s" boxed>
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs" boxed>
 					<p class="body_text -large">(02)</p>
 					<p class="h6">Clear brand messaging for complex innovations</p>
 				</Box>
-				<Box as="li" customClass="-space-s -horizontal -padding-s" boxed>
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs" boxed>
 					<p class="body_text -large">(03)</p>
 					<p class="h6">Sustainable design systems that scale responsibly</p>
 				</Box>

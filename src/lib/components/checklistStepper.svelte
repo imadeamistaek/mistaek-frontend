@@ -4,7 +4,9 @@
 	import { downloadPDF } from '$lib/utils/pdfClient';
 	import { blur } from 'svelte/transition';
 	import { get } from 'svelte/store';
-	import Button from "../elements/button.svelte";
+
+	import ButtonOLD from "../elements/button(DEPRECATED).svelte";
+	import Button from '$lib/elements/button.svelte';
 	import Tag from '../elements/tag.svelte';
 	import Link from '../elements/link.svelte';
 	import List from '$lib/components/list.svelte';
@@ -94,7 +96,7 @@
 					<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
 				</Box>
 				<Box as="div" customClass="col-3 col-start-4  cell-row-span-2">
-					<Button customClass="default -padding-m -full" buttonLabel="Start the Reality Check" tagLabel="" icon="" on:click={nextStep}/>
+					<Button customClass="-full" variant="default" size="large" label="Start the Reality Check" on:click={nextStep} />
 				</Box>
 			</Grid>
 			{:else if step >= 1 && step <= checklistSections.length}
@@ -124,14 +126,14 @@
 				</Box>
 				<Box as="div" customClass="col-6 cell-row-span-1 -horizontal -cgap-none -align-br">
 					{#if step > 1 && step < checklistSections.length}
-					<Button customClass="border -padding-m -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
-					<Button customClass="default -padding-m -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
+					<Button customClass="-full" variant="brand" size="large" label="Previous" on:click={prevStep} />
+					<Button customClass="-full" variant="default" size="large" label="Next: {checklistSections[step - 1].next}" on:click={nextStep} />
 					{:else if step === 1}
-					<Button customClass="border -padding-m -full" buttonLabel="Cancel" tagLabel="" icon="" on:click={restart}/>
-					<Button customClass="default -padding-m -full" buttonLabel="Next: {checklistSections[step - 1].next}" tagLabel="" icon="" on:click={nextStep}/>
+					<Button customClass="-full" variant="brand" size="large" label="Cancel" on:click={restart} />
+					<Button customClass="-full" variant="default" size="large" label="Next: {checklistSections[step - 1].next}" on:click={nextStep} />
 					{:else if step === checklistSections.length}
-					<Button customClass="border -padding-m -full" buttonLabel="Previous" tagLabel="" icon="" on:click={prevStep}/>
-					<Button customClass="default -padding-m -full" buttonLabel="{checklistSections[step - 1].next}" tagLabel="" icon="" on:click={finishChecklist}/>
+					<Button customClass="-full" variant="brand" size="large" label="Previous" on:click={prevStep} />
+					<Button customClass="-full" variant="highlight" size="large" label="{checklistSections[step - 1].next}" on:click={finishChecklist} />
 					{/if}
 				</Box>
 			</Grid>
@@ -159,7 +161,7 @@
 			<Grid customClass="col-6 grid-rows-6 custom-grid">
 				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -cgap-xs">
 					<Tag label="Score: {score} / 25" customClass="" />
-					<Button customClass="subtle -padding-m" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
+					<ButtonOLD customClass="subtle -padding-m" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
 				</Box>
 				<Grid customClass="col-6 cell-row-span-2 -padding-l -space-l">
 					<p class="h2 col-3">{result.title}</p>
@@ -171,7 +173,7 @@
 					</Box>
 					<List customClass="col-3 col-start-4" vertical>
 						<Box as="li" customClass="">
-							<Button customClass="border -full -padding-m" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
+							<ButtonOLD customClass="border -full -padding-m" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
 						</Box>
 						<Box as="li" customClass="-space-s -padding-s" boxed>
 							<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
@@ -179,21 +181,6 @@
 					</List>
 				</Grid>
 			</Grid>
-			<!-- <div class="content_group" in:blur>
-				<div class="row_group">
-					<Tag customClass="" label="Score: {score} / 25"/>
-					<Button customClass="subtle" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
-				</div>
-				<p class="h2">{result.title}</p>
-				<p class="h6">{result.message}</p>
-				<p class="body_text -medium">{result.insights}</p>
-				<p class="body_text -medium">{result.next}</p>
-				
-				<div class="row_group">
-					<Button customClass="border" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
-					<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
-				</div>
-			</div> -->
 			{:else}
 			<p>Something went wrong calculating your result.</p>
 			{/if}
@@ -220,14 +207,17 @@
 	/*
 	/* All the styles related to the content of the checklist
 	/* ---------------------------------------------------------------------------------------------------- */
-	.content {
-		width: 100%;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
+
+	@media (min-width: 992px) {
+		.content {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			/* display: flex;
+			align-items: flex-start;
+			flex-direction: column; */
+		}
 	}
 	
 	/* ---------------------------------------------------------------------------------------------------- */

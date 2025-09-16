@@ -15,18 +15,18 @@
 		</Box>
 		<Box as="div" customClass="col-3 col-start-4">
 			<List customClass="col-3 col-start-4" vertical>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
+				<Box as="li" customClass="-align-top -padding-xs" boxed>
 					<Crosshair customClass="-tl" />
-					<p class="body_text -large">Most design systems get abandoned because teams can't commit to maintaining them</p>
+					<p class="body_text -medium">Most design systems get abandoned because teams can't commit to maintaining them.</p>
 				</Box>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Teams often spend more time debating component names than solving user problems</p>
+				<Box as="li" customClass="-align-top -padding-xs" boxed>
+					<p class="body_text -medium">Teams often spend more time debating component names than solving user problems.</p>
 				</Box>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Many 'accessible' design systems fail basic usability tests with real users</p>
+				<Box as="li" customClass="-align-top -padding-xs" boxed>
+					<p class="body_text -medium">Many 'accessible' design systems fail basic usability tests with real users.</p>
 				</Box>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">The biggest cost isn't building the system, it's the ongoing team time to keep it useful</p>
+				<Box as="li" customClass="-align-top -padding-xs" boxed>
+					<p class="body_text -medium">The biggest cost isn't building the system, it's the ongoing team time to keep it useful.</p>
 				</Box>
 			</List>
 		</Box>

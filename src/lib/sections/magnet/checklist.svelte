@@ -3,7 +3,7 @@
     import List from "$lib/components/list.svelte";
     import ListItem from "$lib/elements/listItem.svelte";
 </script>
-<section class="-flex -no-gap" id="checklist">
+<section class="-flex" id="checklist">
     <ChecklistStepper />
     <List customClass="">
 		<ListItem as="li" boxed icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>

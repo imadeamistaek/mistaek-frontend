@@ -1,5 +1,5 @@
 <script>
-	import Button from "../elements/button.svelte";
+	import Button from "../elements/button(DEPRECATED).svelte";
 
 	let { showModal = $bindable(), header, body, footer } = $props();
 	let dialog = $state();

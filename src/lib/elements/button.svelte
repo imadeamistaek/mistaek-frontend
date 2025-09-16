@@ -1,21 +1,83 @@
 <script lang="ts">
-	import Tag from "./tag.svelte";
+	import { createEventDispatcher } from 'svelte';
+	
+	// Props
+	export let label: string;
+	export let variant: 'highlight' | 'brand' | 'default' | 'subtle' = 'default';
+	export let size: 'small' | 'medium' | 'large' = 'medium';
+	export let icon: string | null = null;
+	export let iconPosition: 'left' | 'right' = 'right';
+	export let loading: boolean = false;
+	export let type: 'button' | 'submit' | 'reset' = 'button';
+	export let customClass: string = '';
+	export let ariaDescribedby: string | null = null;
+	export let ariaExpanded: boolean | null = null;
+	export let ariaPressed: boolean | null = null;
 
-	export let buttonLabel: string;
-	export let icon: string | null | undefined;
-	export let tagLabel: string | undefined;
-	export let customClass: string | null | undefined;
+	// Events
+	const dispatch = createEventDispatcher();
+	
+	// Computed values
+	$: hasIcon = icon && !loading;
+	$: isIconOnly = hasIcon && !label;
+	$: ariaLabel = isIconOnly ? `${icon} button` : label;
+	
+	// CSS classes
+	$: buttonClasses = [
+		'btn',
+		`btn--${variant}`,
+		`btn--${size}`,
+		hasIcon && `btn--has-icon btn--icon-${iconPosition}`,
+		isIconOnly && 'btn--icon-only',
+		loading && 'btn--loading',
+		customClass
+	].filter(Boolean).join(' ');
+
+	function handleClick(event: MouseEvent) {
+		if (loading) {
+			event.preventDefault();
+			return;
+		}
+		dispatch('click', event);
+	}
 </script>
 
-<button class={`${customClass}`} aria-label="{buttonLabel}" on:click>
-	<span>{buttonLabel}</span>
-	{#if icon}
-		<i class="icon" aria-hidden="true">
-			<img src={`/icons/mi-${icon}.webp`} alt="{icon}">
-		</i>
-	{/if}
-	{#if tagLabel}
-		<Tag customClass="-small -subtle" label="{tagLabel}"/>
+<button
+	class={buttonClasses}
+	{type}
+	aria-label={isIconOnly ? ariaLabel : null}
+	aria-describedby={ariaDescribedby}
+	aria-expanded={ariaExpanded}
+	aria-pressed={ariaPressed}
+	aria-busy={loading}
+	on:click={handleClick}
+	on:focus
+	on:blur
+	on:keydown
+>
+	{#if loading}
+		<span class="btn__spinner" aria-hidden="true">
+			<svg viewBox="0 0 24 24" class="btn__spinner-icon">
+				<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="60" stroke-dashoffset="40" />
+			</svg>
+		</span>
+		<span class="sr-only">Loading</span>
+	{:else}
+		{#if hasIcon && iconPosition === 'left'}
+			<i class="icon" aria-hidden="true">
+				<img src={`/icons/mi-${icon}.webp`} alt="{icon}">
+			</i>
+		{/if}
+		
+		{#if label}
+			<span class="btn__label">{label}</span>
+		{/if}
+		
+		{#if hasIcon && iconPosition === 'right'}
+			<i class="icon" aria-hidden="true">
+				<img src={`/icons/mi-${icon}.webp`} alt="{icon}">
+			</i>
+		{/if}
 	{/if}
 </button>
 
@@ -24,83 +86,188 @@
 	/* BUTTON default styles */
 	/* ---------------------------------------------------------------------------------------------------- */
 	button {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
+		position: relative;
+		display: inline-flex;
+		align-items: flex-end;
+		justify-content: flex-start;
 		gap: var(--space-200);
-		/* padding: var(--space-300) var(--space-400); */
+		font-family: inherit;
 		color: var(--color-on-surface);
-		cursor: pointer;
-		text-align: left;
-		user-select: none;
+		text-align: center;
 		text-decoration: none;
-		outline: none;
+		white-space: nowrap;
+		vertical-align: middle;
+		user-select: none;
+		cursor: pointer;
 		transition-property: background-color, border, color;
 		transition-duration: var(--transition-duration-fast);
 		transition-timing-function: var(--transition-timing-function);
+		
+		/* Prevent layout shift on hover */
+		transform: translateZ(0);
+		backface-visibility: hidden;
 	}
-	button span {
+
+	button .btn__label {
 		font-family: var(--typeface-family-base);
 		font-weight: var(--typeface-weight-bold);
-		font-size: var(--typeface-size-body-large);
 		line-height: var(--typeface-line-height-base);
 		letter-spacing: var(--typeface-tracking-base);
 		margin: 0;
 		padding: 0;
 	}
-	button:focus-visible {
-		outline: 3px solid var(--color-neutral-400);
-		box-shadow: 0 0 0 6px var(--color-brand-accent);
+
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Size Variants */
+	/* ---------------------------------------------------------------------------------------------------- */
+	.btn--small {
+		padding: var(--space-100);
+		font-size: var(--typeface-size-body-small);
 	}
 
-	@media (min-width: 992px) {
-		button {flex-direction: row;}
+	.btn--medium {
+		padding: var(--space-300);
+		font-size: var(--typeface-size-body-medium);
+	}
+
+	.btn--large {
+		padding: var(--space-500);
+		font-size: var(--typeface-size-body-large);
+	}
+
+	/* Icon-only sizing */
+	.btn--icon-only.btn--small {
+		width: var(--space-600);
+		padding: var(--space-150);
+	}
+
+	.btn--icon-only.btn--medium {
+		width: var(--space-700);
+		padding: var(--space-200);
+	}
+
+	.btn--icon-only.btn--large {
+		width: var(--space-800);
+		padding: var(--space-300);
 	}
 
 	/* ---------------------------------------------------------------------------------------------------- */
+	/* Color Variants */
+	/* ---------------------------------------------------------------------------------------------------- */
+	/* Brand Highlight */
+	.btn--highlight {
+		background-color: var(--color-on-surface);
+		border: var(--border-width) solid var(--color-on-surface-accent);
+		color: var(--color-surface);
+	}
+	.btn--highlight:hover:not(:disabled) { background-color: var(--color-on-surface-darker); }
+	.btn--highlight:active:not(:disabled) { background-color: var(--color-on-surface-darker); }
+
+	/* Brand Variant */
+	.btn--brand {
+		background-color: var(--color-surface-darker);
+		border: var(--border-width) solid var(--color-on-surface-accent);
+	}
+	.btn--brand:hover:not(:disabled) { background-color: var(--color-surface); }
+	.btn--brand:active:not(:disabled) { background-color: var(--color-surface); }
+
 	/* Default Variant */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.default {
+	.btn--default {
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
 	}
-	.default:hover {
-		background-color: var(--color-on-surface);
-		border: var(--border-width) solid var(--color-on-surface);
-		color: var(--color-surface-darker);
-	}
+	.btn--default:hover:not(:disabled) { background-color: var(--color-on-surface-accent);}
+	.btn--default:active:not(:disabled) { background-color: var(--color-on-surface-accent);}
 
-	/* ---------------------------------------------------------------------------------------------------- */
-	/* Border Variant */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.border {
-		background-color: transparent;
-		border: var(--border-width) solid var(--color-on-surface-accent);
-	}
-	.border:hover {
-		border: var(--border-width) solid var(--color-on-surface);
-	}
-
-	/* ---------------------------------------------------------------------------------------------------- */
 	/* Subtle Variant */
-	/* ---------------------------------------------------------------------------------------------------- */
-	.subtle {
-		padding: var(--space-100) var(--space-200);
+	.btn--subtle {
 		background-color: transparent;
 		border: transparent;
 	}
-	.subtle span {
-		font-size: var(--typeface-size-body-medium);
-		font-weight: var(--typeface-weight-regular);
-	}
-	.subtle:hover {
-		background-color: var(--color-surface);
-	}
+	.btn--subtle:hover:not(:disabled) { background-color: var(--color-on-surface-opacity-10);}
 
 	/* ---------------------------------------------------------------------------------------------------- */
-	/* UTILS */
+	/* States */
 	/* ---------------------------------------------------------------------------------------------------- */
-	.-full { flex: 1;}
+	.btn:focus-visible {
+		border-color: var(--color-on-surface);
+		outline: 3px solid var(--color-brand-accent);
+		outline-offset: 0px;
+	}
 
+	.btn--loading {
+		cursor: wait;
+	}
+
+	/* Icon styles */
+	.btn__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* Loading spinner */
+	.btn__spinner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.btn__spinner-icon {
+		width: 1.25em;
+		height: 1.25em;
+		animation: btn-spin 1s linear infinite;
+	}
+
+	@keyframes btn-spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	/* Screen reader only text */
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	/* Reduced motion support */
+	@media (prefers-reduced-motion: reduce) {
+		.btn {
+			transition: none;
+		}
+		
+		.btn--primary:hover:not(:disabled) {
+			transform: none;
+		}
+		
+		.btn__spinner-icon {
+			animation: none;
+		}
+	}
+
+	/* High contrast support */
+	@media (prefers-contrast: high) {
+		.btn {
+			border: 2px solid;
+		}
+		
+		.btn--primary {
+			border-color: var(--color-on-primary);
+		}
+		
+		.btn--secondary {
+			border-color: var(--color-on-surface);
+		}
+	}
+
+	/* Utility classes */
+	.btn.-full { flex: 1; }
 </style>

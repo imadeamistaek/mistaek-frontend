@@ -2,6 +2,8 @@
 /* PADDING All */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-none {padding: 0 !important;}
+.-padding-xxs {padding: var(--space-100);}
+.-padding-xs {padding: var(--space-200);}
 .-padding-s {padding: var(--space-300);}
 .-padding-m {padding: var(--space-400);}
 .-padding-l {padding: var(--space-500);}
@@ -9,6 +11,8 @@
 .-padding-xxl {padding: var(--space-700);}
 
 @media (min-width: 992px) {
+	.-padding-xxs {padding: var(--space-400);}
+	.-padding-xs {padding: var(--space-500);}
 	.-padding-s {padding: var(--space-600);}
 	.-padding-m {padding: var(--space-700);}
 	.-padding-l {padding: var(--space-800);}
@@ -20,6 +24,8 @@
 /* PADDING Vertical */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-vnone {padding-top: 0 !important; padding-bottom: 0 !important;}
+.-padding-vxxs {padding-top: var(--space-100); padding-bottom: var(--space-100);}
+.-padding-vxs {padding-top: var(--space-200); padding-bottom: var(--space-200);}
 .-padding-vs {padding-top: var(--space-300); padding-bottom: var(--space-300);}
 .-padding-vm {padding-top: var(--space-400); padding-bottom: var(--space-400);}
 .-padding-vl {padding-top: var(--space-500); padding-bottom: var(--space-500);}
@@ -27,6 +33,8 @@
 .-padding-vxxl {padding-top: var(--space-700); padding-bottom: var(--space-700);}
 
 @media (min-width: 992px) {
+	.-padding-vxxs {padding-top: var(--space-400); padding-bottom: var(--space-400);}
+	.-padding-vxs {padding-top: var(--space-500); padding-bottom: var(--space-500);}
 	.-padding-vs {padding-top: var(--space-600); padding-bottom: var(--space-600);}
 	.-padding-vm {padding-top: var(--space-700); padding-bottom: var(--space-700);}
 	.-padding-vl {padding-top: var(--space-800); padding-bottom: var(--space-800);}
@@ -38,6 +46,8 @@
 /* PADDING Horizontal */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-hnone {padding-left: 0 !important; padding-right: 0 !important;}
+.-padding-hxxs {padding-left: var(--space-100); padding-right: var(--space-100);}
+.-padding-hxs {padding-left: var(--space-200); padding-right: var(--space-200);}
 .-padding-hs {padding-left: var(--space-300); padding-right: var(--space-300);}
 .-padding-hm {padding-left: var(--space-400); padding-right: var(--space-400);}
 .-padding-hl {padding-left: var(--space-500); padding-right: var(--space-500);}
@@ -45,6 +55,8 @@
 .-padding-hxxl {padding-left: var(--space-700); padding-right: var(--space-700);}
 
 @media (min-width: 992px) {
+	.-padding-hxxs {padding-left: var(--space-400); padding-right: var(--space-400);}
+	.-padding-hxs {padding-left: var(--space-500); padding-right: var(--space-500);}
 	.-padding-hs {padding-left: var(--space-600); padding-right: var(--space-600);}
 	.-padding-hm {padding-left: var(--space-700); padding-right: var(--space-700);}
 	.-padding-hl {padding-left: var(--space-800); padding-right: var(--space-800);}

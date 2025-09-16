@@ -8,10 +8,12 @@
 
 <style>
 	.grid {
+		position: relative;
 		display: grid;
 		grid-template-columns: repeat(6,minmax(0,1fr));
-		/* grid-row-gap: var(--space-800); */
 	}
+
+	.grid.-with-bg { background-color: var(--color-surface); }
 	@media (min-width: 992px) {
 		.grid {
 			grid-template-columns: repeat(6,minmax(0,1fr));

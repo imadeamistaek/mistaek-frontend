@@ -4,11 +4,12 @@
 /* Neutrals */
 :root {
 	--color-neutral-100: #F4F4F5;
-	--color-neutral-200: #8A8A93;
-	--color-neutral-300: #28282A;
-	--color-neutral-400: #1D1D1F;
-	--color-neutral-500: #141415;
-	--color-neutral-600: #0A0A0A;
+	--color-neutral-200: #DFDFE2;
+	--color-neutral-300: #8A8A93;
+	--color-neutral-400: #28282A;
+	--color-neutral-500: #1D1D1F;
+	--color-neutral-600: #141415;
+	--color-neutral-700: #0A0A0A;
 }
 
 /* Brand */
@@ -18,10 +19,10 @@
 
 /* Surface */
 :root {
-	--color-surface: var(--color-neutral-500);
-	--color-surface-darker: var(--color-neutral-600);
+	--color-surface: var(--color-neutral-600);
+	--color-surface-darker: var(--color-neutral-700);
 	--color-on-surface: var(--color-neutral-100);
-	--color-on-surface-darker: var(--color-neutral-200);
+	--color-on-surface-darker: var(--color-neutral-300);
 	--color-on-surface-accent: var(--color-neutral-400);
 	--color-on-surface-brand: var(--color-brand-accent);
 }

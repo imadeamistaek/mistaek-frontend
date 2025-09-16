@@ -1,8 +1,8 @@
 <script>
     import CtaSection from "$lib/components/ctaSection.svelte";
-    import Footer from "$lib/components/footer.svelte";
+    import Footer from "../comingSoon/footer.svelte";
 </script>
-<section class="-flex -last -no-gap">
-    <CtaSection customClass="col-6"/>
+<section class="-flex -last">
+    <CtaSection />
     <Footer />
 </section>

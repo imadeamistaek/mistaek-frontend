@@ -12,8 +12,10 @@
     import Footer from '$lib/components/footer.svelte';
 	import Modal from '$lib/components/modal.svelte';
 
-	import Button from '$lib/elements/button.svelte';
+	import Button from '$lib/elements/button(DEPRECATED).svelte';
     import InputEmail from '$lib/elements/inputEmail.svelte';
+    import ButtonNew from '$lib/elements/button.svelte';
+    import Anchor from '$lib/elements/anchor.svelte';
 	let showModal = $state(false);
 </script>
 
@@ -34,6 +36,20 @@
 	<p class="body_text -small">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
 	<p class="body_text -micro">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
 	<p class="body_text -nano">This quick, no-fluff checklist helps you find out if it’s the right time to build a Design System — and where to start if it is.</p>
+</section>
+
+<section class="-flex">
+	<Tag customClass="-large" label="Buttons" />
+	<ButtonNew variant="brand" label="Button" icon="arrow-out" iconPosition="right"/>
+	<ButtonNew variant="default" label="Button" icon="arrow-out" iconPosition="right"/>
+	<ButtonNew variant="subtle" label="Button" icon="arrow-out" iconPosition="right"/>
+</section>
+
+<section class="-flex">
+	<Tag customClass="-large" label="Anchors" />
+	<Anchor variant="brand" label="test" href="#"/>
+	<Anchor variant="default" label="test" href="#"/>
+	<Anchor variant="subtle" label="test" href="#"/>
 </section>
 
 <section class="-flex">

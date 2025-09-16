@@ -6,7 +6,7 @@
 
 <section aria-labelledby="fresh_title">
     <Tag label="Starting Fresh" customClass="-nano" />
-	<Grid customClass="col-6 col-start-1">
+	<Grid customClass="col-6 col-start-1 -rgap-m">
 		<h4 id="fresh_title" class="h2 col-2">Practice what we preach</h4>
 		<div class="pairing col-3 col-start-4 -spaced">
 			<p class="h6 ">Our old site worked, but it didn't fully represent who we've become.</p>
