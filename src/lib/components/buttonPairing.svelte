@@ -17,11 +17,13 @@
 	.button_pairing {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: space-around; */
 		align-items: center;
 		gap: var(--space-400);
 	}
 	@media (min-width: 992px) {
-		.button_pairing {flex-direction: row;}
+		.button_pairing {
+			flex-direction: row;
+			flex-flow: row wrap;
+		}
 	}
 </style>

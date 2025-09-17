@@ -20,10 +20,9 @@ body {
 	background-color: var(--color-surface);
 	color: var(--color-on-surface);
 }
-@media (min-width: 992px) {
-	body {
-		padding: 0 var(--space-1000);
-	}
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	body { padding: 0 var(--space-1000); }
 }
 
 /* Accessibility improvements */
@@ -180,8 +179,9 @@ span.body_text {
 .body_text.-subtle {color: var(--color-on-surface-darker);}
 
 /* Container modifiers */
+.-contained-m {max-width: 480px;}
+.-contained-l {max-width: 560px;}
 .-contained-xl {max-width: 640px;}
-.-contained {max-width: 560px;}
 
 /* Mobile-specific adjustments */
 @media (max-width: 480px) {
@@ -221,38 +221,6 @@ span.body_text {
 	.body_text.-large {
 		font-size: var(--typeface-size-body-small);
 	}
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-/* Global Styles */
-/* ---------------------------------------------------------------------------------------------------- */
-
-/* SECTION -------------------------------------------------- */
-section {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(6,minmax(0,1fr));
-	grid-row-gap: var(--space-400);
-	padding: var(--space-1000) 0;
-	z-index: var(--zindex-foreground);
-}
-@media (min-width: 992px) {
-	section {
-		/* grid-template-columns: repeat(6, 1fr); */
-		grid-template-columns: repeat(6,minmax(0,1fr));
-		grid-row-gap: var(--space-800);
-		padding: var(--space-max) 0;
-	}
-}
-section.-flex {
-	display: flex;
-	flex-direction: column;
-}
-section.-no-gap {
-	gap: 0;
-}
-section.-last {
-	padding: var(--space-max) 0 0;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -400,21 +368,5 @@ li {
 .-highlight { color: var(--color-on-surface-brand); }
 .-tcenter {text-align: center;}
 
-.-cgap-none {column-gap: 0px;}
-.-cgap-xxs {column-gap: var(--space-100);}
-.-cgap-xs {column-gap: var(--space-200);}
-.-cgap-s {column-gap: var(--space-400);}
-.-cgap-m {column-gap: var(--space-600);}
-.-cgap-l {column-gap: var(--space-800);}
-.-cgap-xl {column-gap: var(--space-1000);}
-
-.-rgap-none {row-gap: 0px;}
-.-rgap-xxs {row-gap: var(--space-100);}
-.-rgap-xs {row-gap: var(--space-200);}
-.-rgap-s {row-gap: var(--space-400);}
-.-rgap-m {row-gap: var(--space-600);}
-.-rgap-l {row-gap: var(--space-800);}
-.-rgap-xl {row-gap: var(--space-1000);}
-
 .-hidden-xs { display: none; }
-@media (min-width: 650px) { .-hidden-xs { display: initial; } }
+@media (min-width: 720px) { .-hidden-xs { display: initial; } }

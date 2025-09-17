@@ -1,0 +1,95 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* GAP */
+/*                                                                                                      */
+/* Rules for how gap is going to behave throughout the experiences */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* GAP All */
+/* Base: 320px+ (Mobile First) */
+/* ---------------------------------------------------------------------------------------------------- */
+.-gap-none {gap: 0 !important;}
+.-gap-xxs {gap: var(--space-100);}
+.-gap-xs {gap: var(--space-200);}
+.-gap-s {gap: var(--space-300);}
+.-gap-m {gap: var(--space-400);}
+.-gap-l {gap: var(--space-500);}
+.-gap-xl {gap: var(--space-600);}
+.-gap-2xl {gap: var(--space-700);}
+.-gap-3xl {gap: var(--space-800);}
+.-gap-4xl {gap: var(--space-900);}
+.-gap-max {gap: var(--space-1000);}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	.-gap-xxs {gap: var(--space-200);}
+	.-gap-xs {gap: var(--space-300);}
+	.-gap-s {gap: var(--space-400);}
+	.-gap-m {gap: var(--space-500);}
+	.-gap-l {gap: var(--space-600);}
+	.-gap-xl {gap: var(--space-700);}
+	.-gap-2xl {gap: var(--space-800);}
+	.-gap-3xl {gap: var(--space-900);}
+	.-gap-4xl {gap: var(--space-1000);}
+	.-gap-max {gap: var(--space-max);}
+}
+
+/* GAP Vertical */
+/* Base: 320px+ (Mobile First) */
+/* ---------------------------------------------------------------------------------------------------- */
+.-gap-vnone {row-gap: 0 !important;}
+.-gap-vxxs {row-gap: var(--space-100);}
+.-gap-vxs {row-gap: var(--space-200);}
+.-gap-vs {row-gap: var(--space-300);}
+.-gap-vm {row-gap: var(--space-400);}
+.-gap-vl {row-gap: var(--space-500);}
+.-gap-vxl {row-gap: var(--space-600);}
+.-gap-v2xl {row-gap: var(--space-700);}
+.-gap-v3xl {row-gap: var(--space-800);}
+.-gap-v4xl {row-gap: var(--space-900);}
+.-gap-vmax {row-gap: var(--space-1000);}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	.-gap-vnone {row-gap: 0 !important;}
+	.-gap-vxxs {row-gap: var(--space-200);}
+	.-gap-vxs {row-gap: var(--space-300);}
+	.-gap-vs {row-gap: var(--space-400);}
+	.-gap-vm {row-gap: var(--space-500);}
+	.-gap-vl {row-gap: var(--space-600);}
+	.-gap-vxl {row-gap: var(--space-700);}
+	.-gap-v2xl {row-gap: var(--space-800);}
+	.-gap-v3xl {row-gap: var(--space-900);}
+	.-gap-v4xl {row-gap: var(--space-1000);}
+	.-gap-vmax {row-gap: var(--space-max);}
+}
+
+/* GAP Horizontal */
+/* Base: 320px+ (Mobile First) */
+/* ---------------------------------------------------------------------------------------------------- */
+.-gap-hnone {column-gap: 0 !important;}
+.-gap-hxxs {column-gap: var(--space-100);}
+.-gap-hxs {column-gap: var(--space-200);}
+.-gap-hs {column-gap: var(--space-300);}
+.-gap-hm {column-gap: var(--space-400);}
+.-gap-hl {column-gap: var(--space-500);}
+.-gap-hxl {column-gap: var(--space-600);}
+.-gap-h2xl {column-gap: var(--space-700);}
+.-gap-h3xl {column-gap: var(--space-800);}
+.-gap-h4xl {column-gap: var(--space-900);}
+.-gap-hmax {column-gap: var(--space-1000);}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	.-gap-hnone {column-gap: 0 !important;}
+	.-gap-hxxs {column-gap: var(--space-200);}
+	.-gap-hxs {column-gap: var(--space-300);}
+	.-gap-hs {column-gap: var(--space-400);}
+	.-gap-hm {column-gap: var(--space-500);}
+	.-gap-hl {column-gap: var(--space-600);}
+	.-gap-hxl {column-gap: var(--space-700);}
+	.-gap-h2xl {column-gap: var(--space-800);}
+	.-gap-h3xl {column-gap: var(--space-900);}
+	.-gap-h4xl {column-gap: var(--space-1000);}
+	.-gap-hmax {column-gap: var(--space-max);}
+}

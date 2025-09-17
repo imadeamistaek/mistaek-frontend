@@ -6,7 +6,7 @@
     import List from '$lib/components/list.svelte';
     import Testimonial from '$lib/components/testimonial.svelte';
     import Grid from '$lib/components/grid.svelte';
-    import CardFounder from '$lib/components/cardFounder.svelte';
+    import CardFounder from '$lib/components/cardCreator.svelte';
     import CtaSection from '$lib/components/ctaSection.svelte';
     import ChecklistStepper from '$lib/components/checklistStepper.svelte';
     import Footer from '$lib/components/footer.svelte';
@@ -151,7 +151,7 @@
 
 <section class="-flex">
 	<Tag customClass="-large" label="Final CTA Section" />
-	<CtaSection customClass=""/>
+	<CtaSection />
 </section>
 
 <section class="-flex">
@@ -172,8 +172,8 @@
 	<Modal bind:showModal>
 		{#snippet header()}
 			<p class="h5">Get your custom action plan</p>
-			<p class="body_text -large -contained">Your personalized roadmap to design system success, delivered in minutes.</p>
-			<p class="body_text -micro -subtle -contained">I'll email you a complete breakdown of your assessment, including:</p>
+			<p class="body_text -large -contained-l">Your personalized roadmap to design system success, delivered in minutes.</p>
+			<p class="body_text -micro -subtle -contained-l">I'll email you a complete breakdown of your assessment, including:</p>
 		{/snippet}
 
 		{#snippet body()}	

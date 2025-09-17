@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Link from '$lib/elements/link.svelte';
 	import List from './list.svelte';
+	import Box from '$lib/elements/box.svelte';
+
 	export let customClass: string | null | undefined;
 	export let photo: string;
 	export let altText: string;
@@ -11,15 +13,17 @@
 		<img src={photo} alt={altText} class="testimonial-photo" />
 	</div>
 	<div class="slot -right">
-		<div class="details">
-			<p class="h6">I help you simplify your brand, website, and product so it works for real people.</p>
-			<p class="body_text -medium">I’ve spent over 10 years designing and building systems that actually work, not just look nice.</p>
-			<p class="body_text -medium">Whether you’re starting from scratch or scaling fast, I can help you make sense of what’s worth doing now, and what can wait.</p>
-		</div>
-		<List customClass="-gap-vnone" gapped vertical>
-			<li><Link customClass="-small -full" label="Book a call" url="https://cal.com/mistaek/15min" type="external" /></li>
-			<li><Link customClass="-small -full" label="Follow me on LinkedIn" url="https://www.linkedin.com/in/andremsequeira/" type="external" /></li>
-		</List>
+		<Box customClass="-padding-m -gap-vxs">
+			<p class="body_text -subtle -nano">André — designer, systems thinker, and founder of Mistaek Studio</p>
+			<p class="h5">"I help founders build the right things at the right time."</p>
+			<p class="body_text -small">Over 10 years building (and fixing) design systems for teams who thought they were ready but weren't.</p>
+		</Box>
+		<Box customClass="-padding-m -items-vend">
+			<List customClass="-gap-vnone" vertical>
+				<li><Link customClass="-small -full" label="Book a call" url="https://cal.com/mistaek/15min" type="external" /></li>
+				<li><Link customClass="-small -full" label="Follow me on LinkedIn" url="https://www.linkedin.com/in/andremsequeira/" type="external" /></li>
+			</List>
+		</Box>
 	</div>
 </div>
 
@@ -38,7 +42,7 @@
 		flex: 1;
 	}
 	.-left {flex-basis: 50%; flex-grow: 0;}
-	.-right {padding: var(--space-500);}
+	/* .-right {padding: var(--space-500);} */
 
 	img {width: 100%; height: 100%; object-fit: cover;}
 	.details {

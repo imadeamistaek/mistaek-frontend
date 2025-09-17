@@ -7,8 +7,10 @@
 /* UTILITIEs */
 @import 'utilities/alignment.css';
 @import 'utilities/aspect-ratio.css';
+@import 'utilities/gap.css';
 @import 'utilities/grid.css';
 @import 'utilities/padding.css';
+@import 'utilities/responsive.css';
 
 /* COMPONENT STYLES */
 @import 'components/backgroundGrid.css';

@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let customClass: string | null | undefined;
+	export let customClass: string = '';
 </script>
 
 <div class={`grid ${customClass}`}>

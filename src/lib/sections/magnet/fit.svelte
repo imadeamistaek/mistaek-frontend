@@ -1,5 +1,4 @@
 <script lang="ts">
-    import SectionHeading from "$lib/components/sectionHeading.svelte";
 	import Tag from "$lib/elements/tag.svelte";
     import Grid from "$lib/components/grid.svelte";
     import Box from "$lib/elements/box.svelte";
@@ -7,29 +6,31 @@
     import ListItem from "$lib/elements/listItem.svelte";
 </script>
 
-<section>
-	<Tag label="Are we a good match?" customClass="-nano col-6" />
-	<h4 class="h3 col-3">Not every designer works with every founder.</h4>
-	<p class="col-4 body_text -large">Here's how to know if we should work together:</p>
+<section class="container" aria-labelledby="fit_title">
+	<Grid customClass="-gap-vm">
+		<Tag label="Are we a good match?" customClass="-nano col-6" />
+		<h4 id="fit_title" class="h3 col-3">Not every designer works with every founder.</h4>
+		<p class="col-4 body_text -large">Here's how to know if we should work together:</p>
 
-    <Grid customClass="col-6 col-start-1">
-		<Box customClass="-aspect-16-9 col-3 -padding-s -rgap-m" boxed>
-			<p class="h6">We'll work well together if:</p>
-			<List customClass="" vertical gapped>
-				<ListItem as="li" icon="checkg" label="You’re building something meaningful in biotech, climate tech, accessibility, sustainability or similar." customClass="-small"/>
-				<ListItem as="li" icon="checkg" label="You want design partners who challenge assumptions and ask hard questions" customClass="-small"/>
-				<ListItem as="li" icon="checkg" label="You care about accessibility and sustainability as core principles, not marketing add-ons" customClass="-small"/>
-				<ListItem as="li" icon="checkg" label="You're ready to hear honest feedback, even when it's not what you expected" customClass="-small"/>
-			</List>
-		</Box>
-		<Box customClass="-aspect-16-9 col-3 -padding-s -rgap-m" boxed>
-			<p class="h6">We're probably not a fit if:</p>
-			<List customClass="" vertical gapped>
-				<ListItem as="li" icon="close-circle-r" label="You want the cheapest option or need something 'quick and dirty'" customClass="-small"/>
-				<ListItem as="li" icon="close-circle-r" label="You've already decided what you want and just need someone to build it" customClass="-small"/>
-				<ListItem as="li" icon="close-circle-r" label="You see design as decoration rather than problem-solving" customClass="-small"/>
-				<ListItem as="li" icon="close-circle-r" label="You don't have time to think through strategy and just want execution" customClass="-small"/>
-			</List>
-		</Box>
+		<Grid customClass="col-6 col-start-1">
+			<Box customClass="-aspect-16-9 col-3 -padding-s -gap-vm" boxed>
+				<p class="h6">We'll work well together if:</p>
+				<List customClass="" vertical gapped>
+					<ListItem as="li" icon="checkg" label="You’re building something meaningful in biotech, climate tech, accessibility, sustainability or similar." customClass="-small"/>
+					<ListItem as="li" icon="checkg" label="You want design partners who challenge assumptions and ask hard questions" customClass="-small"/>
+					<ListItem as="li" icon="checkg" label="You care about accessibility and sustainability as core principles, not marketing add-ons" customClass="-small"/>
+					<ListItem as="li" icon="checkg" label="You're ready to hear honest feedback, even when it's not what you expected" customClass="-small"/>
+				</List>
+			</Box>
+			<Box customClass="-aspect-16-9 col-3 -padding-s -gap-vm" boxed>
+				<p class="h6">We're probably not a fit if:</p>
+				<List customClass="" vertical gapped>
+					<ListItem as="li" icon="close-circle-r" label="You want the cheapest option or need something 'quick and dirty'" customClass="-small"/>
+					<ListItem as="li" icon="close-circle-r" label="You've already decided what you want and just need someone to build it" customClass="-small"/>
+					<ListItem as="li" icon="close-circle-r" label="You see design as decoration rather than problem-solving" customClass="-small"/>
+					<ListItem as="li" icon="close-circle-r" label="You don't have time to think through strategy and just want execution" customClass="-small"/>
+				</List>
+			</Box>
+		</Grid>
 	</Grid>
 </section>

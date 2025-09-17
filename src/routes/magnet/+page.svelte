@@ -3,7 +3,7 @@
 	import About from '$lib/sections/magnet/about.svelte';
     import Checklist from '$lib/sections/magnet/checklist.svelte';
     import Fit from '$lib/sections/magnet/fit.svelte';
-    import Founder from '$lib/sections/magnet/founder.svelte';
+    import Creator from '$lib/sections/magnet/creator.svelte';
     import Footer from '$lib/sections/magnet/footer.svelte';
     import Industry from '$lib/sections/magnet/industry.svelte';
 </script>
@@ -13,5 +13,5 @@
 <Checklist />
 <Industry />
 <Fit />
-<Founder />
+<Creator />
 <Footer />

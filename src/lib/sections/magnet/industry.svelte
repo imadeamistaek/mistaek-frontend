@@ -6,12 +6,12 @@
 	import Crosshair from '$lib/elements/markers/crosshair.svelte';
 </script>
 
-<section id="about" aria-labelledby="timeline_title">
-	<Grid customClass="col-6 -cgap-none">
-		<Box as="div" customClass="col-2 -rgap-m">
+<section class="container" aria-labelledby="timeline_title">
+	<Grid customClass="col-6 -gap-vl">
+		<Box as="div" customClass="col-2 -gap-vm">
 			<Tag label="The truth about design systems" customClass="-nano" />
 			<h3 id="timeline_title" class="h3">Why most design systems fail</h3>
-			<p class="body_text -medium -contained">Before you make the same expensive mistakes everyone else is making, here's what we've observed working with teams:</p>
+			<p class="body_text -medium -contained-l">Before you make the same expensive mistakes everyone else is making, here's what we've observed working with teams:</p>
 		</Box>
 		<Box as="div" customClass="col-3 col-start-4">
 			<List customClass="col-3 col-start-4" vertical>

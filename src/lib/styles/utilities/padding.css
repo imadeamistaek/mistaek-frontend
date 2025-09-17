@@ -1,5 +1,12 @@
 /* ---------------------------------------------------------------------------------------------------- */
+/* PADDING */
+/*                                                                                                      */
+/* Rules for how padding is going to behave throughout the experiences */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
 /* PADDING All */
+/* Base: 320px+ (Mobile First) */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-none {padding: 0 !important;}
 .-padding-xxs {padding: var(--space-100);}
@@ -8,20 +15,27 @@
 .-padding-m {padding: var(--space-400);}
 .-padding-l {padding: var(--space-500);}
 .-padding-xl {padding: var(--space-600);}
-.-padding-xxl {padding: var(--space-700);}
+.-padding-2xl {padding: var(--space-700);}
+.-padding-3xl {padding: var(--space-800);}
+.-padding-4xl {padding: var(--space-900);}
+.-padding-max {padding: var(--space-1000);}
 
-@media (min-width: 992px) {
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
 	.-padding-xxs {padding: var(--space-400);}
 	.-padding-xs {padding: var(--space-500);}
 	.-padding-s {padding: var(--space-600);}
 	.-padding-m {padding: var(--space-700);}
 	.-padding-l {padding: var(--space-800);}
 	.-padding-xl {padding: var(--space-900);}
-	.-padding-xxl {padding: var(--space-1000);}
+	.-padding-2xl {padding: var(--space-1000);}
+	.-padding-3xl {padding: var(--space-max);}
+	.-padding-4xl {padding: var(--space-max);}
+	.-padding-max {padding: var(--space-max);}
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
 /* PADDING Vertical */
+/* Base: 320px+ (Mobile First) */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-vnone {padding-top: 0 !important; padding-bottom: 0 !important;}
 .-padding-vxxs {padding-top: var(--space-100); padding-bottom: var(--space-100);}
@@ -30,20 +44,21 @@
 .-padding-vm {padding-top: var(--space-400); padding-bottom: var(--space-400);}
 .-padding-vl {padding-top: var(--space-500); padding-bottom: var(--space-500);}
 .-padding-vxl {padding-top: var(--space-600); padding-bottom: var(--space-600);}
-.-padding-vxxl {padding-top: var(--space-700); padding-bottom: var(--space-700);}
+.-padding-v2xl {padding-top: var(--space-700); padding-bottom: var(--space-700);}
 
-@media (min-width: 992px) {
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
 	.-padding-vxxs {padding-top: var(--space-400); padding-bottom: var(--space-400);}
 	.-padding-vxs {padding-top: var(--space-500); padding-bottom: var(--space-500);}
 	.-padding-vs {padding-top: var(--space-600); padding-bottom: var(--space-600);}
 	.-padding-vm {padding-top: var(--space-700); padding-bottom: var(--space-700);}
 	.-padding-vl {padding-top: var(--space-800); padding-bottom: var(--space-800);}
 	.-padding-vxl {padding-top: var(--space-900); padding-bottom: var(--space-900);}
-	.-padding-vxxl {padding-top: var(--space-1000); padding-bottom: var(--space-1000);}
+	.-padding-v2xl {padding-top: var(--space-1000); padding-bottom: var(--space-1000);}
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
 /* PADDING Horizontal */
+/* Base: 320px+ (Mobile First) */
 /* ---------------------------------------------------------------------------------------------------- */
 .-padding-hnone {padding-left: 0 !important; padding-right: 0 !important;}
 .-padding-hxxs {padding-left: var(--space-100); padding-right: var(--space-100);}
@@ -52,14 +67,15 @@
 .-padding-hm {padding-left: var(--space-400); padding-right: var(--space-400);}
 .-padding-hl {padding-left: var(--space-500); padding-right: var(--space-500);}
 .-padding-hxl {padding-left: var(--space-600); padding-right: var(--space-600);}
-.-padding-hxxl {padding-left: var(--space-700); padding-right: var(--space-700);}
+.-padding-h2xl {padding-left: var(--space-700); padding-right: var(--space-700);}
 
-@media (min-width: 992px) {
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
 	.-padding-hxxs {padding-left: var(--space-400); padding-right: var(--space-400);}
 	.-padding-hxs {padding-left: var(--space-500); padding-right: var(--space-500);}
 	.-padding-hs {padding-left: var(--space-600); padding-right: var(--space-600);}
 	.-padding-hm {padding-left: var(--space-700); padding-right: var(--space-700);}
 	.-padding-hl {padding-left: var(--space-800); padding-right: var(--space-800);}
 	.-padding-hxl {padding-left: var(--space-900); padding-right: var(--space-900);}
-	.-padding-hxxl {padding-left: var(--space-1000); padding-right: var(--space-1000);}
+	.-padding-h2xl {padding-left: var(--space-1000); padding-right: var(--space-1000);}
 }

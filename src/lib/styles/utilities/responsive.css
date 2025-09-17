@@ -1,0 +1,101 @@
+/* =============================================================================
+MISTAEK RESPONSIVE SYSTEM - Mobile-First & Content-Driven
+============================================================================= */
+/* Base: 320px+ (Mobile First) */
+section.container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	padding: var(--space-1000) 0;
+	z-index: var(--zindex-foreground);
+	/* display: grid;
+	grid-template-columns: repeat(6,minmax(0,1fr));
+	grid-row-gap: var(--space-400); */
+}
+/* @media (min-width: 992px) {
+	section {
+		grid-template-columns: repeat(6,minmax(0,1fr));
+		grid-row-gap: var(--space-800);
+		padding: var(--space-max) 0;
+	}
+}
+section.-flex {
+	display: flex;
+	flex-direction: column;
+}
+section.-no-gap {
+	gap: 0;
+} */
+section.container.-last {
+	padding: var(--space-max) 0 0;
+}
+
+/* Small: 480px+ (Large Mobile) */
+@media (min-width: 30rem) {
+	section.container {
+		max-width: var(--container-md);
+	}
+	
+	/* .grid {
+		grid-template-columns: repeat(2, 1fr);
+	} */
+}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	section.container {
+		padding: var(--space-max) 0;
+		max-width: var(--container-lg);
+	}
+	
+	/* .grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	.grid-sidebar {
+		grid-template-columns: 1fr 20rem;
+	} */
+}
+
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	section.container {
+		max-width: var(--container-xl);
+	}
+	
+	/* .grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	
+	.grid-sidebar {
+		grid-template-columns: 1fr 24rem;
+	} */
+}
+
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	section.container {
+		max-width: var(--container-2xl);
+	}
+	
+	/* .grid {
+		grid-template-columns: repeat(12, 1fr);
+	} */
+}
+
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	section.container {
+		max-width: var(--container-3xl);
+	}
+}
+
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	section.container {
+		max-width: var(--container-3xl);
+	}
+}

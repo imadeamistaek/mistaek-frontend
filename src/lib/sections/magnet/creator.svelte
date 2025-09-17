@@ -1,0 +1,16 @@
+<script lang="ts">
+    import Grid from "$lib/components/grid.svelte";
+    import Box from "$lib/elements/box.svelte";
+    import Tag from "$lib/elements/tag.svelte";
+    import CardCreator from "$lib/components/cardCreator.svelte";
+</script>
+
+<section class="container" aria-labelledby="creator_title">
+    <Grid customClass="col-6 -gap-vmax">
+		<Box as="div" customClass="col-4 -gap-vm">
+			<Tag label="Who built this?" customClass="-nano" />
+			<h5 id="creator_title" class="h3">This reality check comes from years of watching teams waste money on premature design systems.</h5>
+		</Box>
+		<CardCreator customClass="col-4 col-start-3" photo="/people/andre.png" altText="A black and white portrait of André resting his head on his hand, looking at the camera with a thoughtful look, wearing a black wool sweater." />
+	</Grid>
+</section>

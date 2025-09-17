@@ -91,7 +91,7 @@
 				<Box as="div" customClass="col-5 cell-row-span-2 -padding-l">
 					<p id="available_title" class="h1">The 5-step design system reality check</p>
 				</Box>
-				<Box as="div" customClass="col-3 col-start-1 cell-row-span-2 -align-bl -padding-hl -rgap-xs">
+				<Box as="div" customClass="col-3 col-start-1 cell-row-span-2 -align-bl -padding-hl -gap-vxs">
 					<p class="h6 -contained-xl">Find out if you're ready, or if you need to solve other problems first.</p>
 					<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
 				</Box>
@@ -101,11 +101,11 @@
 			</Grid>
 			{:else if step >= 1 && step <= checklistSections.length}
 			<Grid customClass="col-6 grid-rows-6 custom-grid">
-				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -cgap-xs">
+				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -gap-hxs">
 					<Tag label="{checklistSections[step - 1].id}" customClass="-nano" />
 					<p class="body_text -nano">{checklistSections[step - 1].completion}</p>
 				</Box>
-				<Box as="div" customClass="col-6  cell-row-span-4 -padding-hl -rgap-s">
+				<Box as="div" customClass="col-6  cell-row-span-4 -padding-hl -gap-vs">
 					<p class="h3">{checklistSections[step - 1].title}</p>
 					<p class="body_text -medium -contained">{checklistSections[step - 1].description}</p>
 					<List customClass="" vertical gapped>
