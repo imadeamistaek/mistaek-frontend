@@ -38,22 +38,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: flex-start;
+		/* align-items: flex-start; */
 		flex: 1;
 	}
 	.-left {flex-basis: 50%; flex-grow: 0;}
-	/* .-right {padding: var(--space-500);} */
 
 	img {width: 100%; height: 100%; object-fit: cover;}
-	.details {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: var(--space-500);
-	}
-
-	p.h6 ~ p.body_text { margin-top: var(--space-500); }
-	p.body_text ~ p.body_text { margin-top: var(--space-200); }
-
 
 	@media (min-width: 992px) {
 		.card {flex-direction: row;}

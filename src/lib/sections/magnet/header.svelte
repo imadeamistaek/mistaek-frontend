@@ -5,11 +5,11 @@
 </script>
 
 <section class="container" aria-labelledby="hero_title">
-	<Grid customClass="-gap-vm">
+	<Grid customClass="-cols-6 -gap-vm">
 		<Logo small={true} />
-		<h1 id="hero_title" class="h2 col-5 col-start-1">Before you invest serious money in a design system you don't need...</h1>
-		<p class="h6 col-3 col-start-1">Take this 5-minute reality check. Most companies aren't ready for design systems, but everyone's building them anyway. Find out if you're actually ready, or if you should focus on something else first.</p>
-		<Anchor customClass="col-2 col-start-1" variant="default" size="large" label="Take the Reality Check" href="#checklist"/>
+		<h1 id="hero_title" class="h2 col-6 col-start-1 md:col-5 md:col-start-1 lg:col-4 lg:col-start-1">Before you invest serious money in a design system you don't need...</h1>
+		<p class="h6 col-6 col-start-1 md:col-5 md:col-start-1 lg:col-3 lg:col-start-1">Take this 5-minute reality check. Most companies aren't ready for design systems, but everyone's building them anyway. Find out if you're actually ready, or if you should focus on something else first.</p>
+		<Anchor customClass="col-6 col-start-1 md:col-3 md:col-start-1 lg:col-2 lg:col-start-1" variant="default" size="large" label="Take the Reality Check" href="#checklist"/>
 	</Grid>
 </section>
 

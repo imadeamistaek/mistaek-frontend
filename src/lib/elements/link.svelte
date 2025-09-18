@@ -135,7 +135,7 @@
 	@media (min-width: 992px) {
 		.link.-full { 
 			width: auto;
-			justify-content: center;
+			/* justify-content: center; */
 		}
 	}
 

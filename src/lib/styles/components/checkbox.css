@@ -1,7 +1,7 @@
 label.checkbox {
 	position: relative;
 	display: inline-flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 	gap: var(--space-200);
 }
@@ -29,6 +29,7 @@ label i {
 	transition-duration: var(--transition-duration-nitro);
 	transition-timing-function: var(--transition-timing-function);
 }
+label p { margin-top: 2px !important; }
 
 label input[type="checkbox"]:checked {background-color: var(--color-on-surface);}
 label input[type="checkbox"]:checked ~ i {transform: scale(100%);}

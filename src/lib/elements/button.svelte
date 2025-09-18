@@ -4,7 +4,7 @@
 	// Props
 	export let label: string;
 	export let variant: 'highlight' | 'brand' | 'default' | 'subtle' = 'default';
-	export let size: 'small' | 'medium' | 'large' = 'medium';
+	export let size: 'mini' | 'small' | 'medium' | 'large' = 'medium';
 	export let icon: string | null = null;
 	export let iconPosition: 'left' | 'right' = 'right';
 	export let loading: boolean = false;
@@ -93,9 +93,10 @@
 		gap: var(--space-200);
 		font-family: inherit;
 		color: var(--color-on-surface);
-		text-align: center;
+		text-align: left;
 		text-decoration: none;
-		white-space: nowrap;
+		text-wrap: auto;
+		/* white-space: nowrap; */
 		vertical-align: middle;
 		user-select: none;
 		cursor: pointer;
@@ -120,6 +121,13 @@
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* Size Variants */
 	/* ---------------------------------------------------------------------------------------------------- */
+	.btn--mini {
+		height: fit-content;
+		padding: var(--space-100);
+		align-items: center;
+		font-size: var(--typeface-size-body-small);
+	}
+
 	.btn--small {
 		padding: var(--space-100);
 		font-size: var(--typeface-size-body-small);
@@ -269,5 +277,5 @@
 	}
 
 	/* Utility classes */
-	.btn.-full { flex: 1; }
+	.btn.-full { flex: 1; justify-content: space-between; }
 </style>

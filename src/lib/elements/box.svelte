@@ -14,7 +14,6 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		/* gap: var(--space-100); */
 	}
 	.-boxed {
 		background-color: var(--color-surface);
@@ -23,8 +22,27 @@
 
 	.-overflow-h { overflow: hidden; }
 	
-	.-horizontal {flex-direction: column;}
-	@media (min-width: 992px) {
-		.-horizontal {flex-direction: row;}
+	.-horizontal {flex-direction: row; }
+	.-wrap { flex-wrap: wrap; }
+	.-horizontal-to-vertical { flex-direction: column; align-items: stretch;}
+
+	/* Small: 480px+ (Large Mobile) */
+	@media (min-width: 30rem) {}
+
+	/* Medium: 768px+ (Tablet Portrait) */
+	@media (min-width: 48rem) {
+		.-horizontal-to-vertical {flex-direction: row;}
 	}
+
+	/* Large: 1024px+ (Desktop) */
+	@media (min-width: 64rem) {}
+
+	/* Extra Large: 1280px+ (Large Desktop) */
+	@media (min-width: 80rem) {}
+
+	/* 2XL: 1536px+ (Ultra Wide) */
+	@media (min-width: 96rem) {}
+
+	/* 3XL: 1920px+ (Ultra Wide) */
+	@media (min-width: 120rem) {}
 </style>

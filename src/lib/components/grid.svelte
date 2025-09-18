@@ -9,14 +9,10 @@
 <style>
 	.grid {
 		position: relative;
+		flex: 1;
 		display: grid;
 		grid-template-columns: repeat(6,minmax(0,1fr));
 	}
 
 	.grid.-with-bg { background-color: var(--color-surface); }
-	@media (min-width: 992px) {
-		.grid {
-			grid-template-columns: repeat(6,minmax(0,1fr));
-		}
-	}
 </style>

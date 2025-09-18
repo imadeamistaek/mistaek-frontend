@@ -87,27 +87,27 @@
 		{#key step}
 		<div class="content" in:blur={{ duration: 800, delay: 200 }} out:blur={{ duration: 800 }}>
 			{#if step === 0}
-			<Grid customClass="col-6 grid-rows-4 custom-grid">
-				<Box as="div" customClass="col-5 cell-row-span-2 -padding-l">
+			<Grid customClass="custom-grid">
+				<Box as="div" customClass="col-6 col-start-1 md:col-6 md:col-start-1 lg:col-5 lg:col-start-1 -padding-l">
 					<p id="available_title" class="h1">The 5-step design system reality check</p>
 				</Box>
-				<Box as="div" customClass="col-3 col-start-1 cell-row-span-2 -align-bl -padding-hl -gap-vxs">
+				<Box as="div" customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-1 -align-bl -padding-l -gap-vxs">
 					<p class="h6 -contained-xl">Find out if you're ready, or if you need to solve other problems first.</p>
 					<p class="body_text -medium -contained">Answer honestly. This isn't about giving you the answer you want to hear. It's about giving you the answer that will actually help your team move faster.</p>
 				</Box>
-				<Box as="div" customClass="col-3 col-start-4  cell-row-span-2">
-					<Button customClass="-full" variant="default" size="large" label="Start the Reality Check" on:click={nextStep} />
+				<Box as="div" customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-4">
+					<Button customClass="-full" variant="highlight" size="large" label="Start the Reality Check" on:click={nextStep} />
 				</Box>
 			</Grid>
 			{:else if step >= 1 && step <= checklistSections.length}
-			<Grid customClass="col-6 grid-rows-6 custom-grid">
-				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -gap-hxs">
+			<Grid customClass="custom-grid">
+				<Box as="div" customClass="col-6 col-start-1 -padding-hl -padding-vs -horizontal -gap-xs -items-hcenter">
 					<Tag label="{checklistSections[step - 1].id}" customClass="-nano" />
 					<p class="body_text -nano">{checklistSections[step - 1].completion}</p>
 				</Box>
-				<Box as="div" customClass="col-6  cell-row-span-4 -padding-hl -gap-vs">
+				<Box as="div" customClass="col-6 col-start-1 -padding-l -gap-vs">
 					<p class="h3">{checklistSections[step - 1].title}</p>
-					<p class="body_text -medium -contained">{checklistSections[step - 1].description}</p>
+					<p class="body_text -medium -contained-xl">{checklistSections[step - 1].description}</p>
 					<List customClass="" vertical gapped>
 						{#each checklistSections[step - 1].items as item}
 						<li>
@@ -124,7 +124,7 @@
 						{/each}
 					</List>
 				</Box>
-				<Box as="div" customClass="col-6 cell-row-span-1 -horizontal -cgap-none -align-br">
+				<Box as="div" customClass="col-6 col-start-1 -horizontal-to-vertical -wrap -gap-none -align-br">
 					{#if step > 1 && step < checklistSections.length}
 					<Button customClass="-full" variant="brand" size="large" label="Previous" on:click={prevStep} />
 					<Button customClass="-full" variant="default" size="large" label="Next: {checklistSections[step - 1].next}" on:click={nextStep} />
@@ -141,7 +141,7 @@
 			<!-- Final Step: Result -->
 			{#if isThinking}
 			<!-- Thinking transition -->
-			<Box as="div" customClass="col-6 -padding-hl -rgap-s">
+			<Box as="div" customClass="custom-grid col-6 col-start-1 -padding-hl -gap-hs -items-hcenter">
 				<div class="thinking fade-out-after" on:animationend={handleThinkingEnd}>
 					<span class="line line-1">
 						<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
@@ -158,25 +158,25 @@
 				</div>
 			</Box>
 			{:else if showResults && result}
-			<Grid customClass="col-6 grid-rows-6 custom-grid">
-				<Box as="div" customClass="col-6 cell-row-span-1 -padding-hl -padding-vs -horizontal -cgap-xs">
+			<Grid customClass="custom-grid -rows-6">
+				<Box as="div" customClass="col-6 col-start-1 row-full md:row-1 -padding-hl -padding-vs -horizontal -gap-hxs -items-hcenter">
 					<Tag label="Score: {score} / 25" customClass="" />
-					<ButtonOLD customClass="subtle -padding-m" buttonLabel="Start Over" tagLabel="" icon="refreshw" on:click={restart}/>
+					<Button variant="subtle" size="mini" icon="refreshw" label="Start Over" on:click={restart} />
 				</Box>
-				<Grid customClass="col-6 cell-row-span-2 -padding-l -space-l">
-					<p class="h2 col-3">{result.title}</p>
-					<p class="h6 col-2 col-start-5">{result.message}</p>
+				<Grid customClass="col-6 col-start-1 row-auto md:row-3 -gap-vs -padding-l -space-l">
+					<p class="h2 col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-1">{result.title}</p>
+					<p class="h6 col-6 col-start-1 md:col-4 md:col-start-1 lg:col-2 lg:col-start-5">{result.message}</p>
 				</Grid>
-				<Grid customClass="col-6 cell-row-span-3 -padding-none -space-l">
-					<Box as="div" customClass="col-2 -space-s -horizontal -padding-hl">
+				<Grid customClass="col-6 col-start-1 row-auto md:row-2 -padding-none -space-l -gap-vs">
+					<Box as="div" customClass="col-6 col-start-1 md:col-3 md:col-start-1 lg:col-2 lg:col-start-1 -space-s -horizontal -padding-hl">
 						<p class="body_text -medium">{result.insights}</p>
 					</Box>
-					<List customClass="col-3 col-start-4" vertical>
+					<List customClass="col-6 col-start-1 md:col-3 md:col-start-4 lg:col-3 lg:col-start-4" vertical>
 						<Box as="li" customClass="">
-							<ButtonOLD customClass="border -full -padding-m" buttonLabel="Get My Custom Action Plan" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
+							<Button customClass="-full" variant="brand" size="large" icon="downloadw" label="Get My Custom Action Plan" on:click={downloadPDF} />
 						</Box>
-						<Box as="li" customClass="-space-s -padding-s" boxed>
-							<Link label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
+						<Box as="li" customClass="-space-s -padding-xs" boxed>
+							<Link customClass="-full" label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
 						</Box>
 					</List>
 				</Grid>

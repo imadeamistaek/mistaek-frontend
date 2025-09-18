@@ -8,12 +8,12 @@
 </script>
 
 <Box as="div" customClass="" boxed>
-	<Grid customClass="-aspect-21-9 grid-rows-2">
+	<Grid customClass="-aspect-21-9">
 		<BackgroundColumns />
-		<Box as="div" customClass="col-3 col-start-1 cell-row-span-1 -padding-xl -rgap-s">
+		<Box as="div" customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-1 -padding-xl -rgap-s">
 			<h6 class="h2">Ready to build the right thing at the right time?</h6>
 		</Box>
-		<Box as="div" customClass="col-3 col-start-4 cell-row-start-2 -padding-xl -gap-vs -items-vend -alignhcenter">
+		<Box as="div" customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-4 -padding-xl -gap-vs -items-vend -alignhcenter">
 			<p class="h6 -contained-m">Let's figure out your smartest next move.</p>
 			<p class="body_text -medium -contained-m">Book a quick call and we'll help you create a plan that actually matches where your product is right now, not where you think it should be.</p>
 			<ButtonPairing>

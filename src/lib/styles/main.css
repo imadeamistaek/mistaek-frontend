@@ -11,6 +11,7 @@
 @import 'utilities/grid.css';
 @import 'utilities/padding.css';
 @import 'utilities/responsive.css';
+@import 'utilities/visibility.css';
 
 /* COMPONENT STYLES */
 @import 'components/backgroundGrid.css';
