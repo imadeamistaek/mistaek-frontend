@@ -168,8 +168,8 @@
 		border: var(--border-width) solid var(--color-on-surface-accent);
 		color: var(--color-surface);
 	}
-	.btn--highlight:hover:not(:disabled) { background-color: var(--color-on-surface-darker); }
-	.btn--highlight:active:not(:disabled) { background-color: var(--color-on-surface-darker); }
+	.btn--highlight:hover:not(:disabled) { background-color: var(--color-neutral-200); }
+	.btn--highlight:active:not(:disabled) { background-color: var(--color-neutral-200); }
 
 	/* Brand Variant */
 	.btn--brand {

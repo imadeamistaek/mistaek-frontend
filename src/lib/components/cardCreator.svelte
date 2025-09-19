@@ -3,7 +3,7 @@
 	import List from './list.svelte';
 	import Box from '$lib/elements/box.svelte';
 
-	export let customClass: string | null | undefined;
+	export let customClass: string | null | undefined = '';
 	export let photo: string;
 	export let altText: string;
 </script>

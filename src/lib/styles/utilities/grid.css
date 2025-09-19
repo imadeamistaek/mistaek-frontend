@@ -26,6 +26,7 @@ MISTAEK GRID SYSTEM - Mobile-First & Content-Driven
 .-rows-5 { grid-template-rows:repeat(5,minmax(0,1fr)); }
 .-rows-6 { grid-template-rows:repeat(6,minmax(0,1fr)); }
 .-rows-fit { grid-auto-rows: max-content;}
+.-rows-3flex { grid-template-rows: auto 1fr auto;}
 
 /* Small: 480px+ (Large Mobile) */
 @media (min-width: 30rem) {}
@@ -146,12 +147,12 @@ MISTAEK GRID SYSTEM - Mobile-First & Content-Driven
 /* -------------------------------------------------------------------------- */
 
 /* Rows */
-.row-1 { grid-row:span 1/span 1; }
-.row-2 { grid-row:span 2/span 2; }
-.row-3 { grid-row:span 3/span 3; }
-.row-4 { grid-row:span 4/span 4; }
-.row-5 { grid-row:span 5/span 5; }
-.row-6 { grid-row:span 6/span 6; }
+.row-1 { grid-row: span 1; }
+.row-2 { grid-row: span 2; }
+.row-3 { grid-row: span 3; }
+.row-4 { grid-row: span 4; }
+.row-5 { grid-row: span 5; }
+.row-6 { grid-row: span 6; }
 .row-auto { grid-row: auto; }
 .row-full { grid-row: 1/-1; }
 

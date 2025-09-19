@@ -6,10 +6,10 @@
 	import Crosshair from '$lib/elements/markers/crosshair.svelte';
 </script>
 
-<section class="container" aria-labelledby="timeline_title">
+<section class="container" aria-labelledby="about_title">
 	<Grid customClass="-gap-vm">
 		<Tag label="Why this matters" customClass="-nano" />
-		<h2 id="timeline_title" class="h3 col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-1">Design systems can accelerate your team <span class="highlight">or become expensive digital junk</span>.</h2>
+		<h2 id="about_title" class="h3 col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-1">Design systems can accelerate your team <span class="highlight">or become expensive digital junk</span>.</h2>
 		<p class="body_text -medium -contained-xl col-6 col-start-1 md:col-4 md:col-start-1 lg:col-2 lg:col-start-5">Everyone's talking about design systems because they can be game-changing tools. But only when they match where your product actually is, not where you think it should be. This reality check cuts through the hype and tells you the truth.</p>
 		<List customClass="stages col-6 col-start-1 md:col-6 md:col-start-1 lg:col-6 lg:col-start-1">
 			<Box as="li" customClass="-align-top -aspect-16-9 -padding-s" boxed>

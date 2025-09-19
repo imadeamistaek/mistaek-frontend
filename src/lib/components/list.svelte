@@ -1,10 +1,27 @@
 <script lang="ts">
+	export let customClass: string = '';
 	export let vertical: boolean = false;
 	export let gapped: boolean = false;
-	export let customClass: string | null | undefined;
+	export let ariaLabel: string = '';
+
+		
+	let listRef: HTMLUListElement;
+	let itemCount = 0;
+	
+	// Count list items after component mounts
+	$: if (listRef) {
+		itemCount = listRef.children.length;
+	}
+	
+	// Generate automatic aria-label if none provided
+	$: computedAriaLabel = ariaLabel || `List with ${itemCount} item${itemCount !== 1 ? 's' : ''}`;
 </script>
 
-<ul class={`list ${customClass} ${vertical ? '-vertical' : ''} ${gapped ? '-gapped' : ''}`}>
+<ul 
+  bind:this={listRef}
+  class={`list ${customClass} ${vertical ? '-vertical' : ''} ${gapped ? '-gapped' : ''}`}
+  aria-label={computedAriaLabel}
+>
 	<slot />
 </ul>
 
@@ -14,7 +31,7 @@
 		display: flex;
 		flex-flow: row wrap;
 		flex-direction: column;
-		padding: 0;
+		/* padding: 0; */
 		margin: 0;
 		list-style: none;
 	}

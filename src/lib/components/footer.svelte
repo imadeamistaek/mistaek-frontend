@@ -14,7 +14,7 @@
 				<li class="-hidden-m"><Logo small={true} /></li>
 				<li><p class="body_text -micro -subtle -contained-l">We remove the barriers that hold ideas back and create design that works for people, brands, and the planet.</p></li>
 				<li>
-					<List customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-4 -gap-vnone" gapped>
+					<List customClass="col-6 col-start-1 md:col-4 md:col-start-1 lg:col-3 lg:col-start-4 -gap-vnone -padding-none" gapped>
 						<li><Link customClass="-small -full" label="Book a call" url="https://cal.com/mistaek/15min" type="external" /></li>
 						<li><Link customClass="-small -full" label="Follow the updates" url="https://www.linkedin.com/company/mistaek-studio/" type="external" /></li>
 						<li><Link customClass="-small -full" label="hello@mistaek.com" url="mailto:hello@mistaek.com" type="external" icon="send" /></li>

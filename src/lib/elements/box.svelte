@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let as: string = 'div'; // default wrapper
-	export let customClass: string | null | undefined;
+	export let customClass: string | null | undefined = '';
 	export let boxed: boolean = false;
 </script>
 

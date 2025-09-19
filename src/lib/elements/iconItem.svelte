@@ -4,17 +4,18 @@
 	export let label: string;
 	export let customClass: string | null | undefined;
 	export let boxed: boolean = false;
+	export let alt: string = '';
 </script>
 
-<svelte:element this={as} class={`list_item ${boxed ? '-boxed' : ''}`}>
+<svelte:element this={as} class={`icon_item ${boxed ? '-boxed' : ''}`}>
 	<i class="icon" aria-hidden="true">
-		<img src={`/icons/mi-${icon}.webp`} alt="arrow-out">
+		<img src={`/icons/mi-${icon}.webp`} alt={alt}>
 	</i>
 	<p class={`body_text ${customClass}`}>{label}</p>
 </svelte:element>
 
 <style>
-	.list_item {
+	.icon_item {
 		flex: 1;
 		display: inline-flex;
 		flex-direction: row;

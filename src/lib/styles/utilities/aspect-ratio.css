@@ -1,11 +1,35 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* ASPECT RATIO */
 /* ---------------------------------------------------------------------------------------------------- */
-@media (min-width: 992px) {
-    .-aspect-square { aspect-ratio: 1 / 1; }
-    .-aspect-16-9 { aspect-ratio: 16 / 9; }
-    .-aspect-4-3 { aspect-ratio: 4 / 3; }
-    .-aspect-3-2 { aspect-ratio: 3 / 2; }
-    .-aspect-2-1 { aspect-ratio: 2 / 1; }
-    .-aspect-21-9 { aspect-ratio: 21 / 9; }
+.-aspect-square { aspect-ratio: auto; }
+.-aspect-16-9 { aspect-ratio: auto; }
+.-aspect-4-3 { aspect-ratio: auto; }
+.-aspect-3-2 { aspect-ratio: auto; }
+.-aspect-2-1 { aspect-ratio: auto; }
+.-aspect-21-9 { aspect-ratio: auto; }
+
+
+/* Small: 480px+ (Large Mobile) */
+@media (min-width: 30rem) {}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {}
+
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {}
+
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+.-aspect-square { aspect-ratio: 1 / 1; }
+.-aspect-16-9 { aspect-ratio: 16 / 9; }
+.-aspect-4-3 { aspect-ratio: 4 / 3; }
+.-aspect-3-2 { aspect-ratio: 3 / 2; }
+.-aspect-2-1 { aspect-ratio: 2 / 1; }
+.-aspect-21-9 { aspect-ratio: 21 / 9; }
 }
+
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {}
+
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {}
