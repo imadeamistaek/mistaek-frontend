@@ -1,5 +1,6 @@
 <script>
-	import Button from "../elements/button(DEPRECATED).svelte";
+	import ButtonOld from "../elements/button(DEPRECATED).svelte";
+	import Button from "../elements/button.svelte";
 
 	let { showModal = $bindable(), header, body, footer } = $props();
 	let dialog = $state();
@@ -17,7 +18,7 @@
 		<hr />
 		<div class="slot -footer">{@render footer?.()}</div>
 		<!-- svelte-ignore a11y_autofocus -->
-		<Button customClass="subtle" buttonLabel="" tagLabel="" icon="close" on:click={() => dialog.close()}/>
+		<Button variant="subtle" label="" icon="close" on:click={() => dialog.close()}/>
 	</div>
 </dialog>
 
@@ -31,7 +32,7 @@
 		top: auto;
 		bottom: var(--space-1000);
 		max-width: 48em;
-		padding: var(--space-1000);
+		padding: var(--space-800);
 		color: var(--color-on-surface);
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
@@ -79,9 +80,9 @@
 	/* ---------------------------------------------------------------------------------------------------- */
 	/* CLOSE BUTTON */
 	/* ---------------------------------------------------------------------------------------------------- */
-	:global(button.subtle) {
-		position: absolute;
-		top: var(--space-300);
+	:global(.btn--icon-only) {
+		position: absolute !important;
+		top: 0;
 		right: 0;
 	}
 </style>

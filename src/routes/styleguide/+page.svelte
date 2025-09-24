@@ -158,19 +158,20 @@
 
 			<Modal bind:showModal>
 				{#snippet header()}
-					<p class="h5">Get your custom action plan</p>
-					<p class="body_text -large -contained-l">Your personalized roadmap to design system success, delivered in minutes.</p>
-					<p class="body_text -micro -subtle -contained-l">I'll email you a complete breakdown of your assessment, including:</p>
+					<p class="h5">Get your honest assessment results</p>
+					<p class="body_text -large -contained-l">Your custom action plan based on where your team actually is right now.</p>
+					<p class="body_text -micro -subtle -contained-l">We'll send you a detailed breakdown of your assessment, including:</p>
 				{/snippet}
 
 				{#snippet body()}	
-					<List customClass="" vertical>
-						<IconItem as="li" icon="checkg" label="Your score explanation and what it really means for your product's future" customClass="-micro"/>
-						<IconItem as="li" icon="checkg" label="Specific, prioritised next steps you can tackle this week" customClass="-micro"/>
-						<IconItem as="li" icon="checkg" label="Bonus insights and strategies I've used helping startups avoid expensive mistakes" customClass="-micro"/>
+					<List customClass="-padding-none" vertical>
+						<IconItem as="li" icon="checkg" label="Your score and what it means for your specific situation" customClass="-micro"/>
+						<IconItem as="li" icon="checkg" label="Next steps prioritized by what will actually move the needle" customClass="-micro"/>
+						<IconItem as="li" icon="checkg" label="Common mistakes we've seen teams make at your stage" customClass="-micro"/>
+						<IconItem as="li" icon="checkg" label="Resources to help you build the right foundation" customClass="-micro"/>
 					</List>
-					<List customClass="" vertical>
-						<IconItem as="li" icon="checkw" label="This PDF isn't fully accessible yet. If you need a screen-reader friendly version, just email hello@mistaek.com and I'll send you one personally." customClass="-micro -subtle"/>
+					<List customClass="-padding-none" vertical>
+						<IconItem as="li" icon="infow" label="This PDF isn't fully accessible yet (we practice what we preach about showing work in progress). Need a screen-reader friendly version? Email hello@mistaek.com and we'll send one within 24 hours." customClass="-micro -subtle"/>
 					</List>
 				{/snippet}
 

@@ -334,6 +334,18 @@ ul {
 	margin: 0;
 }
 ul.-spaced { gap: var(--space-300);}
+ol {
+	display: flex;
+	flex-direction: column;
+	padding: var(--space-600) var(--space-400);
+	margin: 0;
+	counter-reset: list-counter; /* Reset counter for ordered lists */
+}
+ol li {
+	display: list-item;
+	counter-increment: list-counter; /* Increment counter for each list item */
+	position: relative;
+}
 li {
 	display: flex;
 	flex-direction: row;
@@ -367,36 +379,16 @@ li {
 /* ---------------------------------------------------------------------------------------------------- */
 /* UTILITIES Styles */
 /* ---------------------------------------------------------------------------------------------------- */
-
-/* COLUMNS -------------------------------------------------- */
-/* .col-1 { grid-column: span 6 / span 6; }
-.col-2 { grid-column: span 6 / span 6; }
-.col-3 { grid-column: span 6 / span 6; }
-.col-4 { grid-column: span 6 / span 6; }
-.col-5 { grid-column: span 6 / span 6; }
-.col-6 { grid-column: span 6 / span 6; }
-.col-start-1 { grid-column-start:1 }
-.col-start-2 { grid-column-start:1 }
-.col-start-3 { grid-column-start:1 }
-.col-start-4 { grid-column-start:1 }
-.col-start-5 { grid-column-start:1 }
-.col-start-6 { grid-column-start:1 }
-
-@media (min-width: 992px) {
-	.col-1 { grid-column: span 1 / span 1; }
-	.col-2 { grid-column: span 2 / span 2; }
-	.col-3 { grid-column: span 3 / span 3; }
-	.col-4 { grid-column: span 4 / span 4; }
-	.col-5 { grid-column: span 5 / span 5; }
-	.col-6 { grid-column: span 6 / span 6; }
-	.col-start-1 { grid-column-start:1 }
-	.col-start-2 { grid-column-start:2 }
-	.col-start-3 { grid-column-start:3 }
-	.col-start-4 { grid-column-start:4 }
-	.col-start-5 { grid-column-start:5 }
-	.col-start-6 { grid-column-start:6 }
-} */
-
 .-bold { font-weight: var(--typeface-weight-bold); }
 .-highlight { color: var(--color-on-surface-brand); }
 .-tcenter {text-align: center;}
+
+.spacer {
+	width: 100%;
+	height: var(--space-400);
+	opacity: 0;
+	pointer-events: none;
+	user-select: none;
+}
+
+.spacer.-small { height: var(--space-200); }
