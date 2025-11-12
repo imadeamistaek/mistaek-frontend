@@ -31,8 +31,8 @@
 	dialog {
 		top: auto;
 		bottom: var(--space-1000);
-		max-width: 48em;
-		padding: var(--space-800);
+		max-width: 56em;
+		padding: 0;
 		color: var(--color-on-surface);
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
@@ -66,6 +66,9 @@
 	/*
 	/* All the styles necessary to style the slots inside the dialog
 	/* ---------------------------------------------------------------------------------------------------- */
+	.content {
+		padding: var(--space-800);
+	}
 	.slot {
 		display: flex;
 		flex-direction: column;

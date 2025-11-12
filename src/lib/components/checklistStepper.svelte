@@ -1,28 +1,37 @@
 <script lang="ts">
 	import { checklistSections, type ChecklistResult, checklistResults } from '$lib/data/checklist';
 	import { selectedItems, totalScore } from '$lib/stores/checklist';
-	import { downloadPDF } from '$lib/utils/pdfClient';
 	import { blur } from 'svelte/transition';
-	import { get } from 'svelte/store';
 
-	import ButtonOLD from "../elements/button(DEPRECATED).svelte";
 	import Button from '$lib/elements/button.svelte';
 	import Tag from '../elements/tag.svelte';
 	import Link from '../elements/link.svelte';
 	import List from '$lib/components/list.svelte';
 	import Box from '$lib/elements/box.svelte';
 	import Crosshair from "$lib/elements/markers/crosshair.svelte";
-    import Grid from "$lib/components/grid.svelte";
+	import Grid from "$lib/components/grid.svelte";
+	import MagnetForm from './magnetForm.svelte';
+	import Modal from '$lib/components/modal.svelte';
+	import IconItem from '$lib/elements/iconItem.svelte';
 	
-	// STEPS --------------------------------------------------------------------------------------------------------
-	// Logic to deal with steps
-	let step = 0;
+	// Props (Svelte 5 style)
+	let { form }: { form: any } = $props();
+	
+	// State
+	let step = $state(0);
+	let isThinking = $state(false);
+	let showResults = $state(false);
+	let showModal = $state(false);
+	
+	// Derived state
+	let score = $derived($totalScore);
+	let result = $derived(getResult(score));
+	
+	// Functions
 	function nextStep() { step++; }
 	function prevStep() { step--; }
-	function handleThinkingEnd() {step += 1;}
+	function handleThinkingEnd() { step += 1; }
 	
-	// UPDATE CHECKBOXES --------------------------------------------------------------------------------------------
-	// Logic to update items
 	function toggleItem(id: string) {
 		selectedItems.update((current) => {
 			const copy = new Set(current);
@@ -31,29 +40,19 @@
 		});
 	}
 	
-	// RESTART --------------------------------------------------------------------------------------------------------
-	// Bring to Step 0 and delete all answers
 	function restart() {
 		step = 0;
 		selectedItems.set(new Set());
 	}
 	
-	// RESULTS --------------------------------------------------------------------------------------------------------
-	// function getResult(score: number): ChecklistResult | undefined {
-	// 	return checklistResults.find(({ range }) => score >= range[0] && score <= range[1]);
-	// }
-	
-	let isThinking = false;
-	let showResults = false;
-	
 	function finishChecklist() {
 		isThinking = true;
-		step++; // Go to results step
+		step++;
 		
 		setTimeout(() => {
 			isThinking = false;
 			showResults = true;
-		}, 6500); // adjust duration as needed
+		}, 6500);
 	}
 	
 	function getResult(score: number): ChecklistResult {
@@ -65,17 +64,9 @@
 			message: 'There was a problem calculating your score.',
 			insights: '',
 			next: '',
-			actions: [] // 👈 empty array to match type
+			actions: []
 		};
 	}
-	
-	// ✅ These are reactive and always up to date
-	let score: number;
-	// let result: { label: string; range: [number, number]; summary: string } | undefined;
-	let result: ChecklistResult;
-	
-	$: score = $totalScore;
-	$: result = getResult(score);
 </script>
 
 <Box as="div" customClass={`container ${step >= 1 && step <= checklistSections.length ? "-step" : ""}`} boxed>
@@ -115,7 +106,7 @@
 								<input
 								type="checkbox"
 								checked={$selectedItems.has(item.id)}
-								on:change={() => toggleItem(item.id)}
+								onchange={() => toggleItem(item.id)}
 								/>
 								<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkb.webp`} alt="check icon"></i>
 								<p class="body_text -medium">{item.label}</p>
@@ -142,7 +133,7 @@
 			{#if isThinking}
 			<!-- Thinking transition -->
 			<Box as="div" customClass="custom-grid col-6 col-start-1 -padding-hl -gap-hs -items-hcenter">
-				<div class="thinking fade-out-after" on:animationend={handleThinkingEnd}>
+				<div class="thinking fade-out-after" onanimationend={handleThinkingEnd}>
 					<span class="line line-1">
 						<i class="icon" aria-hidden="true"><img src={`/icons/mi-checkw.webp`} alt="check"></i>
 						<p class="body_text -medium -subtle">Calculating your results...</p>
@@ -173,7 +164,7 @@
 					</Box>
 					<List customClass="col-6 col-start-1 md:col-6 md:col-start-1 lg:col-3 lg:col-start-4 -padding-none" vertical>
 						<Box as="li" customClass="">
-							<Button customClass="-full" variant="brand" size="large" icon="downloadw" label="Get My Custom Action Plan" on:click={downloadPDF} />
+							<Button customClass="-full" variant="brand" size="large" icon="downloadw" label="Get My Custom Action Plan" on:click={() => (showModal = true)} />
 						</Box>
 						<Box as="li" customClass="-space-s -padding-xs" boxed>
 							<Link customClass="-full" label="Book a Reality Check Call" url="https://cal.com/mistaek/15min" type="external" />
@@ -189,6 +180,35 @@
 		{/key}
 	</Box>
 </Box>
+
+<Modal bind:showModal>
+	{#snippet header()}
+		<p class="h5">Get your honest assessment results</p>
+		<p class="body_text -large -contained-l">Your custom action plan based on where your team actually is right now.</p>
+		<p class="body_text -micro -subtle -contained-l">We'll send you a detailed breakdown of your assessment, including:</p>
+	{/snippet}
+
+	{#snippet body()}	
+		<List customClass="-padding-none" vertical>
+			<IconItem as="li" icon="checkg" label="Your score and what it means for your specific situation" customClass="-micro"/>
+			<IconItem as="li" icon="checkg" label="Next steps prioritized by what will actually move the needle" customClass="-micro"/>
+			<IconItem as="li" icon="checkg" label="Common mistakes we've seen teams make at your stage" customClass="-micro"/>
+			<IconItem as="li" icon="checkg" label="Resources to help you build the right foundation" customClass="-micro"/>
+		</List>
+		<List customClass="-padding-none" vertical>
+			<IconItem as="li" icon="infow" label="This PDF isn't fully accessible yet (we practice what we preach about showing work in progress). Need a screen-reader friendly version? Email hello@mistaek.com and we'll send one within 24 hours." customClass="-micro -subtle"/>
+		</List>
+	{/snippet}
+
+	{#snippet footer()}
+		<MagnetForm
+			{form}
+			score={$totalScore}
+			resultTitle={result.title}
+			resultData={{ selectedItems: Array.from($selectedItems) }}
+		/>
+	{/snippet}
+</Modal>
 
 <style>
 	:global(.box.container) {

@@ -250,6 +250,7 @@ span.body_text {
 
 /* Color modifiers */
 .body_text.-subtle {color: var(--color-on-surface-darker);}
+.body_text.-error {color: var(--color-surface-on-error-accent);}
 
 /* Container modifiers */
 .-contained-m {max-width: 480px;}

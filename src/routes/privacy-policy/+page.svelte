@@ -25,11 +25,11 @@
 		</Box>
 	</Grid>
 	<Grid customClass="-cols-6 -gap-vm -items-hstart">
-		<aside class="col-6 col-start-1 md:col-2 md:col-start-1 -padding-vxl -gap-vs">
+		<aside class="col-6 col-start-1 md:col-1 md:col-start-1 lg:col-2 lg:col-start-1 -padding-vxl -gap-vs">
 			<p class="body_text -large -subtle -contained-xl">Last updated:</p>
 			<p class="body_text -large -contained-xl">September 23, 2025</p>
 		</aside>
-		<main class="col-6 col-start-1 md:col-4 md:col-start-3 -padding-vxl -gap-vs">
+		<main class="col-6 col-start-1 md:col-5 md:col-start-1 lg:col-4 lg:col-start-3 -padding-vxl -gap-vs">
 
 			<!-- INTRODUCTION -->
 			<section class="-padding-vl -gap-vs">
@@ -184,7 +184,16 @@
 			</section>
 
 			<!-- 5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES? -->
-
+			<section class="-padding-vl -gap-vs" id="cookies">
+				<h2 class="h4">5. Do we use cookies and other tracking technologies?</h2>
+				<p class="body_text -large"><strong>In Short:</strong> We may use cookies and other tracking technologies to collect and store your information.</p>
+				<p class="body_text -large">We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Some online tracking technologies help us maintain the security of our Services, prevent crashes, fix bugs, save your preferences, and assist with basic site functions.</p>
+				<p class="body_text -large">We also permit third parties and service providers to use online tracking technologies on our Services for analytics and advertising, including to help manage and display advertisements, to tailor advertisements to your interests, or to send abandoned shopping cart reminders (depending on your communication preferences). The third parties and service providers use their technology to provide advertising about products and services tailored to your interests which may appear either on our Services or on other websites.</p>
+				<p class="body_text -large">To the extent these online tracking technologies are deemed to be a 'sale'/'sharing' (which includes targeted advertising, as defined under the applicable laws) under applicable US state laws, you can opt out of these online tracking technologies by submitting a request as described below under section '<a href="#uslaws">DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a>'</p>
+				<p class="body_text -large">Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice: <a href="https://mistaek.com/cookie-policy">https://mistaek.com/cookie-policy</a>.</p>
+				<h3 class="h6">Google Analytics</h3>
+				<p class="body_text -large">We may share your information with Google Analytics to track and analyse the use of the Services. To opt out of being tracked by Google Analytics across the Services, visit <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout</a>. For more information on the privacy practices of Google, please visit the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms page</a>.</p>
+			</section>
 
 			<!-- 6. HOW LONG DO WE KEEP YOUR INFORMATION? -->
 			<section class="-padding-vl -gap-vs" id="inforetain">
@@ -209,7 +218,22 @@
 			</section>
 
 			<!-- 9. WHAT ARE YOUR PRIVACY RIGHTS? -->
+			<section class="-padding-vl -gap-vs" id="privacyrights">
+				<h2 class="h4">9. What are your privacy rights?</h2>
+				<p class="body_text -large"><strong>In Short:</strong> Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.</p>
+				<p class="body_text -large">In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. If a decision that produces legal or similarly significant effects is made solely by automated means, we will inform you, explain the main factors, and offer a simple way to request human review. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section '<a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>' below.</p>
+				<p class="body_text -large">We will consider and act upon any request in accordance with applicable data protection laws.</p>
+				<p class="body_text -large">If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your <a href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" target="_blank" rel="noopener noreferrer">Member State data protection authority</a> or <a href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/" target="_blank" rel="noopener noreferrer">UK data protection authority</a>.</p>
+				<p class="body_text -large">If you are located in Switzerland, you may contact the <a href="https://www.edoeb.admin.ch/edoeb/en/home.html" target="_blank" rel="noopener noreferrer">Federal Data Protection and Information Commissioner</a>.</p>
+				
+				<Box customID="withdrawconsent" customClass="-padding-vs -gap-vs">
+					<p class="body_text -large"><strong>Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section '<a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>' below.</p>
+					<p class="body_text -large">However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.</p>
+				</Box>
 
+				<p class="body_text -large"><strong>Cookies and similar technologies:</strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. For further information, please see our Cookie Notice: <a href="https://mistaek.com/cookie-policy">https://mistaek.com/cookie-policy</a>.</p>
+				<p class="body_text -large">If you have questions or comments about your privacy rights, you may email us at <a href="mailto:hello@mistaek.com">hello@mistaek.com</a>.</p>
+			</section>
 
 			<!-- 10. CONTROLS FOR DO-NOT-TRACK FEATURES -->
 			<section class="-padding-vl -gap-vs" id="DNT">
@@ -219,7 +243,293 @@
 			</section>
 
 			<!-- 11. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS? -->
+			<section class="-padding-vl -gap-vs" id="uslaws">
+				<h2 class="h4">11. Do United States residents have specific privacy rights?</h2>
+				<p class="body_text -large"><strong>In Short:</strong> If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.</p>
+				
+				<h3 class="h6">Categories of Personal Information We Collect</h3>
+				<p class="body_text -large">The table below shows the categories of personal information we have collected in the past twelve (12) months. The table includes illustrative examples of each category and does not reflect the personal information we collect from you. For a comprehensive inventory of all personal information we process, please refer to the section '<a href="#infocollect">WHAT INFORMATION DO WE COLLECT?</a>'</p>
+			
+				<div class="table_grid">
+					<div class="table_head -gap-s">
+						<div class="cell">
+							<p class="body_text -large">Category</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -large">Examples</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -large">Collected</p>
+						</div>
+					</div>
 
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">A. Identifiers</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">YES</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">B. Personal information as defined in the California Customer Records statute</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Name, contact information, education, employment, employment history, and financial information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">YES</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">C. Protected classification characteristics under state or federal law</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">D. Commercial information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Transaction information, purchase history, financial details, and payment information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">E. Biometric information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Fingerprints and voiceprints</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">F. Internet or other similar network activity</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Browsing history, search history, online behaviour, interest data, and interactions with our and other websites, applications, systems, and advertisements</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">G. Geolocation data</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Device location</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">H. Audio, electronic, sensory, or similar information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Images and audio, video or call recordings created in connection with our business activities</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">I. Professional or employment-related information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Business contact details in order to provide you our Services at a business level or job title, work history, and professional qualifications if you apply for a job with us</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">J. Education Information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Student records and directory information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">K. Inferences drawn from collected personal information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual's preferences and characteristics</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+					<div class="table_child -gap-s">
+						<div class="cell">
+							<p class="body_text -nano">(Category)</p>
+							<p class="body_text -large">L. Sensitive personal Information</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Examples)</p>
+							<p class="body_text -large">Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</p>
+						</div>
+						<div class="cell">
+							<p class="body_text -nano">(Collected)</p>
+							<p class="body_text -large">NO</p>
+						</div>
+					</div>
+
+				</div>
+				
+				<p class="body_text -large">We may also collect other personal information outside of these categories through instances where you interact with us in person, online, or by phone or mail in the context of:</p>
+				<List customClass="-gap-vs -with-bullets" vertical>
+					<li><p class="body_text -large">Receiving help through our customer support channels;</p></li>
+					<li><p class="body_text -large">Participation in customer surveys or contests; and</p></li>
+					<li><p class="body_text -large">Facilitation in the delivery of our Services and to respond to your inquiries.</p></li>
+				</List>
+
+				<p class="body_text -large">We will use and retain the collected personal information as needed to provide the Services or for:</p>
+				<List customClass="-gap-vs -with-bullets" vertical>
+					<li><p class="body_text -large">Category A - As long as the user has an account with us</p></li>
+					<li><p class="body_text -large">Category B - As long as the user has an account with us</p></li>
+				</List>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">Sources of Personal Information</h3>
+					<p class="body_text -large">Learn more about the sources of personal information we collect in '<a href="#infocollect">WHAT INFORMATION DO WE COLLECT?</a>'</p>
+				</Box>
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">How We Use and Share Personal Information</h3>
+					<p class="body_text -large">Learn more about how we use your personal information in the section, '<a href="#infouse">HOW DO WE PROCESS YOUR INFORMATION?</a>'</p>
+				</Box>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<p class="body_text -large"><strong>Will your information be shared with anyone else?</strong></p>
+					<p class="body_text -large">We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information to in the section, '<a href="#whoshare">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>'</p>
+				</Box>
+
+				<p class="body_text -large">We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be 'selling' of your personal information.</p>
+
+				<p class="body_text -large">We have disclosed the following categories of personal information to third parties for a business or commercial purpose in the preceding twelve (12) months:</p>
+				<List customClass="-gap-vs -with-bullets" vertical>
+					<li><p class="body_text -large">Category A. Identifiers</p></li>
+					<li><p class="body_text -large">Category B. Personal information as defined in the California Customer Records law</p></li>
+				</List>
+
+				<p class="body_text -large">The categories of third parties to whom we disclosed personal information for a business or commercial purpose can be found under '<a href="#whoshare">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>'</p>
+				
+				<p class="body_text -large">We have sold or shared the following categories of personal information to third parties in the preceding twelve (12) months:</p>
+
+				<p class="body_text -large">The categories of third parties to whom we shared personal information with are:</p>
+				<List customClass="-gap-vs -with-bullets" vertical>
+					<li><p class="body_text -large"><strong>Web and Mobile Analytics</strong></p><p class="body_text -large">Google Analytics</p></li>
+				</List>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">Your Rights</h3>
+					<p class="body_text -large">You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include:</p>
+					<List customClass="-gap-vs -with-bullets" vertical>
+						<li><p class="body_text -large"><strong>Right to know</strong> whether or not we are processing your personal data</p></li>
+						<li><p class="body_text -large"><strong>Right to access</strong> your personal data</p></li>
+						<li><p class="body_text -large"><strong>Right to correct</strong> inaccuracies in your personal data</p></li>
+						<li><p class="body_text -large"><strong>Right to request</strong> the deletion of your personal data</p></li>
+						<li><p class="body_text -large"><strong>Right to obtain a copy</strong> of the personal data you previously shared with us</p></li>
+						<li><p class="body_text -large"><strong>Right to non-discrimination</strong> for exercising your rights</p></li>
+						<li><p class="body_text -large"><strong>Right to opt out</strong> of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California's privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ('profiling')</p></li>
+					</List>
+				</Box>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<p class="body_text -large">Depending upon the state where you live, you may also have the following rights:</p>
+					<List customClass="-gap-vs -with-bullets" vertical>
+						<li><p class="body_text -large">Right to access the categories of personal data being processed (as permitted by applicable law, including the privacy law in Minnesota)</p></li>
+						<li><p class="body_text -large">Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in California, Delaware, and Maryland)</p></li>
+						<li><p class="body_text -large">Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in Minnesota and Oregon)</p></li>
+						<li><p class="body_text -large">Right to review, understand, question, and correct how personal data has been profiled (as permitted by applicable law, including the privacy law in Minnesota)</p></li>
+						<li><p class="body_text -large">Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including the privacy law in California)</p></li>
+						<li><p class="body_text -large">Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including the privacy law in Florida)</p></li>
+					</List>
+				</Box>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">How to Exercise Your Rights</h3>
+					<p class="body_text -large">To exercise these rights, you can contact us by visiting <a href="http://www.mistaek.com/unsubscribe">http://www.mistaek.com/unsubscribe</a>, by emailing us at <a href="mailto:hello@mistaek.com">hello@mistaek.com</a>, or by referring to the contact details at the bottom of this document.</p>
+				</Box>
+
+				<p class="body_text -large">You can opt out from the selling of your personal information, targeted advertising, or profiling by disabling cookies in Cookie Preference Settings.</p>
+				<p class="body_text -large">We will honour your opt-out preferences if you enact the <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener noreferrer">Global Privacy Control</a> (GPC) opt-out signal on your browser.</p>
+				<p class="body_text -large">Under certain US state data protection laws, you can designate an authorised agent to make a request on your behalf. We may deny a request from an authorised agent that does not submit proof that they have been validly authorised to act on your behalf in accordance with applicable laws.</p>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">Request Verification</h3>
+					<p class="body_text -large">Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.</p>
+				</Box>
+
+				<p class="body_text -large">If you submit the request through an authorised agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
+
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">Appeals</h3>
+					<p class="body_text -large">Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:hello@mistaek.com">hello@mistaek.com</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+				</Box>
+				
+				<Box customClass="-padding-vxs -gap-vxs">
+					<h3 class="h6">California 'Shine The Light' Law</h3>
+					<p class="body_text -large">California Civil Code Section 1798.83, also known as the 'Shine The Light' law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section '<a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>'</p>
+				</Box>
+			</section>
 
 			<!-- 12. DO WE MAKE UPDATES TO THIS NOTICE? -->
 			<section class="-padding-vl -gap-vs" id="policyupdates">
@@ -252,12 +562,43 @@
 		flex-direction: column;
 	}
 
-	:global(a) {
+	.table_head {
+		display: none;
+		padding: var(--space-300);
+		background-color: var(--color-surface);
+		border: var(--border-width) solid var(--color-on-surface-accent);
+	}
+	.table_child {
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-300);
+		background-color: var(--color-surface);
+		border: var(--border-width) solid var(--color-on-surface-accent);
+	}
+	.table_child .-nano { display: block; }
+	
+	/* Medium: 768px+ (Tablet Portrait) */
+	@media (min-width: 48rem) {
+		.table_head, .table_child {
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+		}
+	}
+	/* Large: 1024px+ (Desktop) */
+	@media (min-width: 64rem) {
+		.table_head, .table_child {
+			display: grid;
+			grid-template-columns: 240px 1fr 160px;
+		}
+		.table_child .-nano { display: none; }
+	}
+	a {
 		padding: 0 !important;
 		text-decoration: underline !important;
 	}
 
 	:global(ul.list.-with-bullets) {
+		width: auto !important;
 		list-style: disc !important;
 		padding-left: var(--space-600) !important;
 	}

@@ -6,10 +6,12 @@
     import Grid from '$lib/components/grid.svelte';
     import Footer from '$lib/components/footer.svelte';
 	import Modal from '$lib/components/modal.svelte';
-    import InputEmail from '$lib/elements/inputEmail.svelte';
     import Button from '$lib/elements/button.svelte';
     import Anchor from '$lib/elements/anchor.svelte';
     import CardCreator from '$lib/components/cardCreator.svelte';
+	import MagnetForm from '$lib/components/magnetForm.svelte';
+    import Checkbox from '$lib/elements/checkbox.svelte';
+    import Input from '$lib/elements/input.svelte';
 	let showModal = $state(false);
 </script>
 
@@ -58,6 +60,24 @@
 			<Anchor variant="brand" label="test" href="#"/>
 			<Anchor variant="default" label="test" href="#"/>
 			<Anchor variant="subtle" label="test" href="#"/>
+		</Box>
+	</Grid>
+</section>
+
+<section>
+	<Grid customClass="-cols-6">
+		<Box customClass="col-6 col-start-1 -gap-vl -padding-vl">
+			<Tag label="Checkbox" customClass="-nano" />
+			<Checkbox id="checkbox1" name="checkbox1" label="I agree to the terms and conditions" required error="test" />
+		</Box>
+	</Grid>
+</section>
+
+<section>
+	<Grid customClass="-cols-6">
+		<Box customClass="col-6 col-start-1 -gap-vl -padding-vl">
+			<Tag label="Input" customClass="-nano" />
+			<Input id="input1" name="input1" label="Full Name" placeholder="Enter your full name" required />
 		</Box>
 	</Grid>
 </section>
@@ -177,9 +197,15 @@
 
 				{#snippet footer()}
 					<form method="POST">
-						<InputEmail />
+						<Input id="email" name="email" label="Email address" placeholder="" required customClass="-margin-b"/>
 						<Button variant="brand" label="Send me the report"/>
 					</form>
+					<!-- <MagnetForm
+					  	{form}
+						score={$totalScore}
+						resultTitle={result.title}
+						resultData={{ selectedItems: Array.from($selectedItems) }}
+					/> -->
 				{/snippet}
 			</Modal>
 		</Box>

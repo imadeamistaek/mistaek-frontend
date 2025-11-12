@@ -4,6 +4,7 @@
 	export let icon: string | null | undefined = null;
 	export let url: string | null | undefined = null;
 	export let type: 'external' | 'internal' | 'email' = 'internal';
+	export let showIcon: boolean = true;
 	
 	// Derived values based on type
 	$: isExternal = type === 'external';
@@ -24,6 +25,7 @@
 	// Icon selection based on type
 	$: iconName = icon || (isExternal ? 'arrow-out' : isInternal ? 'arrow-right' : 'mail');
 	$: iconAlt = isExternal ? 'external link' : isInternal ? 'internal link' : 'email';
+	$: shouldShowIcon = showIcon && (icon || isExternal || isInternal);
 </script>
 
 <a 
@@ -38,7 +40,7 @@
 >
 	<span class="body_text -large -bold">{label}</span>
 	
-	{#if icon || isExternal || isInternal}
+	{#if shouldShowIcon}
 	<div class="icon-wrapper" aria-hidden="true">
 		<i class="icon -small">
 			<img src={`/icons/mi-${iconName}.webp`} alt={iconAlt} />

@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let as: string = 'div'; // default wrapper
 	export let customClass: string | null | undefined = '';
+	export let customID: string | null | undefined = '';
 	export let boxed: boolean = false;
 </script>
 
-<svelte:element this={as} class={`box ${customClass} ${boxed ? '-boxed' : ''}`}>
+<svelte:element this={as} id="${customID}" class={`box ${customClass} ${boxed ? '-boxed' : ''}`}>
 	<slot />
 </svelte:element>
 
