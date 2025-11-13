@@ -110,7 +110,7 @@ required
 validator={validatePrivacy}
 disabled={isSubmitting || submitSuccess}
 >
-I accept the <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+I accept the <a href="/privacy-policy" target="_blank" rel="noopener noreferrer"><u>Privacy Policy</u></a>
 </Checkbox>
 
 {#if submitSuccess}

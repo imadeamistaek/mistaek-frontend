@@ -1,5 +1,4 @@
 <script>
-	import ButtonOld from "../elements/button(DEPRECATED).svelte";
 	import Button from "../elements/button.svelte";
 
 	let { showModal = $bindable(), header, body, footer } = $props();
@@ -29,10 +28,11 @@
 	/* Dialog container styles, which are used to create a modal dialog
 	/* ---------------------------------------------------------------------------------------------------- */
 	dialog {
-		top: auto;
-		bottom: var(--space-1000);
-		max-width: 56em;
+		max-height: calc(100vh - var(--space-300));
+		max-width: calc(100vw - var(--space-300));
+		width: 100%;
 		padding: 0;
+		margin: auto;
 		color: var(--color-on-surface);
 		background-color: var(--color-surface);
 		border: var(--border-width) solid var(--color-on-surface-accent);
@@ -41,10 +41,21 @@
 		animation-fill-mode: forwards;
 		animation-timing-function: var(--transition-timing-function);
 	}
+
+	/* Medium: 768px+ (Tablet Portrait) */
+	@media (min-width: 48rem) {
+		dialog { max-width: 56em; max-height: calc(100vh - var(--space-800)); }
+	}
+
 	dialog::backdrop { background: var(--color-surface-opacity-80); }
 	
 	dialog[open] { animation-name: slideUp; }
 	dialog[open]::backdrop { animation-name: fade; }
+
+	/* When modal is open, prevent body scroll */
+	:global(body:has(dialog[open])) {
+		overflow: hidden;
+	}
 
 	@keyframes slideUp {
 		from {
@@ -67,7 +78,37 @@
 	/* All the styles necessary to style the slots inside the dialog
 	/* ---------------------------------------------------------------------------------------------------- */
 	.content {
-		padding: var(--space-800);
+		max-width: 56em;
+		padding: var(--space-200);
+	}
+		/* Small: 480px+ (Large Mobile) */
+	@media (min-width: 30rem) {
+		.content { padding: var(--space-300); }
+	}
+
+	/* Medium: 768px+ (Tablet Portrait) */
+	@media (min-width: 48rem) {
+		.content { padding: var(--space-400); }
+	}
+
+	/* Large: 1024px+ (Desktop) */
+	@media (min-width: 64rem) {
+		.content { padding: var(--space-500); }
+	}
+
+	/* Extra Large: 1280px+ (Large Desktop) */
+	@media (min-width: 80rem) {
+		.content { padding: var(--space-600); }
+	}
+
+	/* 2XL: 1536px+ (Ultra Wide) */
+	@media (min-width: 96rem) {
+		.content { padding: var(--space-700); }
+	}
+
+	/* 3XL: 1920px+ (Ultra Wide) */
+	@media (min-width: 120rem) {
+		.content { padding: var(--space-800); }
 	}
 	.slot {
 		display: flex;
