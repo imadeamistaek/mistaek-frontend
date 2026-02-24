@@ -1,0 +1,76 @@
+/* =============================================================================
+MISTAEK VISIBILITY SYSTEM - Mobile-First & Content-Driven
+============================================================================= */
+.-hidden-xs { display: none; }
+.-hidden-s { display: none; }
+.-hidden-m { display: none; }
+.-hidden-l { display: none; }
+.-hidden-xl { display: none; }
+.-hidden-2xl { display: none; }
+.-hidden-3xl { display: none; }
+
+/* Small: 480px+ (Large Mobile) */
+@media (min-width: 30rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: none; }
+    .-hidden-m { display: none; }
+    .-hidden-l { display: none; }
+    .-hidden-xl { display: none; }
+    .-hidden-2xl { display: none; }
+    .-hidden-3xl { display: none; }
+}
+
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: initial; }
+    .-hidden-m { display: none; }
+    .-hidden-l { display: none; }
+    .-hidden-xl { display: none; }
+    .-hidden-2xl { display: none; }
+    .-hidden-3xl { display: none; }
+}
+
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: initial; }
+    .-hidden-m { display: initial; }
+    .-hidden-l { display: none; }
+    .-hidden-xl { display: none; }
+    .-hidden-2xl { display: none; }
+    .-hidden-3xl { display: none; }
+}
+
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: initial; }
+    .-hidden-m { display: initial; }
+    .-hidden-l { display: initial; }
+    .-hidden-xl { display: initial; }
+    .-hidden-2xl { display: none; }
+    .-hidden-3xl { display: none; }
+}
+
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: initial; }
+    .-hidden-m { display: initial; }
+    .-hidden-l { display: initial; }
+    .-hidden-xl { display: initial; }
+    .-hidden-2xl { display: initial; }
+    .-hidden-3xl { display: none; }
+}
+
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+    .-hidden-xs { display: initial; }
+    .-hidden-s { display: initial; }
+    .-hidden-m { display: initial; }
+    .-hidden-l { display: initial; }
+    .-hidden-xl { display: initial; }
+    .-hidden-2xl { display: initial; }
+    .-hidden-3xl { display: initial; }
+}

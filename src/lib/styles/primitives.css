@@ -14,6 +14,11 @@
 /* Brand */
 :root {
 	--color-brand-accent: #FF781F;
+	--color-brand-100: var(--color-brand-accent);
+	--color-brand-80: oklab(70.175% 0.14075 0.09175);
+	--color-brand-60: oklab(76.89399999999999% 0.10225 0.06494);
+	--color-brand-40: oklab(84.60499999999999% 0.06388 0.04112);
+	--color-brand-20: oklab(91.69500000000001% 0.03233 0.02006);
 }
 
 /* Surface */
@@ -39,6 +44,7 @@
 	--color-surface-opacity-90: rgba(20, 20, 21, 0.9);
 }
 :root {
+	--color-on-surface-opacity-1: rgba(244, 244, 245, 0.01);
 	--color-on-surface-opacity-10: rgba(244, 244, 245, 0.1);
 	--color-on-surface-opacity-20: rgba(244, 244, 245, 0.2);
 	--color-on-surface-opacity-30: rgba(244, 244, 245, 0.3);
@@ -150,17 +156,19 @@
 /* Font Sizes */
 :root {
 	--typeface-size-base: 16px;
-	--typeface-size-heading-1: 7.5rem;
-	--typeface-size-heading-2: 5rem;
-	--typeface-size-heading-3: 4rem;
-	--typeface-size-heading-4: 3rem;
-	--typeface-size-heading-5: 2.5rem;
-	--typeface-size-heading-6: 2rem;
+	--typeface-size-heading-3xl: 7.5rem;
+	--typeface-size-heading-2xl: 6.25rem;
+	--typeface-size-heading-xl: 5rem;
+	--typeface-size-heading-l: 4rem;
+	--typeface-size-heading-m: 3rem;
+	--typeface-size-heading-s: 2.5rem;
+	--typeface-size-heading-xs: 2rem;
+	--typeface-size-heading-2xs: 1.5rem;
 	--typeface-size-body-large: 1.375rem;
 	--typeface-size-body-medium: 1.25rem;
 	--typeface-size-body-small: 1.125rem;
 	--typeface-size-body-micro: 1rem;
-	--typeface-size-body-nano: 0.875rem;
+	--typeface-size-body-nano: 0.750rem;
 }
 
 /* Font Weights */

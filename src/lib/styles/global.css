@@ -20,10 +20,9 @@ body {
 	background-color: var(--color-surface);
 	color: var(--color-on-surface);
 }
-@media (min-width: 992px) {
-	body {
-		padding: 0 var(--space-1000);
-	}
+/* Medium: 768px+ (Tablet Portrait) */
+@media (min-width: 48rem) {
+	body { padding: 0 var(--space-1000); }
 }
 
 /* Accessibility improvements */
@@ -61,89 +60,135 @@ span.highlight {
 
 /* Heading List -------------------------------------------------- */
 h1, .h1 {
-	font-size: var(--typeface-size-heading-4); /* Start smaller on mobile */
+	font-size: var(--typeface-size-heading-m); /* Start smaller on mobile */
 	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 480px) {
-	h1, .h1 {
-		font-size: var(--typeface-size-heading-3);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h1, .h1 {font-size: var(--typeface-size-heading-l);}
 }
-@media (min-width: 768px) {
-	h1, .h1 {
-		font-size: var(--typeface-size-heading-2);
-	}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h1, .h1 {font-size: var(--typeface-size-heading-xl);}
 }
-@media (min-width: 992px) {
-	h1, .h1 {
-		font-size: var(--typeface-size-heading-1);
-	}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h1, .h1 {font-size: var(--typeface-size-heading-2xl);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h1, .h1 {font-size: var(--typeface-size-heading-3xl);}
 }
 
 h2, .h2 {
-	font-size: var(--typeface-size-heading-5);
+	font-size: var(--typeface-size-heading-s); /* Start smaller on mobile */
 	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 480px) {
-	h2, .h2 {
-		font-size: var(--typeface-size-heading-4);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h2, .h2 {font-size: var(--typeface-size-heading-m);}
 }
-@media (min-width: 992px) {
-	h2, .h2 {
-		font-size: var(--typeface-size-heading-2);
-	}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h2, .h2 {font-size: var(--typeface-size-heading-l);}
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h2, .h2 {font-size: var(--typeface-size-heading-xl);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h2, .h2 {font-size: var(--typeface-size-heading-2xl);}
 }
 
 h3, .h3 {
-	font-size: var(--typeface-size-heading-6);
+	font-size: var(--typeface-size-heading-xs); /* Start smaller on mobile */
 	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 480px) {
-	h3, .h3 {
-		font-size: var(--typeface-size-heading-5);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h3, .h3 {font-size: var(--typeface-size-heading-s);}
 }
-@media (min-width: 992px) {
-	h3, .h3 {
-		font-size: var(--typeface-size-heading-3);
-	}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h3, .h3 {font-size: var(--typeface-size-heading-m);}
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h3, .h3 {font-size: var(--typeface-size-heading-l);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h3, .h3 {font-size: var(--typeface-size-heading-xl);}
 }
 
 h4, .h4 {
-	font-size: var(--typeface-size-heading-6);
-	line-height: var(--typeface-line-height-heading);
+	font-size: var(--typeface-size-heading-xxs); /* Start smaller on mobile */
+	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 992px) {
-	h4, .h4 {
-		font-size: var(--typeface-size-heading-4);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h4, .h4 {font-size: var(--typeface-size-heading-xs);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h4, .h4 {font-size: var(--typeface-size-heading-s);}
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h4, .h4 {font-size: var(--typeface-size-heading-m);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h4, .h4 {font-size: var(--typeface-size-heading-l);}
 }
 
 h5, .h5 {
-	font-size: var(--typeface-size-body-large);
-	line-height: var(--typeface-line-height-heading);
+	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
+	line-height: var(--typeface-line-height-body);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 992px) {
-	h5, .h5 {
-		font-size: var(--typeface-size-heading-5);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h5, .h5 {font-size: var(--typeface-size-heading-xxs);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h5, .h5 {font-size: var(--typeface-size-heading-xs);}
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h5, .h5 {font-size: var(--typeface-size-heading-s);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h5, .h5 {font-size: var(--typeface-size-heading-m);}
 }
 
 h6, .h6 {
-	font-size: var(--typeface-size-body-medium);
-	line-height: var(--typeface-line-height-heading);
+	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
+	line-height: var(--typeface-line-height-body);
 	letter-spacing: var(--typeface-tracking-heading);
 }
-@media (min-width: 992px) {
-	h6, .h6 {
-		font-size: var(--typeface-size-heading-6);
-	}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h6, .h6 {font-size: var(--typeface-size-heading-xs);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h6, .h6 {font-size: var(--typeface-size-heading-xs);}
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h6, .h6 {font-size: var(--typeface-size-heading-xs);}
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h6, .h6 {font-size: var(--typeface-size-heading-s);}
 }
 
 
@@ -165,9 +210,34 @@ span.body_text {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.body_text.-large {font-size: var(--typeface-size-body-large);}
-.body_text.-medium {font-size: var(--typeface-size-body-medium);}
-.body_text.-small {font-size: var(--typeface-size-body-small);}
+.body_text.-large {font-size: var(--typeface-size-body-small);}
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	.body_text.-large {font-size: var(--typeface-size-body-medium);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	.body_text.-large {font-size: var(--typeface-size-body-large);}
+}
+
+.body_text.-medium {font-size: var(--typeface-size-body-micro);}
+@media (min-width: 64rem) {
+	.body_text.-medium {font-size: var(--typeface-size-body-small);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	.body_text.-medium {font-size: var(--typeface-size-body-medium);}
+}
+
+.body_text.-small {font-size: var(--typeface-size-body-micro);}
+@media (min-width: 64rem) {
+	.body_text.-small {font-size: var(--typeface-size-body-micro);}
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	.body_text.-small {font-size: var(--typeface-size-body-small);}
+}
+
 .body_text.-micro {font-size: var(--typeface-size-body-micro);}
 .body_text.-nano {
 	font-size: var(--typeface-size-body-nano); 
@@ -177,83 +247,15 @@ span.body_text {
 
 /* Weight modifiers */
 .body_text.-bold {font-weight: var(--typeface-weight-bold);}
+
+/* Color modifiers */
 .body_text.-subtle {color: var(--color-on-surface-darker);}
+.body_text.-error {color: var(--color-surface-on-error-accent);}
 
 /* Container modifiers */
-.body_text.-contained-xl {max-width: 640px;}
-.body_text.-contained {max-width: 560px;}
-
-/* Mobile-specific adjustments */
-@media (max-width: 480px) {
-	p.body_text,
-	span.body_text {
-		line-height: 1.6; /* Slightly tighter for mobile */
-	}
-
-	/* Make large text more reasonable on mobile */
-	.body_text.-large {
-		font-size: var(--typeface-size-body-medium);
-	}
-	
-	/* Base body text slightly smaller on mobile */
-	p.body_text,
-	span.body_text {
-		font-size: var(--typeface-size-body-small);
-	}
-	
-	/* Ensure small text doesn't get too tiny */
-	.body_text.-small {
-		font-size: calc(var(--typeface-size-body-small) * 0.9);
-	}
-	
-	.body_text.-micro {
-		font-size: calc(var(--typeface-size-body-micro) * 1.1);
-	}
-}
-
-/* Very small screens */
-@media (max-width: 320px) {
-	p.body_text,
-	span.body_text {
-		font-size: calc(var(--typeface-size-body-small) * 0.95);
-	}
-	
-	.body_text.-large {
-		font-size: var(--typeface-size-body-small);
-	}
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-/* Global Styles */
-/* ---------------------------------------------------------------------------------------------------- */
-
-/* SECTION -------------------------------------------------- */
-section {
-	position: relative;
-	display: grid;
-	/* grid-template-columns: repeat(3, 1fr); */
-	grid-template-columns: repeat(6,minmax(0,1fr));
-	grid-row-gap: var(--space-800);
-	padding: var(--space-1000) 0;
-	z-index: var(zindex-foreground);
-}
-@media (min-width: 992px) {
-	section {
-		/* grid-template-columns: repeat(6, 1fr); */
-		grid-template-columns: repeat(6,minmax(0,1fr));
-		padding: var(--space-max) 0;
-	}
-}
-section.-flex {
-	display: flex;
-	flex-direction: column;
-}
-section.-no-gap {
-	gap: 0;
-}
-section.-last {
-	padding: var(--space-max) 0 0;
-}
+.-contained-m {max-width: 480px;}
+.-contained-l {max-width: 560px;}
+.-contained-xl {max-width: 640px;}
 
 /* ---------------------------------------------------------------------------------------------------- */
 /* Component Styles */
@@ -333,6 +335,18 @@ ul {
 	margin: 0;
 }
 ul.-spaced { gap: var(--space-300);}
+ol {
+	display: flex;
+	flex-direction: column;
+	padding: var(--space-600) var(--space-400);
+	margin: 0;
+	counter-reset: list-counter; /* Reset counter for ordered lists */
+}
+ol li {
+	display: list-item;
+	counter-increment: list-counter; /* Increment counter for each list item */
+	position: relative;
+}
 li {
 	display: flex;
 	flex-direction: row;
@@ -366,44 +380,16 @@ li {
 /* ---------------------------------------------------------------------------------------------------- */
 /* UTILITIES Styles */
 /* ---------------------------------------------------------------------------------------------------- */
-
-/* COLUMNS -------------------------------------------------- */
-.col-1 { grid-column: span 6 / span 6; }
-.col-2 { grid-column: span 6 / span 6; }
-.col-3 { grid-column: span 6 / span 6; }
-.col-4 { grid-column: span 6 / span 6; }
-.col-5 { grid-column: span 6 / span 6; }
-.col-6 { grid-column: span 6 / span 6; }
-.col-start-1 { grid-column-start:1 }
-.col-start-2 { grid-column-start:1 }
-.col-start-3 { grid-column-start:1 }
-.col-start-4 { grid-column-start:1 }
-.col-start-5 { grid-column-start:1 }
-.col-start-6 { grid-column-start:1 }
-
-@media (min-width: 992px) {
-	.col-1 { grid-column: span 1 / span 1; }
-	.col-2 { grid-column: span 2 / span 2; }
-	.col-3 { grid-column: span 3 / span 3; }
-	.col-4 { grid-column: span 4 / span 4; }
-	.col-5 { grid-column: span 5 / span 5; }
-	.col-6 { grid-column: span 6 / span 6; }
-	.col-start-1 { grid-column-start:1 }
-	.col-start-2 { grid-column-start:2 }
-	.col-start-3 { grid-column-start:3 }
-	.col-start-4 { grid-column-start:4 }
-	.col-start-5 { grid-column-start:5 }
-	.col-start-6 { grid-column-start:6 }
-}
-
 .-bold { font-weight: var(--typeface-weight-bold); }
 .-highlight { color: var(--color-on-surface-brand); }
+.-tcenter {text-align: center;}
 
-.-align-tl { align-items: flex-start; justify-content: flex-start; align-self: flex-start; }
-.-align-tr { align-items: flex-start; justify-content: flex-end; align-self: flex-end; }
-.-align-center { align-items: center; justify-content: center; align-self: center; }
-.-align-bl { align-items: flex-start; justify-content: flex-end; align-self: flex-start; }
-.-align-br { align-items: flex-end; justify-content: flex-end; align-self: flex-end; }
+.spacer {
+	width: 100%;
+	height: var(--space-400);
+	opacity: 0;
+	pointer-events: none;
+	user-select: none;
+}
 
-.-hidden-xs { display: none; }
-@media (min-width: 650px) { .-hidden-xs { display: initial; } }
+.spacer.-small { height: var(--space-200); }

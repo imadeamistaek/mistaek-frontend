@@ -12,10 +12,12 @@
 			<h5 class="h2 col-2">Make it matter.</h5>
 			<List customClass="col-3 col-start-4" gapped vertical>
 				<li class="-hidden-xs"><Logo small={true} /></li>
-				<li><p class="body_text -micro -subtle -contained">We remove the barriers that hold ideas back and create design that works for people, brands, and the planet.</p></li>
+					<List customClass="col-3 col-start-4 -gap-vnone" gapped vertical>
+						<li><p class="body_text -micro -subtle -contained">Design systems for nature tech companies</p></li>
+						<li><p class="body_text -micro -subtle -contained">© 2026 Mistaek. Built with accessibility in mind.</p></li>
+					</List>
 				<li>
 					<List customClass="col-3 col-start-4 -gap-vnone" gapped>
-						<li><Link customClass="-small -full" label="Book a call" url="https://cal.com/mistaek/15min" type="external" /></li>
 						<li><Link customClass="-small -full" label="Follow the updates" url="https://www.linkedin.com/company/mistaek-studio/" type="external" /></li>
 						<li><Link customClass="-small -full" label="hello@mistaek.com" url="mailto:hello@mistaek.com" type="external" icon="send" /></li>
 					</List>

@@ -16,7 +16,7 @@
 		<img src={photo} alt={altText} class="testimonial-photo" />
 		<div class="details">
 			<p class="body_text -small">{author}</p>
-			<p class="body_text -micro -subtle">{job}</p>
+			<p class="body_text -nano -subtle">{job}</p>
 		</div>
 	</div>
 </div>
@@ -25,10 +25,9 @@
 	.testimonial {
 		display: flex;
 		flex-direction: column;
-		gap: var(--space-700);
-		padding: var(--space-700);
-		background-color: var(--color-surface);
-		border: var(--border-width) solid var(--color-on-surface-accent);
+		align-items: flex-start;
+		gap: var(--space-500);
+		flex: 1;
 	}
 	.author {
 		display: flex;
