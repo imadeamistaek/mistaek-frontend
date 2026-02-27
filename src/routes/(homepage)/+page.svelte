@@ -4,7 +4,9 @@
     import Solution from '$lib/sections/homepage/solution.svelte';
     import Whoisfor from '$lib/sections/homepage/whoisfor.svelte';
     import HowWeWork from '$lib/sections/homepage/howwework.svelte';
-    import Testomonials from '$lib/sections/homepage/testimonials.svelte';
+    import Testimonials from '$lib/sections/homepage/testimonials.svelte';
+    import Comparison from '$lib/sections/homepage/comparison.svelte';
+    import Pricing from '$lib/sections/homepage/pricing.svelte';
     import Cta from '$lib/sections/homepage/cta.svelte';
     import Footer from '$lib/sections/homepage/footer.svelte';
 </script>
@@ -14,6 +16,8 @@
 <Whoisfor />
 <HowWeWork />
 <Solution />
-<Testomonials />
+<Comparison />
+<Pricing />
+<Testimonials />
 <Cta />
 <Footer />

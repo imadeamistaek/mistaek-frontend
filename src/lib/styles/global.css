@@ -383,6 +383,8 @@ li {
 .-bold { font-weight: var(--typeface-weight-bold); }
 .-highlight { color: var(--color-on-surface-brand); }
 .-tcenter {text-align: center;}
+.-tleft {text-align: left;}
+.-tright {text-align: right;}
 
 .spacer {
 	width: 100%;

@@ -5,11 +5,14 @@
 	import Crosshair from "$lib/elements/markers/crosshair.svelte";
 	import Grid from "$lib/components/grid.svelte";
 	import Link from '$lib/elements/link.svelte';
+	import Grain from '$lib/elements/grain.svelte';
 </script>
 
 <section class="container" aria-labelledby="solution_title">
 	<Grid customClass="-cols-6 -gap-vm">
+		
 		<Box as="div" customClass="col-6 col-start-1 -space-l" boxed>
+			<Grain absolute/>
 			<div class="glass-container">
 				<div class="circle -brand -alt"></div>
 				<div class="circle -niche"></div>
@@ -32,6 +35,7 @@
 				</div>
 			</Grid>
 		</Box>
+	
 	</Grid>
 </section>
 

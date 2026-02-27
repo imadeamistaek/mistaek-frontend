@@ -29,6 +29,7 @@
 		.-horizontal {flex-direction: row;}
 	}
 
+	.-space-none {gap: 0 !important;}
 	.-space-s {gap: var(--space-400);}
 	.-space-m {gap: var(--space-600);}
 	.-space-l {gap: var(--space-800);}

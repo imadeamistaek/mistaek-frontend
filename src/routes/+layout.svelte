@@ -7,6 +7,6 @@
 </script>
 
 <Grid />
-<Grain />
+<Grain fixed />
 <FrostedCircles />
 {@render children()}

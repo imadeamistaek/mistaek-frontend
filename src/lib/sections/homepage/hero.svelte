@@ -1,10 +1,14 @@
 <script>
-	import { browser } from "$app/environment";
+	import FixedBar from '$lib/components/fixedBar.svelte';
 	import Grid from "$lib/components/grid.svelte";
-	import Link from '$lib/elements/link.svelte';
+	import LinkBoxed from '$lib/elements/linkBoxed.svelte';
     import Logo from '$lib/elements/logo.svelte';
 	import Benefits from '$lib/components/benefits.svelte';
 </script>
+
+<FixedBar customClass="-tright">
+    <LinkBoxed label="Get started" url="https://cal.com/mistaek/15min" type="external" note="Schedule an intro call" />
+</FixedBar>
 
 <section class="container" aria-labelledby="hero_title">
 	<Grid customClass="-cols-6 -gap-vm">
@@ -21,7 +25,7 @@
 </section>
 
 <style>
-	/* section { padding-top: var(--space-800);} */
+
 	.heading { margin-top: var(--space-500);}
 	/* Medium: 768px+ (Tablet Portrait) */
 	@media (min-width: 48rem) {
