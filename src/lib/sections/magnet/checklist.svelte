@@ -1,5 +1,5 @@
 <script>
-    import ChecklistStepper from "$lib/components/checklistStepper.svelte";
+    // import ChecklistStepper from "$lib/components/checklistStepper.svelte";
     import List from "$lib/components/list.svelte";
     import ListItem from "$lib/elements/listItem.svelte";
 </script>

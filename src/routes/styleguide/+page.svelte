@@ -8,7 +8,7 @@
     import Grid from '$lib/components/grid.svelte';
     import CardFounder from '$lib/components/cardFounder.svelte';
     import CtaSection from '$lib/components/ctaSection.svelte';
-    import ChecklistStepper from '$lib/components/checklistStepper.svelte';
+    // import ChecklistStepper from '$lib/components/checklistStepper.svelte';
     import Footer from '$lib/components/footer.svelte';
 	import Modal from '$lib/components/modal.svelte';
 
@@ -140,7 +140,7 @@
 
 <section class="-flex">
 	<Tag customClass="-large" label="Checklist Cover" />
-	<ChecklistStepper/>
+	<!-- <ChecklistStepper/> -->
 </section>
 
 <section class="-flex">
