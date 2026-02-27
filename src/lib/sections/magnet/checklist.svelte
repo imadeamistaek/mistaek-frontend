@@ -4,7 +4,7 @@
     import ListItem from "$lib/elements/listItem.svelte";
 </script>
 <section class="-flex -no-gap" id="checklist">
-    <ChecklistStepper />
+    <!-- <ChecklistStepper /> -->
     <List customClass="">
 		<ListItem as="li" boxed icon="checkw" label="A clear picture of your team’s current stage" customClass="-micro"/>
 		<ListItem as="li" boxed icon="checkw" label="Tailored insights based on your answers" customClass="-micro"/>
