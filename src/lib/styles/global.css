@@ -176,11 +176,11 @@ h6, .h6 {
 }
 /* Large: 1024px+ (Desktop) */
 @media (min-width: 64rem) {
-	h6, .h6 {font-size: var(--typeface-size-heading-xs);}
+	h6, .h6 {font-size: var(--typeface-size-heading-2xs);}
 }
 /* Extra Large: 1280px+ (Large Desktop) */
 @media (min-width: 80rem) {
-	h6, .h6 {font-size: var(--typeface-size-heading-xs);}
+	h6, .h6 {font-size: var(--typeface-size-heading-2xs);}
 }
 /* 2XL: 1536px+ (Ultra Wide) */
 @media (min-width: 96rem) {

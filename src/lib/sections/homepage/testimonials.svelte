@@ -9,10 +9,10 @@
 <section class="container" aria-labelledby="testimonials_title">
 	<Grid customClass="-cols-6 -gap-vm">
 		<Tag label="Testimonials" customClass="-nano col-1 col-start-1" />
-		<h6 id="testimonials_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Built on 10+ years of designing systems for complex data.</h6>
+		<h6 id="testimonials_title" class="h4 col-6 col-start-1 md:col-3 md:col-start-1">Your sprints are fast because we’ve spent 10+ years building systems for complex data</h6>
 		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -medium -contained-xl">We've spent over a decade building design systems for complex regulated domains like fintech, insurance, and education. Places where data accuracy and trust matter. Where getting it wrong has consequences.</p>
-			<p class="body_text -medium -contained-xl">Now we’re applying that expertise to environmental science and nature tech. Because the planet needs products that work as well as the science behind them.</p>
+			<p class="body_text -small -contained-xl">We've built design systems for complex regulated domains like fintech, insurance, and education. Places where data accuracy and trust matter. Where getting it wrong has consequences.</p>
+			<p class="body_text -small -contained-xl">Now we’re applying that expertise to environmental science and nature tech. Because the planet needs products that work as well as the science behind them.</p>
 		</div>
 
 		<List customClass="col-6 col-start-1 -padding-none" horizontal>

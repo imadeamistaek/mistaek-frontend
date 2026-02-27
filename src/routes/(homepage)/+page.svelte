@@ -11,9 +11,9 @@
 
 <Hero />
 <Problem />
-<Solution />
 <Whoisfor />
 <HowWeWork />
+<Solution />
 <Testomonials />
 <Cta />
 <Footer />

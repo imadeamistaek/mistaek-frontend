@@ -8,13 +8,15 @@
 
 <section class="container" aria-labelledby="howwework_title">
 	<Grid customClass="-cols-6 -gap-vm">
-		<div class="glass-container">
-			<div class="circle -brand -alt"></div>
-			<div class="circle -niche"></div>
-		</div>
-
-		<Tag label="How we work" customClass="-nano" />
-		<h5 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Three phases. Six weeks. One system.</h5>
+		<Grid customClass="col-6 col-start-1 -gap-vm">
+			<Tag label="How we work" customClass="-nano" />
+			<h5 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h5>
+			<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
+				<p class="body_text -medium">We run 4-6 week design system sprints built specifically for complex scientific data products.</p>
+				<p class="body_text -medium">After the sprint, you own the system. No retainers. No ongoing dependencies. No endless “just one more thing.”</p>
+				<p class="body_text -medium">Your team gets the infrastructure to scale without design chaos or expensive redesigns later.</p>
+			</div>
+		</Grid>
 
 		<List customClass="stages col-6 col-start-1">
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
@@ -66,34 +68,6 @@
 		flex: 1;
 		flex-direction: column;
 		justify-content: flex-end;
-	}
-
-	.glass-container {
-		position: absolute;
-		float: left;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-		z-index: -1;
-	}
-	
-	.circle {
-		position: absolute;
-		border-radius: 50%;
-		filter: blur(64px);
-	}
-
-	.circle.-brand {
-		bottom: 40%;
-		left: 50%;
-		width: 80%;
-		height: 50%;
-		transform: translate(-50%,50%);
-		background: radial-gradient(var(--color-neutral-100) 50%, var(--color-brand-20) 60%, var(--color-brand-accent) 70%);
 	}
 
 </style>
