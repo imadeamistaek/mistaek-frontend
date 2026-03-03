@@ -118,11 +118,11 @@
 	}
 
 	/* Accessibility: Ensure text isn't too small */
-	@media (max-width: 480px) {
+	/* @media (max-width: 480px) {
 		.-nano span {
 			font-size: var(--typeface-size-body-micro);
 		}
-	}
+	} */
 
 	/* High contrast mode support */
 	@media (prefers-contrast: high) {

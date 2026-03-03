@@ -10,16 +10,13 @@
 	import Crosshair from "$lib/elements/markers/crosshair.svelte";
 </script>
 
-<section class="container" aria-labelledby="problem_title">
+<section class="container" aria-labelledby="pricing_title">
 	<Grid>
 		
 		<Tag label="Pricing" customClass="-nano col-1 col-start-1" />
 		<div class="pairing col-6 col-start-1 col-6 col-start-1 md:col-3 md:col-start-1 -spaced">
-			<h2 id="problem_title" class="h3 col-6 col-start-1">Clear Pricing. No surprises</h2>
-			<div class="pairing col-6 col-start-1 col-6 col-start-1 md:col-3 md:col-start-1">
-				<p class="h6">One focused sprint. All the infrastructure you need.</p>
-				<p class="h6">No hidden costs.</p>
-			</div>
+			<h6 id="pricing_title" class="h3 col-6 col-start-1">Clear Pricing. No surprises</h6>
+			<p class="body_text -large">One focused sprint. All the infrastructure you need. No hidden costs.</p>
 		</div>
 
 		<Box as="div" customClass="col-6 col-start-1 -space-none">
@@ -39,7 +36,7 @@
 					<Crosshair customClass="-bl" />
 					<Crosshair customClass="-br" />
 					<Grid customClass="col-6 col-start-1 lg:col-3 -padding-l -gap-vm">
-						<div class="pairing col-6 col-start-1 -spaced">
+						<div class="pairing col-6 col-start-1">
 							<p class="h5">Systems Sprint</p>
 							<p class="body_text -medium -contained-xl">Transform complex science into trustworthy products</p>
 						</div>
@@ -70,17 +67,20 @@
 			<List customClass="stages col-6 col-start-1">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Positioning Sprint</p>
-					<p class="body_text -small">Clarify your message for enterprise buyers</p>
+					<p class="body_text -small -subtle">Clarify your message for enterprise buyers</p>
+					<span class="spacer -small"></span>
 					<p class="h6">3-4 weeks, €6k</p>
 				</Box>
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Build Sprint</p>
-					<p class="body_text -small">Design product features that match your system</p>
+					<p class="body_text -small -subtle">Design product features that match your system</p>
+					<span class="spacer -small"></span>
 					<p class="h6">2-3 weeks, €4k</p>
 				</Box>
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Launch Sprint</p>
-					<p class="body_text -small">Bring your digital presence up to product quality</p>
+					<p class="body_text -small -subtle">Bring your digital presence up to product quality</p>
+					<span class="spacer -small"></span>
 					<p class="h6">3-4 weeks, €5k</p>
 				</Box>
 			</List>

@@ -10,7 +10,7 @@
 	<Grid customClass="-cols-6 -gap-vm">
 		<Grid customClass="col-6 col-start-1 -gap-vm">
 			<Tag label="How we work" customClass="-nano" />
-			<h5 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h5>
+			<h4 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h4>
 			<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
 				<p class="body_text -medium">We run 4-6 week design system sprints built specifically for complex scientific data products.</p>
 				<p class="body_text -medium">After the sprint, you own the system. No retainers. No ongoing dependencies. No endless “just one more thing.”</p>

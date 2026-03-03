@@ -9,7 +9,7 @@ section.container {
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
-	padding: var(--space-1000) 0;
+	padding: var(--space-400) 0;
 	z-index: var(--zindex-foreground);
 }
 

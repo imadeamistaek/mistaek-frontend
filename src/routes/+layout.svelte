@@ -8,5 +8,5 @@
 
 <Grid />
 <Grain fixed />
-<FrostedCircles />
+<FrostedCircles customClass="-colours" />
 {@render children()}

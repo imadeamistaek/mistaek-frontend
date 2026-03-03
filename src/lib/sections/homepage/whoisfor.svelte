@@ -6,27 +6,16 @@
 </script>
 
 <section class="container" aria-labelledby="whoisfor_title">
-	<!-- <Grid customClass="col-6 col-start-1 -gap-vm">
-		<Tag label="Who this is for" customClass="-nano col-1 col-start-1" />
-		<h4 id="whoisfor_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Built for nature tech companies scaling with purpose</h4>
-		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -medium -contained-xl">This works best for Series A companies working in ocean tech, biodiversity, nature restoration, or environmental data platforms.</p>
-			<p class="body_text -medium -contained-xl">You have a product in market, paying customers, and a team that's growing. You're dealing with complex scientific data that needs to be clear without dumbing down the science. Your enterprise buyers need to trust what they see.</p>
-		</div>
-        <div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -medium -contained-xl -subtle">If that sounds like you:</p>
-			<Link label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
-		</div>
-	</Grid> -->
 	<Box as="div" customClass="col-6 col-start-1" boxed>
 		<div class="glass-container">
 			<div class="circle -brand"></div>
 			<div class="circle -niche"></div>
 		</div>
 		<Grid customClass="col-6 col-start-1 -padding-l -gap-vxs">
-			<Tag label="Who this is for" customClass="-nano col-4 col-start-2" />
+			<Tag label="Who this is for" customClass="-nano col-4 col-start-1 md:col-4 md:col-start-2" />
 			<div class="pairing col-6 col-start-1 md:col-4 md:col-start-2 -spaced">
-				<h4 id="whoisfor_title" class="h3">Built for Series A nature tech companies</h4>
+				<h3 id="whoisfor_title">Built for Series A nature tech companies</h3>
+				<span class="spacer -small"></span>
 				<p class="body_text -small -contained-xl">This works best for Series A companies working in ocean tech, biodiversity, nature restoration, or environmental data platforms.</p>
 				<p class="body_text -small -contained-xl">You have a product in market, paying customers, and a team that's growing. You're dealing with complex scientific data that needs to be clear without dumbing down the science. Your enterprise buyers need to trust what they see.</p>
 			</div>

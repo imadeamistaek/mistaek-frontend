@@ -18,24 +18,24 @@
 					<div class="circle -niche"></div>
 				</div>
 				<Tag label="The solution" customClass="-nano col-1 col-start-1" />
-				<h3 id="solution_title" class="h3 col-6 col-start-1 lg:col-4 lg:col-start-1">Complete infrastructure. Permanent ownership.</h3>
+				<h5 id="solution_title" class="h3 col-6 col-start-1 lg:col-4 lg:col-start-1">Complete infrastructure. Permanent ownership.</h5>
 			</Grid>
 			<List customClass="col-6 col-start-1 -padding-none" vertical divided hoverable>
-				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs -items-hcenter">
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(01)</p>
-					<p class="h6">Complete design system in Figma your team owns permanently</p>
+					<p class="body_text -large">Complete design system in Figma your team owns permanently</p>
 				</Box>
-				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs -items-hcenter">
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(02)</p>
-					<p class="h6">Design tokens, components, and data visualization patterns</p>
+					<p class="body_text -large">Design tokens, components, and data visualization patterns</p>
 				</Box>
-				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs -items-hcenter">
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(03)</p>
-					<p class="h6">Documentation and training for designers and developers</p>
+					<p class="body_text -large">Documentation and training for designers and developers</p>
 				</Box>
-				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs -items-hcenter">
+				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(04)</p>
-					<p class="h6">Governance framework so the system stays consistent as you grow</p>
+					<p class="body_text -large">Governance framework so the system stays consistent as you grow</p>
 				</Box>
 			</List>
 		</Box>
@@ -53,6 +53,7 @@
 		right: 0;
 		bottom: 0;
 		overflow: hidden;
+		z-index: -1;
 	}
 	
 	.circle {
