@@ -49,7 +49,7 @@
 					<Grid customClass="col-6 col-start-1 lg:col-3 lg:col-start-4 -padding-l -gap-vm">
 						<div class="pairing col-6 col-start-1">
 							<p class="body_text -medium -bold -contained-xl">What you’ll get</p>
-							<p class="body_text -medium -contained-xl">It breaks down the key questions into plain language. No jargon, no endless theory. Just what you need to make a smart decision.</p>
+							<p class="body_text -medium -contained-xl">Complete design infrastructure your team owns permanently. Built specifically for complex scientific data. No retainers, no dependencies.</p>
 						</div>
 						<List customClass="col-6 col-start-1" vertical smallgap>
 							<ListItem as="li" icon="checkg" label="Complete design system in Figma" customClass="-small"/>

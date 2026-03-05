@@ -12,8 +12,7 @@
 			<Tag label="How we work" customClass="-nano" />
 			<h4 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h4>
 			<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-				<p class="body_text -medium">We run 4-6 week design system sprints built specifically for complex scientific data products.</p>
-				<p class="body_text -medium">Focused design system sprints for complex scientific data. After the sprint, you own everything. No retainers. No dependencies.</p>
+				<p class="body_text -medium">We run 4-6 week design system sprints built specifically for complex scientific data products. After the sprint, you own everything. No retainers. No dependencies.</p>
 			</div>
 		</Grid>
 
