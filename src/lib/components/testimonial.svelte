@@ -9,7 +9,7 @@
 
 <div class={`testimonial ${customClass}`}>
 	<div class="quote">
-		<p class="body_text -medium">{quote}</p>
+		<p class="body_text -small">{quote}</p>
 	</div>
 	
 	<div class="author">
