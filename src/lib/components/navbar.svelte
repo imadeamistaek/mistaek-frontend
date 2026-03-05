@@ -73,7 +73,12 @@
 		transition-timing-function: var(--transition-timing-function);
 	}
 
-	.navbar-container .logo { text-align: center; }
+	.navbar-container .logo {
+		text-align: center;
+		transition-property: padding;
+		transition-duration: var(--transition-duration-mid);
+		transition-timing-function: var(--transition-timing-function);
+	}
 
 	/** Scrolled state: reveal container background and border */
 	.navbar.scrolled .navbar-container {
@@ -85,7 +90,8 @@
 
 	@media (min-width: 48rem) {
 		.navbar { padding: 0 var(--space-1000); }
-		/* .navbar.scrolled .navbar-container { padding: var(--space-200) var(--space-1000); } */
+		.navbar-container .logo { text-align: left; }
+		.navbar.scrolled .navbar-container .logo { padding: 0 var(--space-400); }
 	}
 
 /* ---------------------------------------------------------------------------------------------------- */
