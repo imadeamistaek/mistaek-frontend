@@ -1,4 +1,5 @@
 <script>
+    import Navbar from '$lib/components/navbar.svelte';
     import Hero from '$lib/sections/homepage/hero.svelte';
     import Problem from '$lib/sections/homepage/problem.svelte';
     import Solution from '$lib/sections/homepage/solution.svelte';
@@ -11,6 +12,7 @@
     import Footer from '$lib/sections/homepage/footer.svelte';
 </script>
 
+<Navbar full />
 <Hero />
 <Problem />
 <Whoisfor />

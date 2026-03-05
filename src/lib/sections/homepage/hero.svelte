@@ -1,18 +1,14 @@
 <script>
-	import FixedBar from '$lib/components/fixedBar.svelte';
 	import Grid from "$lib/components/grid.svelte";
-	import LinkBoxed from '$lib/elements/linkBoxed.svelte';
-    import Logo from '$lib/elements/logo.svelte';
 	import Benefits from '$lib/components/benefits.svelte';
 </script>
 
-<FixedBar customClass="-tright">
+<!-- <FixedBar customClass="-tright">
     <LinkBoxed label="Get started" url="https://cal.com/mistaek/15min" type="external" note="Schedule an intro call" />
-</FixedBar>
+</FixedBar> -->
 
 <section class="container" aria-labelledby="hero_title">
 	<Grid customClass="-cols-6 -gap-vm">
-		<Logo small={true} />
 		<div class="heading pairing col-6 col-start-1">
 			<h1 id="hero_title">Design Systems for Nature Tech companies building complex products</h1>
 		</div>
