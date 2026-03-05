@@ -19,7 +19,7 @@
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
 				<Testimonial
 					customClass="col-2 -items-vbetween"
-					quote="“André blends creativity with clear thinking — every solution is user-centered and grounded in strategy. His work consistently elevates the quality of the project, and his reliability makes him someone you want on your team. If you’re looking for an experienced UX designer who truly makes a difference, he’s the one.”"
+					quote="“Every solution is user-centred and grounded in strategy. Their work consistently elevates the quality of the project, and their reliability makes them someone you want on your team. If you’re looking for experienced UX designers who truly make a difference, they're the ones.”"
 					photo="/people/beatrizbotao.jpeg"
 					altText="Photo in black and white of Beatriz Botão"
 					author="Beatriz Botão"
@@ -29,7 +29,7 @@
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
 				<Testimonial
 					customClass="col-2 -items-vbetween"
-					quote="“André brings a rare blend of creativity and technical skill — he’s both an exceptional designer and a capable developer. His dedication, passion, and quality of work stand out in every stage, from brand strategy to execution. I’d recommend him to anyone looking for someone who can deliver both vision and results.”"
+					quote="“Mistaek brings a rare blend of creativity and technical skill — they are both exceptional designers and capable developers. Their dedication, passion, and quality of work stand out in every stage, from brand strategy to execution. I’d recommend them to anyone looking for someone who can deliver both vision and results.”"
 					photo="/people/carlosquadrado.jpeg"
 					altText="Photo in black and white of Carlos Quadrado"
 					author="Carlos Quadrado"
@@ -39,7 +39,7 @@
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
 				<Testimonial
 					customClass="col-2 -items-vbetween"
-					quote="“André stands out in high-stakes environments with a rare mix of creativity, strategic thinking, and focus on real results. He works with autonomy, brings clarity to complex challenges, and always keeps business goals in sight. If you need someone who delivers great UX and elevates the whole team — André is that person.”"
+					quote="Mistaek stands out in high-stakes environments with a rare mix of creativity, strategic thinking, and focus on real results. They work with autonomy, bring clarity to complex challenges, and always keeps business goals in sight. If you need someone who delivers great UX and elevates the whole team — Mistaek is that team.”"
 					photo="/people/michaelnunes.jpeg"
 					altText="Photo in black and white of Michael Nunes"
 					author="Michael Nunes"
