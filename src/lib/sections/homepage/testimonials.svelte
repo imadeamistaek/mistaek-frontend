@@ -19,7 +19,7 @@
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
 				<Testimonial
 					customClass="col-2 -items-vbetween"
-					quote="“Every solution is user-centred and grounded in strategy. Their work consistently elevates the quality of the project, and their reliability makes them someone you want on your team. If you’re looking for experienced UX designers who truly make a difference, they're the ones.”"
+					quote="“Mistaek blends creativity with clear thinking — Every solution is user-centred and grounded in strategy. Their work consistently elevates the quality of the project, and their reliability makes them someone you want on your team. If you’re looking for experienced UX designers who truly make a difference, they're the ones.”"
 					photo="/people/beatrizbotao.jpeg"
 					altText="Photo in black and white of Beatriz Botão"
 					author="Beatriz Botão"
