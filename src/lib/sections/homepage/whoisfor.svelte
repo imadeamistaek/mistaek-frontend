@@ -16,10 +16,7 @@
 			<div class="pairing col-6 col-start-1 md:col-4 md:col-start-2 -spaced">
 				<h3 id="whoisfor_title">Built for Series A nature tech companies</h3>
 				<span class="spacer -small"></span>
-				<p class="body_text -small -contained-xl">This works best for Series A companies working in ocean tech, biodiversity, nature restoration, or environmental data platforms.</p>
-				<p class="body_text -small -contained-xl">You have a product in market, paying customers, and a team that's growing. You're dealing with complex scientific data that needs to be clear without dumbing down the science. Your enterprise buyers need to trust what they see.</p>
-			</div>
-			<div class="pairing col-6 col-start-1 md:col-3 md:col-start-2 -spaced">
+				<p class="body_text -small -contained-xl">Ocean tech. Biodiversity. Nature restoration. Environmental data platforms. You have a product in market, paying customers, and a growing team.</p>
 				<p class="body_text -small -contained-xl -subtle">If that sounds like you:</p>
 				<Link label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
 			</div>

@@ -8,7 +8,7 @@
 	import Grain from '$lib/elements/grain.svelte';
 </script>
 
-<section class="container" aria-labelledby="solution_title">
+<section class="container" aria-labelledby="pricing_title">
 	<Grid customClass="-cols-6 -gap-vm">
 		
 		<Box as="div" customClass="col-6 col-start-1 -space-l" boxed>
@@ -19,7 +19,7 @@
 			</div>
 			<Grid customClass="col-6 col-start-1 -padding-l -gap-vl">
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
-					<p id="solution_title" class="h2 col-6 col-start-1 lg:col-3 lg:col-start-1">Make your science matter</p>
+					<p id="pricing_title" class="h2 col-6 col-start-1 lg:col-3 lg:col-start-1">Make your science matter</p>
 					<p class="body_text -medium -contained-xl">Not sure if this is what you need? Let’s talk. We’ll tell you honestly whether a design system sprint makes sense for where you are.</p>
 				</div>
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
@@ -78,6 +78,21 @@
 	}
 
 	.circle.-brand {
+		animation-name: slowTranslation;
+		animation-direction: both;
+		animation-duration: 30s;
+		animation-timing-function: var(--transition-timing-function);
+		animation-iteration-count: infinite;
+	}
+	.circle.-niche {
+		animation-name: slowTranslation;
+		animation-direction: reverse;
+		animation-duration: 60s;
+		animation-timing-function: var(--transition-timing-function);
+		animation-iteration-count: infinite;
+	}	
+
+	.circle.-brand {
 		top: -50%;
 		left: 50%;
 		width: 1600px;
@@ -90,5 +105,14 @@
 		width: 1400px;
 		height: 1400px;
 		background: radial-gradient(var(--color-tag-completed) 24%, var(--color-tag-progress) 50%, var(--color-tag-on-progress) 75%);
+	}
+
+	@keyframes slowTranslation {
+		0%{
+			transform: rotate(0deg) translate(-80px) rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg) translate(-80px) rotate(-360deg);
+		}
 	}
 </style>

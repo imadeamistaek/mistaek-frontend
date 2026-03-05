@@ -11,7 +11,7 @@
 			<p class="h6">Your science is brilliant. Your innovation matters. But complexity is holding it back.</p>
 		</div>
 		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -small -contained-xl">Most nature tech companies at Series A have products in market and paying customers. But as you scale, design inconsistency slows your team down. Complex scientific data becomes harder to trust. Enterprise buyers struggle to understand what you've built.</p>
+			<p class="body_text -small -contained-xl">Most nature tech companies at Series A have strong science but struggle with design consistency as they scale. Complex data doesn't translate well. Customers can't see the value.</p>
 			<p class="body_text -small -contained-xl">You need infrastructure, not just polish. Design systems that translate oceanographic data, biodiversity metrics, or environmental science into interfaces people can trust and understand.</p>
 		</div>
 	</Grid>

@@ -11,8 +11,8 @@
 		<Tag label="Testimonials" customClass="-nano col-1 col-start-1" />
 		<p id="testimonials_title" class="h4 col-6 col-start-1 md:col-3 md:col-start-1">Your sprints are fast because we’ve spent 10+ years building systems for complex data</p>
 		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -small -contained-xl">We've built design systems for complex regulated domains like fintech, insurance, and education. Places where data accuracy and trust matter. Where getting it wrong has consequences.</p>
-			<p class="body_text -small -contained-xl">Now we’re applying that expertise to environmental science and nature tech. Because the planet needs products that work as well as the science behind them.</p>
+			<p class="body_text -small -contained-xl">We've built design systems for fintech, insurance, and education. Places where data accuracy matters and getting it wrong has consequences.</p>
+			<p class="body_text -small -contained-xl">Now we're applying that to nature tech.</p>
 		</div>
 
 		<List customClass="col-6 col-start-1 -padding-none" horizontal>

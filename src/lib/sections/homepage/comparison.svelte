@@ -23,7 +23,7 @@
 					<ListItem as="li" icon="checkg" label="You own the system after delivery" customClass="-small"/>
 					<ListItem as="li" icon="checkg" label="Domain-specific for scientific data" customClass="-small"/>
 					<ListItem as="li" icon="checkg" label="1 focused project at a time" customClass="-small"/>
-					<ListItem as="li" icon="checkg" label="Senior designers" customClass="-small"/>
+					<!-- <ListItem as="li" icon="checkg" label="Senior designers" customClass="-small"/> -->
 				</List>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s -space-s" boxed>
@@ -33,7 +33,7 @@
 					<ListItem as="li" icon="close-circle-r" label="Ongoing retainers and dependencies" customClass="-small -subtle"/>
 					<ListItem as="li" icon="close-circle-r" label="Generic component libraries" customClass="-small -subtle"/>
 					<ListItem as="li" icon="close-circle-r" label="Many projects, divided attention" customClass="-small -subtle"/>
-					<ListItem as="li" icon="close-circle-r" label="Junior designers" customClass="-small -subtle"/>
+					<!-- <ListItem as="li" icon="close-circle-r" label="Junior designers" customClass="-small -subtle"/> -->
 				</List>
 			</Box>
 		</List>

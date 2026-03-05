@@ -67,7 +67,7 @@
 			<List customClass="stages col-6 col-start-1">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Positioning Sprint</p>
-					<p class="body_text -small -subtle">Clarify your message for enterprise buyers</p>
+					<p class="body_text -small -subtle">Clarify your message for customers</p>
 					<span class="spacer -small"></span>
 					<p class="h6">3-4 weeks, €6k</p>
 				</Box>

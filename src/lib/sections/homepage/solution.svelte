@@ -5,6 +5,7 @@
 	import Crosshair from "$lib/elements/markers/crosshair.svelte";
 	import Grid from "$lib/components/grid.svelte";
 	import Tag from "$lib/elements/tag.svelte";
+	import Grain from '$lib/elements/grain.svelte';
 </script>
 
 <section class="container" aria-labelledby="solution_title">
@@ -13,6 +14,7 @@
 			<Crosshair customClass="-tl" />
 			<Crosshair customClass="-br" />
 			<Grid customClass="col-6 col-start-1 -padding-l">
+				<Grain absolute/>
 				<div class="glass-container">
 					<div class="circle -brand"></div>
 					<div class="circle -niche"></div>
@@ -59,6 +61,7 @@
 	.circle {
 		position: absolute;
 		border-radius: 50%;
+		filter: blur(64px);
 	}
 
 	.circle.-brand {
@@ -66,7 +69,8 @@
 		left: 0;
 		width: 1600px;
 		height: 1600px;
-		border: var(--border-width) solid var(--color-on-surface-accent);
+		/* border: var(--border-width) solid var(--color-on-surface-accent); */
+		background: radial-gradient(var(--color-neutral-100) 50%, var(--color-brand-20) 60%, var(--color-brand-accent) 70%);
 		animation-name: slowTranslation;
 		animation-direction: both;
 		animation-duration: 30s;
@@ -78,7 +82,8 @@
 		left: 10%;
 		width: 1000px;
 		height: 1000px;
-		border: var(--border-width) solid var(--color-on-surface-accent);
+		/* border: var(--border-width) solid var(--color-on-surface-accent); */
+		background: radial-gradient(var(--color-tag-completed) 32%, var(--color-tag-progress) 60%, var(--color-tag-on-progress) 75%);
 		animation-name: slowTranslation;
 		animation-direction: reverse;
 		animation-duration: 60s;
@@ -98,7 +103,7 @@
 
 		.circle.-brand {
 			bottom: 80%;
-			left: 0;
+			left: -40%;
 			width: 3200px;
 			height: 3200px;
 		}
