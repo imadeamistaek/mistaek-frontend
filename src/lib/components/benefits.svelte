@@ -46,14 +46,15 @@
 		 * snap it to the end of track2 and reset position to 0.
 		 * This creates the illusion of an endless stream.
 		 */
+		const trackWidth = getTrackWidth(); // calculate once here
+
 		const tick = () => {
-			const trackWidth = getTrackWidth();
 			position -= speed;
 
 			if (position <= -trackWidth) {
 				position = 0;
 			}
-
+			
 			track1.style.transform = `translateX(${position}px)`;
 			track2.style.transform = `translateX(${position}px)`;
 			track3.style.transform = `translateX(${position}px)`;
