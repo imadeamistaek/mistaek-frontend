@@ -33,7 +33,7 @@
 		<article class="col-6 col-start-1 md:col-4 md:col-start-2">
 			<Grid customClass="-cols-4 -gap-vxl">
 				
-				<h1 class="col-6 col-start-1">{data.meta.title}</h1>
+				<h1 class="col-6 col-start-1 post-heading">{data.meta.title}</h1>
 				<p class="col-4 col-start-1 md:col-1 md:col-start-1">Posted on {formatDate(data.meta.date)}</p>
 
 				<!--
@@ -58,7 +58,7 @@
 		transform: rotate(180deg);
 	}
 
-	:global(h1) {
+	:global(h1.post-heading) {
 		padding: var(--space-1000) 0;
 	}
 	:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
