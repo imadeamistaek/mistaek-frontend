@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let label: string;
-	export let note: string;
+	export let note: string | null | undefined = undefined;
 	export let customClass: string | null | undefined = null;
 	export let icon: string | null | undefined = null;
 	export let url: string | null | undefined = null;

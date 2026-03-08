@@ -23,4 +23,6 @@ export type Case = {
 	date: string
 	categories: string[]
 	published: boolean
+	cover?: string      // optional, not every post needs a cover
+	coverAlt?: string   // optional, defaults to empty string
 }

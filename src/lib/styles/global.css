@@ -193,7 +193,7 @@ h6, .h6 {
 
 
 /* Paragraph Styles -------------------------------------------------- */
-p.body_text,
+p, p.body_text,
 span.body_text {
 	margin: 0;
 	padding: 0;

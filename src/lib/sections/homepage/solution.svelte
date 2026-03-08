@@ -9,11 +9,11 @@
 </script>
 
 <section class="container" aria-labelledby="solution_title">
-	<Grid customClass="-cols-6 -gap-vm">
+	<Grid customClass="-gap-vl">
 		<Box as="div" customClass="col-6 col-start-1" boxed>
 			<Crosshair customClass="-tl" />
 			<Crosshair customClass="-br" />
-			<Grid customClass="col-6 col-start-1 -padding-l">
+			<Grid customClass="col-6 col-start-1 -padding-l -gap-vxl">
 				<Grain absolute/>
 				<div class="glass-container">
 					<div class="circle -brand"></div>

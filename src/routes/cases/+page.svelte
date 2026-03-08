@@ -1,39 +1,46 @@
 <script lang="ts">
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/sections/homepage/footer.svelte';
-	
-	/**
-	 * Blog listing page.
-	 * Receives posts from +page.server.ts and renders them as a list.
-	 */
-	import { formatDate } from '$lib/utils'
+	import Grid from "$lib/components/grid.svelte";
+	import List from '$lib/components/list.svelte';
+	import Box from '$lib/elements/box.svelte';
+	import PostCard from '$lib/components/postCard.svelte';
 
 	let { data } = $props()
 </script>
 
 <svelte:head>
 	<title>Cases</title>
-	<meta name="description" content="Cases." />
+	<meta name="description" content="Cases" />
 </svelte:head>
 
 <Navbar full />
 
 <section class="container">
-	<h1>Cases</h1>
+	<Grid customClass="-cols-6 -gap-vxl">
 
-	<ul>
+		<Grid customClass="col-6 col-start-1 -padding-vxl -gap-vxxs">
+			<h1 class="col-6 col-start-1 md:col-3 md:col-start-1">Work</h1>
+			<p class="h6 col-6 col-start-1 md:col-3 md:col-start-1">Design systems for companies translating complex science into trusted products.</p>
+		</Grid>
+
+		<List grid customClass="col-6 col-start-1">
 		{#each data.cases as item}
-		<li>
-			<a href={`/cases/${item.slug}`}>
-				<h2>{item.title}</h2>
-				<p>{formatDate(item.date)}</p>
-				<p>{item.description}</p>
-			</a>
-		</li>
-	{:else}
-		<p>No cases published yet.</p>
-	{/each}
-	</ul>
+			<Box as="li" customClass="col-6 md:col-3 -align-top -padding-s" boxed>
+				<PostCard
+					title={item.title}
+					slug={item.slug}
+					cover={item.cover}
+					coverAlt={item.coverAlt}
+					basePath="cases"
+				/>
+			</Box>
+		{:else}
+			<p>No cases published yet.</p>
+		{/each}
+		</List>
+
+	</Grid>
 </section>
 
 <Footer />
