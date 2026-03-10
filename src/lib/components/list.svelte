@@ -43,6 +43,7 @@
 		/* gap: var(--space-600); */
 	}
 
+	.-contained { width: auto; }
 	.-vertical {flex-direction: column;}
 	.-gapped {gap: var(--space-500);}
 	.-smallgap {gap: var(--space-200);}

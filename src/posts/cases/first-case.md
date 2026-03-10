@@ -4,8 +4,7 @@ description: How governance and systemic thinking rebuilt Santander's digital fo
 date: '2024-01-15'
 categories:
   - Design System
-  - Design Operations
-  - Accessibility
+  - DesignOps
 team:
   - André Sequeira
 published: true

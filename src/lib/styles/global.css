@@ -323,7 +323,7 @@ figcaption {
 /* HR -------------------------------------------------- */
 hr {
 	margin: var(--space-500) 0;
-	border: var(--border-width) solid var(--color-on-surface-opacity-10);
+	border: var(--border-width) solid transparent;
 }
 
 /* LISTS -------------------------------------------------- */
@@ -367,8 +367,8 @@ blockquote {
 	gap: var(--space-100);
 	padding: var(--space-300);
 	margin: 0 0 var(--space-300) 0;
-	background-color: var(--color-surface);
-	border: var(--border-width) solid var(--color-on-surface-accent);
+	background-color: var(--color-brand-opacity-10);
+	border: var(--border-width) solid var(--color-brand-opacity-30);
 }
 
 /* PAIRINGS -------------------------------------------------- */
