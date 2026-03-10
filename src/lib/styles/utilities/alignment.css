@@ -11,7 +11,7 @@
 .-items-hend { align-items: flex-end; }
 .-items-hstretch { align-items: stretch; }
 
-.-items-vstart { justify-content: flex-start; }
+.-items-vstart { justify-content: flex-start !important; }
 .-items-vcenter { justify-content: center; }
 .-items-vend { justify-content: flex-end; }
 .-items-vbetween { justify-content: space-between; }

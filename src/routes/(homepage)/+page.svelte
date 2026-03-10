@@ -5,11 +5,14 @@
     import Solution from '$lib/sections/homepage/solution.svelte';
     import Whoisfor from '$lib/sections/homepage/whoisfor.svelte';
     import HowWeWork from '$lib/sections/homepage/howwework.svelte';
-    import Testimonials from '$lib/sections/homepage/testimonials.svelte';
     import Comparison from '$lib/sections/homepage/comparison.svelte';
     import Pricing from '$lib/sections/homepage/pricing.svelte';
+    import FeaturedCases from '$lib/sections/homepage/featuredCases.svelte';
+    import Testimonials from '$lib/sections/homepage/testimonials.svelte';
     import Cta from '$lib/sections/homepage/cta.svelte';
     import Footer from '$lib/sections/homepage/footer.svelte';
+
+	let { data } = $props();
 </script>
 
 <Navbar full />
@@ -20,6 +23,7 @@
 <Solution />
 <Comparison />
 <Pricing />
+<FeaturedCases cases={data.cases} />
 <Testimonials />
 <Cta />
 <Footer />
