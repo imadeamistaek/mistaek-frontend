@@ -5,7 +5,6 @@
 .-align-bl { align-items: flex-start; justify-content: flex-end; align-self: flex-start; }
 .-align-br { align-items: flex-end; justify-content: flex-end; align-self: flex-end; }
 
-
 .-items-hstart { align-items: flex-start; }
 .-items-hcenter { align-items: center; }
 .-items-hend { align-items: flex-end; }
@@ -17,3 +16,5 @@
 .-items-vbetween { justify-content: space-between; }
 .-items-varound { justify-content: space-around; }
 .-items-vevenly { justify-content: space-evenly; }
+
+.-self-stretch { align-self: stretch; }

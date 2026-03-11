@@ -13,30 +13,54 @@ coverAlt: Screenshot of the final website design
 ---
 
 <script>
+  import Tag from "$lib/elements/tag.svelte";
   import Image from '$lib/elements/image.svelte'
 </script>
 
 ---
 
-## Client context
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="01. Client context" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+
+## A global bank, a growing digital team, and no shared foundation
 
 Santander is one of the world's largest financial institutions, operating across dozens of markets with thousands of people building digital products simultaneously. This project focused on four European markets: Portugal, the UK, Poland, and Spain, during a period of rapid digital expansion across all of them.
 
----
-
-### The challenge
-
-When I joined the project, Santander's European design teams were technically working toward the same goals but practically operating in isolation. In Portugal alone, 10 to 15 designers were running parallel projects with almost no shared infrastructure. Multiple component libraries existed side by side with no clear rules about which to use or why. Colors, typography, and foundational tokens varied not just between countries, but between teams within the same country.
-
-The first version of the design system, Flame 1.0, had made a genuine attempt at unification. But it had fragmented under the pressure of regional growth. Each market had adapted it to local needs without a shared process for managing those adaptations. The result was a system in name only.
-
-This matters because fragmentation in a design system isn't just a design problem. It slows development, erodes trust between design and engineering teams, and makes every product decision harder than it needs to be. At Santander's scale, that slowdown compounds fast. Teams were duplicating work that already existed elsewhere, sometimes without even knowing it.
-
-The brief was to build Flame 2.0: a modular, scalable system meeting WCAG AAA accessibility standards, capable of supporting both local customization and global consistency. Twelve months to redesign the foundation of how four countries build digital products.
+</div>
+</section>
 
 ---
 
-#### My approach
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="02. The challenge" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+
+### Seventy designers. Four countries. No shared system.
+
+In Portugal alone, 10 to 15 designers were running parallel projects with almost no shared infrastructure. Multiple component libraries existed side by side with no clear rules about which to use or why. Colors, typography, and foundational tokens varied not just between countries, but between teams within the same country.
+
+The first version of the design system, Flame 1.0, had fragmented under the pressure of regional growth. Each market had adapted it to local needs without a shared process for managing those adaptations. Teams were duplicating work that already existed elsewhere, sometimes without knowing it. The brief was to rebuild it: modular, scalable, WCAG AAA compliant, and capable of supporting both local customization and global consistency.
+
+</div>
+</section>
+
+---
+
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="03. My approach" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+
+#### Diagnosis first. Components second.
+
+I came in as Lead European Design System Designer, working directly with one representative from each country and through them, with teams of 10 to 15 people per market. Around 70 to 80 designers in total.
+
+The audit of Flame 1.0 made the core problem clear: this wasn't a component quality issue. It was a governance issue. Teams had been adapting the system without a process for feeding those adaptations back into the shared foundation. Good work was being done in isolation and then lost.
+
+That shaped everything. Midway through the project, I noticed three of the four countries weren't using a set of components we'd already shipped. They hadn't existed in those markets when the relevant sprint had passed. Instead of leaving that gap, I introduced dedicated update sprints to bring missing components to every market, paired with weekly newsletters explaining what was changing and why. Adoption fails when designers feel a system is being imposed on them. It works when they understand the reasoning behind it.
+
+</div>
+</section>
 
 <Image
   src="/cases/andre.png"
@@ -44,36 +68,60 @@ The brief was to build Flame 2.0: a modular, scalable system meeting WCAG AAA ac
   cover
   customClass="-aspect-16-9 col-6"
 />
-
-I came in as Lead European Design System Designer. In practice, that meant being responsible for how the system was architected, how decisions were made, and how knowledge moved across the team. I worked directly with one representative designer from each country, and through them, with teams of 10 to 15 people per market. Around 70 to 80 designers in total.
-
-The first thing I did was audit Flame 1.0 properly. Not just cataloging what existed, but understanding why the fragmentation had happened. The answer was mostly governance, or the absence of it. Teams had been adapting components to local needs without a clear process for feeding those adaptations back into the shared system. Good work was being done in isolation and then lost.
-That diagnosis shaped everything that followed. Building better components wasn't enough. We needed a model that made the system self-correcting over time.
-
-One decision that defined the project came mid-sprint. I noticed that three of the four countries weren't using a set of components we'd already shipped. The components were well-designed and accessible, but they simply hadn't existed in those markets when the relevant sprint had passed. Under a strict sprint model, that work would have stayed siloed. Instead, I pushed for dedicated update sprints focused specifically on bringing missing components to the markets that needed them, alongside clear explanations of why each component worked the way it did. We also introduced weekly internal newsletters so teams across all four countries knew what was being built, what was changing, and the reasoning behind it.
-
-That last part, the "why," matters more than most people expect. Adoption fails when designers feel like a system is being imposed on them. It works when they understand the reasoning and feel like contributors to it.
-
----
-
-##### What I built
-
-The core of Flame 2.0 was a modular component library built on a shared token architecture, covering color, typography, spacing, and interaction patterns. The token layer was designed specifically to support regional customization without breaking system coherence. A market could adapt surface-level choices while the foundational structure stayed consistent.
-
-Accessibility was non-negotiable from the start, with WCAG AAA compliance as the target. That level of rigor pushed decisions that had downstream effects across the whole system, from color contrast ratios to interaction states to documentation standards.
-
-Beyond the components themselves, I built the governance infrastructure: clear roles for each country representative, a structured review process, documentation standards, and the update sprint model that kept the system alive as product needs evolved. Toward the end of the project, I was working directly with development teams to close the gap between what was being designed and what was actually being shipped, and to understand why those gaps existed in the first place.
+<Image
+  src="/cases/andre.png"
+  alt="Screenshot of the final design"
+  cover
+  customClass="-aspect-4-3 col-4 col-start-1"
+/>
+<Image
+  src="/cases/andre.png"
+  alt="Screenshot of the final design"
+  cover
+  customClass="-aspect-16-9 col-3 col-start-4"
+/>
 
 ---
 
-###### The outcome
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="04. What I Built" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
 
-The system achieved a 35% average reduction in time spent on mobile and desktop projects across the European markets, based on Santander's internal reporting. For a team of 70 to 80 designers building products simultaneously, that's not a marginal improvement. It compounds across every project, every sprint, every market.
+##### A system designed to survive after handoff
 
-Qualitatively, what changed was that teams started building with shared context instead of in parallel isolation. The newsletters and governance model meant that decisions made in Portugal weren't invisible to Poland. Work that had been duplicated was now reused. Designers understood the system well enough to work within it, and to flag when it wasn't serving them.
+Flame 2.0 was built on a shared token architecture covering color, typography, spacing, and interaction patterns. The token layer supported regional customization without breaking system coherence. WCAG AAA compliance shaped decisions across the entire system, from contrast ratios to interaction states to documentation standards.
 
-The European system performed well enough that Santander's global team, which had been in regular contact throughout the project, decided to migrate their work onto our foundation. That wasn't part of the original brief. It happened because the system was solid enough to scale beyond its original scope.
+Beyond the components, I built the governance infrastructure: clear roles for each country representative, a structured review process, documentation standards, and the update sprint model. Toward the end of the project, I was working directly with development teams to close the gap between what was being designed and what was actually being shipped.
 
-> Key insight
->
-> The hardest part of building a design system at scale isn't the components. It's the governance. A technically excellent library that teams don't understand, trust, or feel ownership over will fragment again within months. What made Flame 2.0 stick wasn't the token architecture or the accessibility standards, though both mattered. It was the newsletters, the update sprints, the weekly touchpoints with country representatives, and the consistent effort to explain the reasoning behind every decision. Systems are only as good as the culture built around them.
+</div>
+</section>
+
+---
+
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="05. The Outcome" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+
+###### 35% faster. And adopted globally without being asked.
+
+The system achieved a 35% average reduction in time spent on mobile and desktop projects across the European markets, based on Santander's internal reporting. Teams started building with shared context instead of in parallel isolation. Work that had been duplicated was now reused.
+
+The result that wasn't in the brief: Santander's global team decided to migrate their work onto the European foundation. Not because they were told to. Because the system was solid enough to earn it.
+
+</div>
+</section>
+
+---
+
+<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
+<Tag label="06. Key Insight" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<div class="text_block col-6 col-start-1 md:col-4 md:col-start-3 xlg:col-3 xlg:col-start-4">
+
+###### The components aren't the hard part. The culture is.
+
+A technically excellent library that teams don't trust or feel ownership over will fragment again within months. What made Flame 2.0 stick wasn't the token architecture or the accessibility standards. It was the newsletters, the update sprints, and the consistent effort to explain the reasoning behind every decision. Systems are only as good as the culture built around them.
+
+</div>
+</section>
+
+---
