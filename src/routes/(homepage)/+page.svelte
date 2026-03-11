@@ -7,9 +7,9 @@
     import HowWeWork from '$lib/sections/homepage/howwework.svelte';
     import Comparison from '$lib/sections/homepage/comparison.svelte';
     import Pricing from '$lib/sections/homepage/pricing.svelte';
-    import FeaturedCases from '$lib/sections/homepage/featuredCases.svelte';
+    import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
     import Testimonials from '$lib/sections/homepage/testimonials.svelte';
-    import Cta from '$lib/sections/homepage/cta.svelte';
+    import Cta from '$lib/sections/general/cta.svelte';
     import Footer from '$lib/sections/homepage/footer.svelte';
 
 	let { data } = $props();
@@ -23,7 +23,14 @@
 <Solution />
 <Comparison />
 <Pricing />
-<FeaturedCases cases={data.cases} />
+<FeaturedItemsGrid
+	items={data.cases}
+	basePath="cases"
+	tag="Cases"
+	title="Work"
+	linkLabel="View all cases"
+	linkUrl="/cases"
+/>
 <Testimonials />
 <Cta />
 <Footer />

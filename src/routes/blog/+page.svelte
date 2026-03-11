@@ -59,7 +59,7 @@
 
 		<List grid customClass="col-6 col-start-1 -gap-none">
 		{#each data.posts as post}
-			<Box as="li" customClass="col-6 md:col-2 -align-top -padding-s" boxed>
+			<Box as="li" customClass="col-6 md:col-2 -align-top -padding-xxs" boxed>
 				<PostCard
 					title={post.title}
 					slug={post.slug}

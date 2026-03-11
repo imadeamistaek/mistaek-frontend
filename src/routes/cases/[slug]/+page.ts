@@ -1,18 +1,38 @@
 import { error } from '@sveltejs/kit'
+import type { Case } from '$lib/types'
 
-/**
- * Dynamically imports a single markdown post based on the slug in the URL.
- * If the file doesn't exist, throws a 404 so SvelteKit shows the error page.
- *
- * @param params.slug - The filename of the post without .md extension
- */
-export async function load({ params }) {
+export async function load({ params, fetch }) {
 	try {
 		const post = await import(`../../../posts/cases/${params.slug}.md`)
 
+		/**
+		 * Fetch all cases to find related ones.
+		 * Filter by matching categories, exclude the current case,
+		 * and take up to 3. If not enough matches, pad with recent cases.
+		 */
+		const response = await fetch('/api/cases')
+		const allCases: Case[] = await response.json()
+
+		const currentCategories: string[] = post.metadata?.categories ?? []
+
+		const related = allCases
+			.filter((c) => c.slug !== params.slug)
+			.sort((a, b) => {
+				/** Count how many categories overlap with the current case */
+				const aMatches = a.categories.filter((cat) =>
+					currentCategories.includes(cat)
+				).length
+				const bMatches = b.categories.filter((cat) =>
+					currentCategories.includes(cat)
+				).length
+				return bMatches - aMatches
+			})
+			.slice(0, 3)
+
 		return {
 			content: post.default,
-			meta: post.metadata
+			meta: post.metadata,
+			cases: related
 		}
 	} catch {
 		error(404, `Could not find ${params.slug}`)

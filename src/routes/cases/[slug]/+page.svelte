@@ -5,6 +5,8 @@
 	 * data.meta is the frontmatter from the top of the .md file.
 	 */
 	import Navbar from '$lib/components/navbar.svelte';
+	import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
+	import Cta from '$lib/sections/general/cta.svelte';
 	import Footer from '$lib/sections/homepage/footer.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import Box from "$lib/elements/box.svelte";
@@ -63,6 +65,14 @@
 
 </section>
 
+<FeaturedItemsGrid
+	items={data.cases}
+	basePath="cases"
+	tag="More work"
+	title="Related cases"
+	colSpan="col-6 md:col-2"
+/>
+<Cta />
 <Footer />
 
 <style>

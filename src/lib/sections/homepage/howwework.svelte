@@ -16,7 +16,7 @@
 			</div>
 		</Grid>
 
-		<List customClass="stages col-6 col-start-1">
+		<List customClass="stages col-6 col-start-1 -gap-none">
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>

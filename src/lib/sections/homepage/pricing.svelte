@@ -63,7 +63,7 @@
 
 			</Box>
 
-			<List customClass="stages col-6 col-start-1">
+			<List customClass="stages col-6 col-start-1 -gap-none">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Positioning Sprint</p>
 					<p class="body_text -small -subtle">Clarify your message for customers</p>
