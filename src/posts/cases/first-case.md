@@ -42,7 +42,7 @@ The brief was to build Flame 2.0: a modular, scalable system meeting WCAG AAA ac
   src="/cases/andre.png"
   alt="Screenshot of the final design"
   cover
-  customClass="-aspect-16-9"
+  customClass="-aspect-16-9 col-6"
 />
 
 I came in as Lead European Design System Designer. In practice, that meant being responsible for how the system was architected, how decisions were made, and how knowledge moved across the team. I worked directly with one representative designer from each country, and through them, with teams of 10 to 15 people per market. Around 70 to 80 designers in total.

@@ -24,7 +24,7 @@
 			<p class="h6 col-6 col-start-1 md:col-3 md:col-start-1">Design systems for companies translating complex science into trusted products.</p>
 		</Grid>
 
-		<List grid customClass="col-6 col-start-1">
+		<List grid customClass="col-6 col-start-1 -gap-none">
 		{#each data.cases as item}
 			<Box as="li" customClass="col-6 md:col-3 -align-top -padding-s" boxed>
 				<PostCard
