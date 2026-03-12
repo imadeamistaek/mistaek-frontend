@@ -21,7 +21,7 @@ coverAlt: Screenshot of the final website design
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="01. Client context" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+<div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 ## A global bank, a growing digital team, and no shared foundation
 
@@ -34,7 +34,7 @@ Santander is one of the world's largest financial institutions, operating across
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="02. The challenge" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+<div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 ### Seventy designers. Four countries. No shared system.
 
@@ -49,7 +49,7 @@ The first version of the design system, Flame 1.0, had fragmented under the pres
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="03. My approach" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+<div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 #### Diagnosis first. Components second.
 
@@ -85,7 +85,7 @@ That shaped everything. Midway through the project, I noticed three of the four 
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="04. What I Built" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+<div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 ##### A system designed to survive after handoff
 
@@ -100,7 +100,7 @@ Beyond the components, I built the governance infrastructure: clear roles for ea
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="05. The Outcome" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-3 md:col-start-4">
+<div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 ###### 35% faster. And adopted globally without being asked.
 
@@ -115,7 +115,7 @@ The result that wasn't in the brief: Santander's global team decided to migrate 
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="06. Key Insight" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
-<div class="text_block col-6 col-start-1 md:col-4 md:col-start-3 xlg:col-3 xlg:col-start-4">
+<div class="col-6 col-start-1 md:col-4 md:col-start-3 xlg:col-3 xlg:col-start-4">
 
 ###### The components aren't the hard part. The culture is.
 

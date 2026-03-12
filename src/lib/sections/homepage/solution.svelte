@@ -22,7 +22,7 @@
 				<Tag label="The solution" customClass="-nano col-1 col-start-1" />
 				<h5 id="solution_title" class="h3 col-6 col-start-1 lg:col-4 lg:col-start-1">Complete infrastructure. Permanent ownership.</h5>
 			</Grid>
-			<List customClass="col-6 col-start-1 -padding-none" vertical divided hoverable>
+			<List customClass="col-6 col-start-1 -padding-none -gap-none" vertical divided hoverable>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(01)</p>
 					<p class="body_text -large">Complete design system in Figma your team owns permanently</p>

@@ -149,7 +149,7 @@ h4, .h4 {
 
 h5, .h5 {
 	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-	line-height: var(--typeface-line-height-body);
+	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
 /* Large: 1024px+ (Desktop) */
@@ -171,7 +171,7 @@ h5, .h5 {
 
 h6, .h6 {
 	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-	line-height: var(--typeface-line-height-body);
+	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
 /* Large: 1024px+ (Desktop) */

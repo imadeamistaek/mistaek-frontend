@@ -56,6 +56,7 @@
 				<Box as="li" customClass={`${colSpan} -align-top -padding-s`} boxed>
 					<PostCard
 						title={item.title}
+						date={item.date}
 						slug={item.slug}
 						cover={item.cover}
 						coverAlt={item.coverAlt ?? ''}

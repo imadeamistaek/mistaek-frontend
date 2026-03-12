@@ -5,11 +5,14 @@
 	 * data.meta is the frontmatter from the top of the .md file.
 	 */
 	import Navbar from '$lib/components/navbar.svelte';
+	import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
+	import Cta from '$lib/sections/general/cta.svelte';
 	import Footer from '$lib/sections/homepage/footer.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import Box from "$lib/elements/box.svelte";
 	import List from '$lib/components/list.svelte';
 	import Tag from "$lib/elements/tag.svelte";
+	import Image from '$lib/elements/image.svelte'
 
 	import { formatDate } from '$lib/utils'
 
@@ -24,98 +27,77 @@
 <Navbar full />
 
 <section class="container">
-	<Grid customClass="-cols-6 -gap-vxl">
-	
-		<span class="spacer -small"></span>
 		
 		<article class="col-6 col-start-1">
+			
+			<div class="pairing col-6 col-start-1 -spaced">
+				<h1 class="post-heading">{data.meta.title}</h1>
+				<p class="md:col-5 lg:col-4 h5">{data.meta.description}</p>
+			</div>
+			
+			
 			<Grid customClass="-cols-6 -gap-vxl">
-				
-				<h1 class="col-6 col-start-1 post-heading">{data.meta.title}</h1>
-				
-				<Box as="div" customClass="-align-vcenter -items-vbetween -padding-xxs col-6 col-start-1 md:col-2 md:col-start-1 -horizontal" boxed>
-					<p class="body_text -medium -subtle">Posted on:</p>
-					<p class="body_text -medium -subtle">{formatDate(data.meta.date)}</p>
-				</Box>
-				<Box as="div" customClass="-align-vcenter -items-vbetween -padding-xxs col-6 col-start-1 md:col-2 md:col-start-3 -horizontal" boxed>
-					<p class="body_text -medium -subtle">Team:</p>
-					<p class="body_text -medium -subtle">{data.meta.team.join(', ')}</p>
-				</Box>
-				<Box as="div" customClass="-align-vcenter -items-vbetween -padding-xxs col-6 col-start-1 md:col-2 md:col-start-5 -horizontal" boxed>
-					<p class="body_text -medium -subtle">Categories:</p>
-					<List customClass="col-6 col-start-1 -gap-none -horizontal -contained">
-						{#each data.meta.categories as label}
-							<Tag label={label} customClass="-nano" />
-						{:else}
-							<p class="body_text -medium -subtle">No categories</p>
-						{/each}
-					</List>
-				</Box>
-
 				<!--
 					data.content is a compiled Svelte component from the markdown file.
 					We render it as a component, not as raw HTML.
 				-->
-				<main class="col-4 col-start-1 lg:col-3 lg:col-start-3 prose">
-					<p>{data.meta.description}</p>
-					<p>{data.meta.context}</p>
-					<!-- <data.content /> -->
-				</main>
+					<List customClass="col-6 col-start-1 lg:col-2 -gap-none -self-start post-frontmatter" vertical>
+						<Box as="li" customClass="-padding-xs -horizontal-always" boxed>
+							<p class="body_text -medium -subtle">Posted on:</p>
+							<p class="body_text -medium -subtle">{formatDate(data.meta.date)}</p>
+						</Box>
+						<Box as="li" customClass="-padding-xs -horizontal-always" boxed>
+							<p class="body_text -medium -subtle">Team:</p>
+							<p class="body_text -medium -subtle">{data.meta.team.join(', ')}</p>
+						</Box>
+						<Box as="li" customClass="-padding-xs -horizontal-always" boxed>
+							<p class="body_text -medium -subtle">Categories:</p>
+							{#each data.meta.categories as label}
+								<Tag label={label} customClass="-nano" />
+							{:else}
+								<p class="body_text -medium -subtle">No categories</p>
+							{/each}
+						</Box>
+					</List>
+
+					<Image src={data.meta.cover} alt={data.meta.coverAlt} customClass="-aspect-16-9 col-6 col-start-1 lg:col-4 lg:col-start-3 cover_image" cover />
+					<div class="prose text_block col-6 col-start-1 lg:col-4 lg:col-start-3">
+						<data.content />
+					</div>
 
 			</Grid>
 		</article>
 
-	</Grid>
 </section>
 
+<FeaturedItemsGrid
+	items={data.posts}
+	basePath="blog"
+	tag="More articles"
+	title="Related articles"
+	colSpan="col-6 md:col-2"
+/>
+<Cta />
 <Footer />
 
 <style>
+	section { padding-top: var(--space-max); }
+	article { display: flex; flex-direction: column; gap: var(--space-400); }
 
-	:global(h1.post-heading) { padding: var(--space-300) 0; }
-	:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
-		font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-		line-height: var(--typeface-line-height-body);
-		letter-spacing: var(--typeface-tracking-heading);
-		margin-bottom: var(--space-300);
-	}
-	:global(.prose p) {
-		font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-		line-height: var(--typeface-line-height-base);
-		letter-spacing: var(--typeface-tracking-base);
-	}
-	:global(.prose * + p) {
-		margin-bottom: var(--space-200);
-	}
-	:global(.image-wrapper) {
-		margin-bottom: var(--space-400);
-	}
 	/* Large: 1024px+ (Desktop) */
 	@media (min-width: 64rem) {
-		:global(h1.post-heading) { padding: var(--space-500) 0; }
-		:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
-			font-size: var(--typeface-size-heading-xxs);
-		}
+		article { gap: var(--space-max); }
 	}
 	/* Extra Large: 1280px+ (Large Desktop) */
 	@media (min-width: 80rem) {
-		:global(h1.post-heading) { padding: var(--space-700) 0; }
-		:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
-			font-size: var(--typeface-size-heading-xs);
-		}
+		article { gap: var(--space-max); }
 	}
 	/* 2XL: 1536px+ (Ultra Wide) */
 	@media (min-width: 96rem) {
-		:global(h1.post-heading) { padding: var(--space-900) 0; }
-		:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
-			font-size: var(--typeface-size-heading-s);
-		}
+		article { gap: var(--space-max); }
 	}
 	/* 3XL: 1920px+ (Ultra Wide) */
 	@media (min-width: 120rem) {
-		:global(h1.post-heading) { padding: var(--space-max) 0; }
-		:global(.prose h2, .prose h3, .prose h4, .prose h5, .prose h6) {
-			font-size: var(--typeface-size-heading-m);
-		}
+		article { gap: var(--space-max); }
 	}
 </style>

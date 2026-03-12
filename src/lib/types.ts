@@ -8,6 +8,7 @@
  */
 
 export type Post = {
+	// Metadata
 	title: string
 	slug: string
 	description: string
@@ -15,6 +16,8 @@ export type Post = {
 	categories: string[]
 	team: string[]
 	published: boolean
+
+	// Cover
 	cover?: string      // optional, not every post needs a cover
 	coverAlt?: string   // optional, defaults to empty string
 }
@@ -32,14 +35,4 @@ export type Case = {
 	// Cover
 	cover?: string      // optional, not every post needs a cover
 	coverAlt?: string   // optional, defaults to empty string
-
-	// Content sections
-	context?: string
-	challenge_section1?: string
-	challenge_section2?: string
-	challenge_section3?: string
-	challenge_section4?: string
-	approach?: string
-	solution?: string
-	results?: string
 }

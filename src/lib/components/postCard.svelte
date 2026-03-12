@@ -17,9 +17,11 @@
 	export let cover: string | null | undefined = null;
 	export let coverAlt: string = '';
 	export let basePath: 'blog' | 'cases' = 'blog';
+	export let date: string | null | undefined = null;
 	export let customClass: string | null | undefined = null;
 
 	import Image from '$lib/elements/image.svelte';
+	import { formatDate } from '$lib/utils';
 
 	$: href = `/${basePath}/${slug}`;
 </script>
@@ -46,9 +48,12 @@
 			The ::after pseudo-element stretches it over the whole card
 			so the entire card is clickable, but only this text is read.
 		-->
-		<h2 class="h6">
+		<p class="h6">
 			<a class="card-link" {href}>{title}</a>
-		</h2>
+		</p>
+		{#if date}
+			<p class="body_text -small -subtle">{formatDate(date)}</p>
+		{/if}
 	</div>
 </article>
 

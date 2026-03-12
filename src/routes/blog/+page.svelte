@@ -65,6 +65,7 @@
 					slug={post.slug}
 					cover={post.cover}
 					coverAlt={post.coverAlt}
+					date={post.date}
 					basePath="blog"
 				/>
 			</Box>

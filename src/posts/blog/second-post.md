@@ -1,7 +1,7 @@
 ---
-title: My First Post
+title: My Second Post
 description: This is a test post to verify everything is working.
-date: '2024-01-15'
+date: '2026-03-12'
 categories:
   - general
 team:
