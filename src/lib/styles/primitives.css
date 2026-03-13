@@ -13,6 +13,7 @@
 
 /* Brand */
 :root {
+	--color-brand-accent-darker: oklch(65.342% 0.21194 33.291);
 	--color-brand-accent: oklch(72.094% 0.18723 47.551);
 	--color-brand-100: var(--color-brand-accent);
 	--color-brand-80: oklch(70.175% 0.16801 33.099);
@@ -190,7 +191,7 @@
 
 /* Line Height */
 :root {
-	--typeface-line-height-display: 100%;
+	--typeface-line-height-display: 110%;
 	--typeface-line-height-heading: 120%;
 	--typeface-line-height-base: 140%;
 }

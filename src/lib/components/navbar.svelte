@@ -9,10 +9,21 @@
 	export let full: boolean = false;
 
 	import { onMount } from 'svelte';
-	import LinkBoxed from '$lib/elements/linkBoxed.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 	import Logo from '$lib/elements/logo.svelte';
 
 	let scrolled = false;
+	let menuOpen = false;
+
+	/**
+	 * Nav links. Add more here as the site grows.
+	 * These show in the desktop navbar and the mobile expanded menu.
+	 */
+	const navLinks = [
+		{ label: 'Home', url: '/' },
+		{ label: 'Work', url: '/cases' },
+		{ label: 'Words', url: '/blog' }
+	];
 
 	onMount(() => {
 		/**
@@ -28,20 +39,64 @@
 		/** Cleanup listener when component is destroyed */
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
+
+	function toggleMenu() {
+		menuOpen = !menuOpen;
+		document.body.style.overflow = menuOpen ? 'hidden' : '';
+	}
+
+	function closeMenu() {
+		menuOpen = false;
+		document.body.style.overflow = '';
+	}
+
 </script>
 
-<nav class="navbar" class:scrolled>
+<nav class="navbar" class:scrolled class:menu-open={menuOpen} aria-label="Main navigation">
 	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
-		<div class="logo col-2 col-start-1 md:col-1">
+		<div class="slot -left col-2 col-start-1">
 			<Logo small={true} />
 		</div>
-		<div class="slot col-4 col-start-3 md:col-3 md:col-start-4 lg:col-2 lg:col-start-5">
-			<LinkBoxed customClass="-dflex" label="Get started" url="https://cal.com/mistaek/15min" type="external" note="Schedule an intro call" />
+		<div class="slot -middle col-2 col-start-3 -items-vcenter">
+			<NewLink showIcon={false} boxed variant="ghost" label="Cases" url="/cases" type="internal" />
+			<NewLink showIcon={false} boxed variant="ghost" label="Words" url="/blog" type="internal" />
 		</div>
-		<div class="blobs">
-			<div class="circle -brand -alt"></div>
-			<div class="circle -niche"></div>
+		<div class="slot -right col-2 col-start-5 -items-vend">
+			<NewLink boxed variant="subtle" label="Schedule an intro call" url="https://cal.com/mistaek/15min" type="external" customClass="-full" />
+			
+			<!--
+				Hamburger: visible on mobile only, hidden on desktop.
+				aria-expanded tells screen readers the menu state.
+				aria-controls points to the mobile menu id.
+			-->
+			<button
+				class="hamburger -hidden-l"
+				aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+				aria-expanded={menuOpen}
+				aria-controls="mobile-menu"
+				on:click={toggleMenu}
+			>
+				<span class="hamburger-line" class:open={menuOpen}></span>
+				<span class="hamburger-line" class:open={menuOpen}></span>
+			</button>
+
 		</div>
+	</div>
+	<!--
+		Mobile menu: expands below the navbar bar.
+		inert when closed so keyboard users can't tab into hidden links.
+		Lives inside <nav> so it sits above everything at the same z-index.
+	-->
+	<div
+		id="mobile-menu"
+		class="mobile-menu"
+		class:open={menuOpen}
+		inert={!menuOpen ? true : undefined}
+		aria-hidden={!menuOpen}
+	>
+		{#each navLinks as link}
+			<NewLink showIcon={false} variant="ghost" label={link.label} url={link.url} type="internal" on:click={closeMenu} />
+		{/each}
 	</div>
 </nav>
 
@@ -73,7 +128,9 @@
 		transition-timing-function: var(--transition-timing-function);
 	}
 
-	.navbar-container .logo {
+	.navbar-container .slot { display: flex; }
+	.navbar-container .slot.-middle { align-self: stretch; }
+	.navbar-container .slot.-left {
 		text-align: center;
 		transition-property: padding;
 		transition-duration: var(--transition-duration-mid);
@@ -86,94 +143,87 @@
 		border-bottom: var(--border-width) solid var(--color-on-surface-accent);
 	}
 
-	:global(.-dflex) { display: flex !important; }
-
 	@media (min-width: 48rem) {
 		.navbar { padding: 0 var(--space-1000); }
-		.navbar-container .logo { text-align: left; }
-		.navbar.scrolled .navbar-container .logo { padding: 0 var(--space-400); }
+		.navbar-container .slot.-left { text-align: left; }
+		.navbar.scrolled .navbar-container .slot.-left { padding: 0 var(--space-400); }
 	}
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* ANIMATION */
-/* ---------------------------------------------------------------------------------------------------- */
-	.blobs {
-		position: absolute;
-		float: left;
+
+	/* ------------------------------------------------------------------ */
+	/* HAMBURGER BUTTON */
+	/* ------------------------------------------------------------------ */
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: var(--space-100);
+		width: 40px;
+		height: 40px;
+		padding: var(--space-100);
+		background: none;
+		border: var(--border-width) solid var(--color-on-surface-accent);
+		cursor: pointer;
+		flex-shrink: 0;
+	}
+
+	.hamburger-line {
+		display: block;
 		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		overflow: hidden;
-		z-index: 0;
-		opacity: 0;
-		user-select: none;
-		pointer-events: none;
-		transition-property: opacity;
+		height: 1px;
+		background-color: var(--color-on-surface);
+		transform-origin: center;
+		transition-property: transform, opacity;
 		transition-duration: var(--transition-duration-mid);
 		transition-timing-function: var(--transition-timing-function);
 	}
 
-	.navbar.scrolled .blobs { opacity: 1; }
-
-	.circle {
-		position: absolute;
-		border-radius: 50%;
+	.hamburger-line:nth-child(1).open {
+		transform: translate3d(0px, 4px, 0) rotate(45deg);
 	}
-	.circle.-brand {
-		animation-name: slowTranslation;
-		animation-direction: both;
-		animation-duration: 30s;
-		animation-timing-function: var(--transition-timing-function);
-		animation-iteration-count: infinite;
-	}
-	.circle.-niche {
-		animation-name: slowTranslation;
-		animation-direction: reverse;
-		animation-duration: 60s;
-		animation-timing-function: var(--transition-timing-function);
-		animation-iteration-count: infinite;
+	.hamburger-line:nth-child(2).open {
+		transform: translate3d(0px, -4px, 0) rotate(-45deg);
 	}
 
-	.blobs .circle {
-		filter: blur(16px);
+	/* ------------------------------------------------------------------ */
+	/* MOBILE MENU */
+	/* ------------------------------------------------------------------ */
+
+	.mobile-menu {
+		/**
+		 * Expands downward from the navbar bar.
+		 * max-height animates from 0 to a large value,
+		 * which is the cleanest way to animate height from auto.
+		 */
+		max-height: 0;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-400);
+		background-color: var(--color-surface);
+		transition-property: max-height, border-color;
+		transition-duration: var(--transition-duration-mid);
+		transition-timing-function: var(--transition-timing-function);
 	}
-	.blobs .circle.-brand {
-		bottom: 100%;
-		left: 0;
-		width: 500px;
-		height: 50px;
-		background: radial-gradient(var(--color-neutral-100) 50%, var(--color-brand-20) 60%, var(--color-brand-accent) 70%);
+
+	.mobile-menu.open {
+		max-height: 100vh;
+		border-bottom: var(--border-width) solid var(--color-on-surface-accent);
 	}
-	.blobs .circle.-niche {
-		bottom: 100%;
-		left: 40%;
-		width: 600px;
-		height: 60px;
-		background: radial-gradient(var(--color-tag-completed) 32%, var(--color-tag-progress) 60%, var(--color-tag-on-progress) 75%);
-	}
-	/* Medium: 768px+ (Tablet Portrait) */
-	@media (min-width: 48rem) {
-		.blobs .circle.-brand {
-			bottom: 100%;
-			width: 100%;
-			height: 50px;
-		}
-		.blobs .circle.-niche {
-			bottom: 100%;
-			width: 100%;
-			height: 20px;
+
+	/* ------------------------------------------------------------------ */
+	/* REDUCED MOTION */
+	/* ------------------------------------------------------------------ */
+
+	@media (prefers-reduced-motion: reduce) {
+		.hamburger-line,
+		.mobile-menu,
+		.mobile-nav-link,
+		.nav-link {
+			transition: none;
 		}
 	}
 
-	@keyframes slowTranslation {
-		0%{
-			transform: rotate(0deg) translate(-8px) rotate(0deg);
-		}
-		100%{
-			transform: rotate(360deg) translate(-8px) rotate(-360deg);
-		}
-	}
 </style>

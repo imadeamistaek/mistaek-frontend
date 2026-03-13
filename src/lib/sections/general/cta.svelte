@@ -1,10 +1,7 @@
 <script>
-	import DistortedLogo from '$lib/elements/distortedLogo.svelte';
-	import List from '$lib/components/list.svelte';
 	import Box from '$lib/elements/box.svelte';
-	import Crosshair from "$lib/elements/markers/crosshair.svelte";
 	import Grid from "$lib/components/grid.svelte";
-	import Link from '$lib/elements/link.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 	import Grain from '$lib/elements/grain.svelte';
 </script>
 
@@ -25,11 +22,11 @@
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
 					<div class="button_pairing">
 						<div class="slot -left">
-							<Link label="Book a call with André" url="https://cal.com/mistaek/15min" type="external" />
+							<NewLink variant="default" label="Book a call with André" url="https://cal.com/mistaek/15min" type="external" />
 						</div>
 						<p class="body_text -micro -subtle -hidden-s">or</p>
 						<div class="slot -right">
-							<Link label="Email us directly" url="mailto:hello@mistaek.com" type="external" icon="send" />
+							<NewLink variant="default" label="Email us directly" url="mailto:hello@mistaek.com" type="external" icon="send" />
 						</div>
 					</div>
 				</div>

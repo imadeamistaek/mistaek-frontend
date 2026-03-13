@@ -3,6 +3,7 @@
 	import Box from '$lib/elements/box.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import Link from '$lib/elements/link.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 </script>
 
 <section class="container" aria-labelledby="whoisfor_title">
@@ -18,7 +19,7 @@
 				<span class="spacer -small"></span>
 				<p class="body_text -small -contained-xl">Ocean tech. Biodiversity. Nature restoration. Environmental data platforms. You have a product in market, paying customers, and a growing team.</p>
 				<p class="body_text -small -contained-xl -subtle">If that sounds like you:</p>
-				<Link label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
+				<NewLink variant="ghost" label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
 			</div>
 		</Grid>
 	</Box>

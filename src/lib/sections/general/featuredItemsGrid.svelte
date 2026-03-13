@@ -20,6 +20,7 @@
 	import Box from '$lib/elements/box.svelte';
 	import PostCard from '$lib/components/postCard.svelte';
 	import Link from '$lib/elements/link.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 
 	export let items: Case[] | Post[] = [];
 	export let basePath: 'cases' | 'blog' = 'cases';
@@ -42,11 +43,12 @@
 				{title}
 			</p>
 			{#if linkLabel && linkUrl}
-				<Link
-					customClass="col-6 col-start-1 md:col-1 md:col-start-6 -items-vstart -small"
+				<NewLink
+					variant="default"
 					label={linkLabel}
 					url={linkUrl}
 					type="internal"
+					customClass="col-6 col-start-1 md:col-1 md:col-start-6 -items-vstart"
 				/>
 			{/if}
 		</Grid>

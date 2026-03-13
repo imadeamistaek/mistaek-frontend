@@ -2,7 +2,7 @@
 	import Tag from "$lib/elements/tag.svelte";
 	import Grid from "$lib/components/grid.svelte";
 	import Box from '$lib/elements/box.svelte';
-	import LinkBoxed from '$lib/elements/linkBoxed.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 	import Grain from '$lib/elements/grain.svelte';
 	import List from "$lib/components/list.svelte";
 	import ListItem from "$lib/elements/listItem.svelte";
@@ -43,7 +43,7 @@
 							<p class="h1">10k €</p>
 							<p class="body_text -medium -contained-xl">50% upfront, 50% at handoff</p>
 						</div>
-						<LinkBoxed label="Get started" url="https://cal.com/mistaek/15min" type="external" customClass="col-6 col-start-1" />
+						<NewLink boxed variant="default" label="Get started" url="https://cal.com/mistaek/15min" type="external" customClass="col-6 col-start-1 -full" />
 					</Grid>
 					<Grid customClass="col-6 col-start-1 lg:col-3 lg:col-start-4 -padding-l -gap-vm">
 						<div class="pairing col-6 col-start-1">

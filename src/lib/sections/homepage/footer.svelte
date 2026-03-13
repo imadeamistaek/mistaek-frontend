@@ -1,9 +1,6 @@
 <script>
-	import List from '$lib/components/list.svelte';
 	import Box from '$lib/elements/box.svelte';
     import Grid from "$lib/components/grid.svelte";
-    import Logo from '$lib/elements/logo.svelte';
-    import Link from '$lib/elements/link.svelte';
 </script>
 
 <footer>
