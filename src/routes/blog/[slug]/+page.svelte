@@ -4,10 +4,8 @@
 	 * data.content is the compiled Markdown as a Svelte component.
 	 * data.meta is the frontmatter from the top of the .md file.
 	 */
-	import Navbar from '$lib/components/navbar.svelte';
 	import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
 	import Cta from '$lib/sections/general/cta.svelte';
-	import Footer from '$lib/sections/homepage/footer.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import Box from "$lib/elements/box.svelte";
 	import List from '$lib/components/list.svelte';
@@ -24,11 +22,9 @@
 	<meta name="description" content={data.meta.description} />
 </svelte:head>
 
-<Navbar full />
-
 <section class="container">
 		
-		<article class="col-6 col-start-1">
+		<article class="col-6 col-start-1 -gap-max">
 			
 			<div class="pairing col-6 col-start-1 -spaced">
 				<h1 class="post-heading">{data.meta.title}</h1>
@@ -78,26 +74,8 @@
 	colSpan="col-6 md:col-2"
 />
 <Cta />
-<Footer />
 
 <style>
 	section { padding-top: var(--space-max); }
-	article { display: flex; flex-direction: column; gap: var(--space-400); }
-
-	/* Large: 1024px+ (Desktop) */
-	@media (min-width: 64rem) {
-		article { gap: var(--space-max); }
-	}
-	/* Extra Large: 1280px+ (Large Desktop) */
-	@media (min-width: 80rem) {
-		article { gap: var(--space-max); }
-	}
-	/* 2XL: 1536px+ (Ultra Wide) */
-	@media (min-width: 96rem) {
-		article { gap: var(--space-max); }
-	}
-	/* 3XL: 1920px+ (Ultra Wide) */
-	@media (min-width: 120rem) {
-		article { gap: var(--space-max); }
-	}
+	section article { display: flex; flex-direction: column;}
 </style>

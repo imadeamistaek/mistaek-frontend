@@ -4,10 +4,8 @@
 	 * data.content is the compiled Markdown as a Svelte component.
 	 * data.meta is the frontmatter from the top of the .md file.
 	 */
-	import Navbar from '$lib/components/navbar.svelte';
 	import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
 	import Cta from '$lib/sections/general/cta.svelte';
-	import Footer from '$lib/sections/homepage/footer.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import Box from "$lib/elements/box.svelte";
 	import List from '$lib/components/list.svelte';
@@ -22,8 +20,6 @@
 	<title>{data.meta.title}</title>
 	<meta name="description" content={data.meta.description} />
 </svelte:head>
-
-<Navbar full />
 
 <section class="container">
 		
@@ -73,4 +69,3 @@
 	colSpan="col-6 md:col-2"
 />
 <Cta />
-<Footer />

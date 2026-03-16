@@ -1,5 +1,4 @@
 <script>
-    import Navbar from '$lib/components/navbar.svelte';
     import Hero from '$lib/sections/homepage/hero.svelte';
     import Problem from '$lib/sections/homepage/problem.svelte';
     import Solution from '$lib/sections/homepage/solution.svelte';
@@ -10,12 +9,10 @@
     import FeaturedItemsGrid from '$lib/sections/general/featuredItemsGrid.svelte';
     import Testimonials from '$lib/sections/homepage/testimonials.svelte';
     import Cta from '$lib/sections/general/cta.svelte';
-    import Footer from '$lib/sections/homepage/footer.svelte';
 
 	let { data } = $props();
 </script>
 
-<Navbar full />
 <Hero />
 <Problem />
 <Whoisfor />
@@ -33,4 +30,3 @@
 />
 <Testimonials />
 <Cta />
-<Footer />

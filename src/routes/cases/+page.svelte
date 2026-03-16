@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Navbar from '$lib/components/navbar.svelte';
-	import Footer from '$lib/sections/homepage/footer.svelte';
 	import Grid from "$lib/components/grid.svelte";
 	import List from '$lib/components/list.svelte';
 	import Box from '$lib/elements/box.svelte';
@@ -13,8 +11,6 @@
 	<title>Cases</title>
 	<meta name="description" content="Cases" />
 </svelte:head>
-
-<Navbar full />
 
 <section class="container">
 	<Grid customClass="-cols-6 -gap-vxl">
@@ -42,5 +38,3 @@
 
 	</Grid>
 </section>
-
-<Footer />
