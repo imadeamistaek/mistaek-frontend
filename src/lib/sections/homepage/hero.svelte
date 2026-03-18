@@ -10,7 +10,7 @@
 <section class="container" aria-labelledby="hero_title">
 	<Grid customClass="-cols-6 -gap-vm">
 		<div class="heading pairing col-6 col-start-1">
-			<h1 id="hero_title">Design Systems for Nature Tech companies building complex products</h1>
+			<h1 id="hero_title">Design Systems for Sustainability Tech companies building complex products</h1>
 		</div>
 		<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1">
 			<p class="body_text -medium -contained-l">We help Series A companies build design infrastructure that makes scientific data clear, consistent, and scalable.</p>

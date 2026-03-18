@@ -13,7 +13,7 @@
 			<List customClass="col-3 col-start-4" gapped vertical>
 				<li class="-hidden-xs"><Logo small={true} /></li>
 					<List customClass="col-3 col-start-4 -gap-vnone" gapped vertical>
-						<li><p class="body_text -micro -subtle -contained">Design systems for nature tech companies</p></li>
+						<li><p class="body_text -micro -subtle -contained">Design systems for sustainability tech companies</p></li>
 						<li><p class="body_text -micro -subtle -contained">© 2026 Mistaek. Built with accessibility in mind.</p></li>
 					</List>
 				<li>
