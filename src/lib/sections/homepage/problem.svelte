@@ -11,7 +11,7 @@
 			<p class="h6">Your science is brilliant. Your innovation matters. But complexity is holding it back.</p>
 		</div>
 		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -items-vend -spaced">
-			<p class="body_text -small -contained-xl">Most nature tech companies at Series A have strong science but struggle with design consistency as they scale. Complex data becomes harder to trust. Your product experience isn't keeping up. You need infrastructure, not just polish.</p>
+			<p class="body_text -small -contained-xl">Most sustainability tech companies at Series A have strong science but struggle with design consistency as they scale. Complex data becomes harder to trust. Your product experience isn't keeping up. You need infrastructure, not just polish.</p>
 		</div>
 	</Grid>
 </section>
