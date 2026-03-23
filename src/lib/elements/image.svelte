@@ -20,6 +20,7 @@
 	export let customClass: string | null | undefined = null;
 	export let loading: 'lazy' | 'eager' = 'lazy';
 	export let cover: boolean = false;
+	export let contain: boolean = false;
 
 	$: isExternal = type === 'external';
 	$: target = isExternal ? '_blank' : undefined;
@@ -44,6 +45,7 @@
 			{alt}
 			{loading}
 			class:cover
+			class:contain
 		/>
 	</a>
 {:else}
@@ -53,6 +55,7 @@
 			{alt}
 			{loading}
 			class:cover
+			class:contain
 		/>
 	</div>
 {/if}
@@ -77,6 +80,9 @@
 	 */
 	img.cover {
 		object-fit: cover;
+	}
+	img.contain {
+		object-fit: contain;
 	}
 
 	/** Remove default anchor underline when image is a link */
