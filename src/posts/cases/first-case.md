@@ -8,7 +8,7 @@ categories:
 team:
   - André Sequeira
 published: true
-cover: /cases/andre.png
+cover: /cases/santander/cover.webp
 coverAlt: Screenshot of the final website design
 ---
 
@@ -19,6 +19,13 @@ coverAlt: Screenshot of the final website design
 
 ---
 
+<Image
+  src="/cases/santander/cover.webp"
+  alt="Decorative image of smiling character from Santander's brand"
+  cover
+  customClass="-aspect-16-9 col-6"
+/>
+
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="01. Client context" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
 <div class="col-6 col-start-1 md:col-3 md:col-start-4">
@@ -28,11 +35,9 @@ coverAlt: Screenshot of the final website design
 Santander is one of the world's largest financial institutions, operating across dozens of markets with thousands of people building digital products simultaneously. This project focused on four European markets: Portugal, the UK, Poland, and Spain, during a period of rapid digital expansion across all of them.
 
 </div>
-</section>
 
 ---
 
-<section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="02. The challenge" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
 <div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
@@ -44,6 +49,12 @@ The first version of the design system, Flame 1.0, had fragmented under the pres
 
 </div>
 </section>
+<Image
+  src="/cases/santander/diagram1.webp"
+  alt="Diagram of Santander's team structure prior to Andre's arrival at the project"
+  contain
+  customClass="col-6"
+/>
 
 ---
 
@@ -60,26 +71,39 @@ The audit of Flame 1.0 made the core problem clear: this wasn't a component qual
 That shaped everything. Midway through the project, I noticed three of the four countries weren't using a set of components we'd already shipped. They hadn't existed in those markets when the relevant sprint had passed. Instead of leaving that gap, I introduced dedicated update sprints to bring missing components to every market, paired with weekly newsletters explaining what was changing and why. Adoption fails when designers feel a system is being imposed on them. It works when they understand the reasoning behind it.
 
 </div>
-</section>
 
 <Image
-  src="/cases/andre.png"
-  alt="Screenshot of the final design"
+  src="/cases/santander/concept1.webp"
+  alt="Decorative image of people smiling while looking at each other"
   cover
   customClass="-aspect-16-9 col-6"
 />
 <Image
-  src="/cases/andre.png"
-  alt="Screenshot of the final design"
+  src="/cases/santander/square1.webp"
+  alt="Representation of token naming structure for the project"
   cover
-  customClass="-aspect-4-3 col-4 col-start-1"
+  customClass="-aspect-4-3 col-3 col-start-1"
 />
 <Image
-  src="/cases/andre.png"
-  alt="Screenshot of the final design"
+  src="/cases/santander/square2.webp"
+  alt="Representation of tokens being applied to typography"
   cover
-  customClass="-aspect-16-9 col-3 col-start-4"
+  customClass="-aspect-4-3 col-3 col-start-4"
 />
+<Image
+  src="/cases/santander/rect1.webp"
+  alt="Representation of the various grids and resolutions used on the project"
+  cover
+  customClass="-aspect-16-9 col-6"
+/>
+<Image
+  src="/cases/santander/square3.webp"
+  alt="Apresentation of several components built for Santander's Design System"
+  cover
+  customClass="-aspect-4-3 col-6"
+/>
+
+</section>
 
 ---
 
@@ -94,6 +118,12 @@ Flame 2.0 was built on a shared token architecture covering color, typography, s
 Beyond the components, I built the governance infrastructure: clear roles for each country representative, a structured review process, documentation standards, and the update sprint model. Toward the end of the project, I was working directly with development teams to close the gap between what was being designed and what was actually being shipped.
 
 </div>
+<Image
+  src="/cases/santander/rect2.webp"
+  alt="Diagram of the team's structure after André's arrival at the project"
+  cover
+  customClass="-aspect-16-9 col-6"
+/>
 </section>
 
 ---
@@ -123,5 +153,12 @@ A technically excellent library that teams don't trust or feel ownership over wi
 
 </div>
 </section>
+
+<Image
+  src="/cases/santander/square4.webp"
+  alt="Decorative image of a character from the new Santander's brand, waving at you"
+  cover
+  customClass="-aspect-4-3 col-6"
+/>
 
 ---

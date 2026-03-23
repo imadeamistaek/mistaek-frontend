@@ -10,7 +10,7 @@
 
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import NewLink from '$lib/elements/newlink.svelte';
+	import Newlink from '$lib/elements/newlink.svelte';
 	import Logo from '$lib/elements/logo.svelte';
 
 	let scrolled = false;
@@ -67,12 +67,12 @@
 			Visible from tablet up.
 		-->
 		<div class="slot -middle col-2 col-start-3">
-			<NewLink showIcon={false} boxed variant="ghost" label="Cases" url="/cases" type="internal" />
-			<NewLink showIcon={false} boxed variant="ghost" label="Words" url="/blog" type="internal" />
+			<Newlink showIcon={false} boxed variant="ghost" label="Cases" url="/cases" type="internal" />
+			<Newlink showIcon={false} boxed variant="ghost" label="Words" url="/blog" type="internal" />
 		</div>
 
 		<div class="slot -right col-4 col-start-3 md:col-2 md:col-start-5">
-			<NewLink
+			<Newlink
 				boxed
 				variant="subtle"
 				label="Book a call"
