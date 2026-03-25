@@ -31,10 +31,6 @@
 
 				<List customClass="col-6 col-start-1 -gap-none post-frontmatter">
 					<Box as="li" customClass="-self-stretch -align-vcenter -padding-xs -horizontal-always" boxed>
-						<p class="body_text -medium -subtle">Posted on:</p>
-						<p class="body_text -medium -subtle">{formatDate(data.meta.date)}</p>
-					</Box>
-					<Box as="li" customClass="-self-stretch -align-vcenter -padding-xs -horizontal-always" boxed>
 						<p class="body_text -medium -subtle">Team:</p>
 						<p class="body_text -medium -subtle">{data.meta.team.join(', ')}</p>
 					</Box>

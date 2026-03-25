@@ -9,7 +9,7 @@ team:
   - André Sequeira
 published: true
 cover: /cases/santander/cover.webp
-coverAlt: Screenshot of the final website design
+coverAlt: Decorative image of smiling character from Santander's brand
 ---
 
 <script>
@@ -58,6 +58,17 @@ The first version of the design system, Flame 1.0, had fragmented under the pres
 
 ---
 
+<section class="text_block -bridge -cols-6 col-6 col-start-1 -gap-vxl">
+<div class="col-6 col-start-1 md:col-4 md:col-start-2">
+
+Fragmentation under scale is a domain-agnostic problem.
+The same structural breakdown happens in any environment where complex data products are growing faster than the systems supporting them.
+
+</div>
+</section>
+
+---
+
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
 <Tag label="03. My approach" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
 <div class="col-6 col-start-1 md:col-3 md:col-start-4">
@@ -82,13 +93,13 @@ That shaped everything. Midway through the project, I noticed three of the four 
   src="/cases/santander/square1.webp"
   alt="Representation of token naming structure for the project"
   cover
-  customClass="-aspect-4-3 col-3 col-start-1"
+  customClass="-aspect-4-3 col-6 col-start-1 md:col-3 md:col-start-1"
 />
 <Image
   src="/cases/santander/square2.webp"
   alt="Representation of tokens being applied to typography"
   cover
-  customClass="-aspect-4-3 col-3 col-start-4"
+  customClass="-aspect-4-3 col-6 col-start-1 md:col-3 md:col-start-4"
 />
 <Image
   src="/cases/santander/rect1.webp"

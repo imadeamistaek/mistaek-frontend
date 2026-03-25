@@ -6,6 +6,7 @@
 	display: grid;
 	padding: var(--space-100) 0;
 }
+.text_block.-bridge p { font-size: var(--typeface-size-heading-s); text-align: center; }
 
 /* Styles for the content within the cases */
 

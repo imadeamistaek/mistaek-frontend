@@ -19,7 +19,6 @@
 	import List from '$lib/components/list.svelte';
 	import Box from '$lib/elements/box.svelte';
 	import PostCard from '$lib/components/postCard.svelte';
-	import Link from '$lib/elements/link.svelte';
 	import NewLink from '$lib/elements/newlink.svelte';
 
 	export let items: Case[] | Post[] = [];
@@ -58,7 +57,7 @@
 				<Box as="li" customClass={`${colSpan} -align-top -padding-s`} boxed>
 					<PostCard
 						title={item.title}
-						date={item.date}
+						date={basePath === 'blog' ? item.date : null}
 						slug={item.slug}
 						cover={item.cover}
 						coverAlt={item.coverAlt ?? ''}
