@@ -16,3 +16,6 @@
 /* COMPONENT STYLES */
 @import 'components/backgroundGrid.css';
 @import 'components/checkbox.css';
+
+/* PAGE STYLES */
+@import 'pages/posts.css';

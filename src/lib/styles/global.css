@@ -149,7 +149,7 @@ h4, .h4 {
 
 h5, .h5 {
 	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-	line-height: var(--typeface-line-height-body);
+	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
 /* Large: 1024px+ (Desktop) */
@@ -171,7 +171,7 @@ h5, .h5 {
 
 h6, .h6 {
 	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
-	line-height: var(--typeface-line-height-body);
+	line-height: var(--typeface-line-height-display);
 	letter-spacing: var(--typeface-tracking-heading);
 }
 /* Large: 1024px+ (Desktop) */
@@ -193,7 +193,7 @@ h6, .h6 {
 
 
 /* Paragraph Styles -------------------------------------------------- */
-p.body_text,
+p, p.body_text,
 span.body_text {
 	margin: 0;
 	padding: 0;
@@ -323,16 +323,17 @@ figcaption {
 /* HR -------------------------------------------------- */
 hr {
 	margin: var(--space-500) 0;
-	border: var(--border-width) solid var(--color-on-surface-opacity-10);
+	border: var(--border-width) solid transparent;
 }
 
 /* LISTS -------------------------------------------------- */
 ul {
 	display: flex;
 	flex-direction: column;
-	list-style: none;
-	padding: var(--space-600) 0;
-	margin: 0;
+	gap: var(--space-200);
+	/* list-style: none; */
+	/* padding: 0 0 0 var(--space-300);
+	margin: 0; */
 }
 ul.-spaced { gap: var(--space-300);}
 ol {
@@ -348,10 +349,26 @@ ol li {
 	position: relative;
 }
 li {
-	display: flex;
+	/* display: flex;
 	flex-direction: row;
 	flex: 1;
-	gap: var(--space-200);
+	gap: var(--space-200); */
+	font-family: var(--typeface-family-base);
+	font-size: var(--typeface-size-body-medium); /* Default to medium instead of large */
+	line-height: var(--typeface-line-height-base);
+	letter-spacing: var(--typeface-tracking-base);
+}
+
+/* BLOCKQUOTE -------------------------------------------------- */
+blockquote {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-100);
+	padding: var(--space-300);
+	margin: 0 0 var(--space-300) 0;
+	background-color: var(--color-brand-opacity-10);
+	border: var(--border-width) solid var(--color-brand-opacity-30);
 }
 
 /* PAIRINGS -------------------------------------------------- */

@@ -49,15 +49,15 @@
 	filter: blur(64px);
 }
 .glass-container.-colours .circle.-brand {
-	bottom: 30%;
-	left: 0;
+	bottom: 20%;
+	left: 20%;
 	width: 1600px;
 	height: 1600px;
 	background: radial-gradient(var(--color-neutral-100) 50%, var(--color-brand-20) 60%, var(--color-brand-accent) 70%);
 }
 .glass-container.-colours .circle.-niche {
 	bottom: 30%;
-	left: 40%;
+	left: 50%;
 	width: 1400px;
 	height: 1400px;
 	background: radial-gradient(var(--color-tag-completed) 32%, var(--color-tag-progress) 60%, var(--color-tag-on-progress) 75%);

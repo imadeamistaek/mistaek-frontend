@@ -15,7 +15,7 @@
 			<h5 id="howwework_title" class="h3">Fast infrastructure.</h5>
 			<h5 id="howwework_title" class="h3">No dependencies.</h5>
 		</div>
-		<List customClass="stages col-6 col-start-1 lg:col-4 lg:col-start-2">
+		<List customClass="stages col-6 col-start-1 lg:col-4 lg:col-start-2 -gap-none">
 			<Box as="li" customClass="-align-top -padding-s -space-s" boxed>
 				<p class="h6">Mistaek</p>
 				<List customClass="" vertical smallgap>

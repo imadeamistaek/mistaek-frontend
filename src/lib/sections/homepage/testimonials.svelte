@@ -15,7 +15,7 @@
 			<p class="body_text -small -contained-xl">Now we're applying that to sustainability tech.</p>
 		</div>
 
-		<List customClass="col-6 col-start-1 -padding-none">
+		<List customClass="col-6 col-start-1 -padding-none -horizontal -gap-none">
 			<Box as="li" customClass="-align-top -aspect-square -padding-s" boxed>
 				<Testimonial
 					customClass="col-2 -items-vbetween"

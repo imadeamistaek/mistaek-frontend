@@ -1,0 +1,57 @@
+/* Apply adjustments to the frontmatter list to make the items have a space between them */
+.list.post-frontmatter li p:first-child { flex: 1; }
+
+/* Styles for the Sections inside the cases */
+.text_block {
+	display: grid;
+	padding: var(--space-100) 0;
+}
+.text_block.-bridge p { font-size: var(--typeface-size-heading-s); text-align: center; }
+
+/* Styles for the content within the cases */
+
+/* MOBILE */
+h1.post-heading { padding: var(--space-300) 0 0; }
+.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+	/* font-size: var(--typeface-size-heading-xs); */
+	line-height: var(--typeface-line-height-body);
+	letter-spacing: var(--typeface-tracking-heading);
+	margin-bottom: var(--space-300);
+}
+.prose p {
+	font-size: var(--typeface-size-body-large); /* Start smaller on mobile */
+	line-height: var(--typeface-line-height-base);
+	letter-spacing: var(--typeface-tracking-base);
+}
+.prose * + p {
+	margin-bottom: var(--space-200);
+}
+
+/* Large: 1024px+ (Desktop) */
+@media (min-width: 64rem) {
+	h1.post-heading { padding: var(--space-500) 0 0; }
+	.text_block { padding: var(--space-600) 0; }
+	.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { font-size: var(--typeface-size-heading-xs); }
+	/* .prose p { font-size: var(--typeface-size-heading-2xs); } */
+}
+/* Extra Large: 1280px+ (Large Desktop) */
+@media (min-width: 80rem) {
+	h1.post-heading { padding: var(--space-700) 0 0; }
+	.text_block { padding: var(--space-800) 0; }
+	.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { font-size: var(--typeface-size-heading-s); }
+	/* .prose p { font-size: var(--typeface-size-heading-xs); } */
+}
+/* 2XL: 1536px+ (Ultra Wide) */
+@media (min-width: 96rem) {
+	h1.post-heading { padding: var(--space-900) 0 0; }
+	.text_block { padding: var(--space-1000) 0; }
+	.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { font-size: var(--typeface-size-heading-m); }
+	/* .prose p { font-size: var(--typeface-size-heading-xs); } */
+}
+/* 3XL: 1920px+ (Ultra Wide) */
+@media (min-width: 120rem) {
+	h1.post-heading { padding: var(--space-max) 0 0; }
+	.text_block { padding: var(--space-max) 0; }
+	.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { font-size: var(--typeface-size-heading-l); }
+	/* .prose p { font-size: var(--typeface-size-heading-xs); } */
+}

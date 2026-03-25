@@ -25,6 +25,7 @@
 	.-overflow-h { overflow: hidden; }
 	
 	.-horizontal {flex-direction: column;}
+	.-horizontal-always {flex-direction: row;}
 	@media (min-width: 992px) {
 		.-horizontal {flex-direction: row;}
 	}

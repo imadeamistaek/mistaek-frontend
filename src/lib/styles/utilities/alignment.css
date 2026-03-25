@@ -5,15 +5,19 @@
 .-align-bl { align-items: flex-start; justify-content: flex-end; align-self: flex-start; }
 .-align-br { align-items: flex-end; justify-content: flex-end; align-self: flex-end; }
 
-
 .-items-hstart { align-items: flex-start; }
 .-items-hcenter { align-items: center; }
 .-items-hend { align-items: flex-end; }
 .-items-hstretch { align-items: stretch; }
 
-.-items-vstart { justify-content: flex-start; }
+.-items-vstart { justify-content: flex-start !important; }
 .-items-vcenter { justify-content: center; }
 .-items-vend { justify-content: flex-end; }
 .-items-vbetween { justify-content: space-between; }
 .-items-varound { justify-content: space-around; }
 .-items-vevenly { justify-content: space-evenly; }
+
+.-self-stretch { align-self: stretch; }
+.-self-start { align-self: flex-start; }
+.-self-center { align-self: center; }
+.-self-end { align-self: flex-end; }

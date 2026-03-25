@@ -2,8 +2,7 @@
 	import Tag from "$lib/elements/tag.svelte";
 	import Grid from "$lib/components/grid.svelte";
 	import Box from '$lib/elements/box.svelte';
-	import Link from '$lib/elements/link.svelte';
-	import LinkBoxed from '$lib/elements/linkBoxed.svelte';
+	import NewLink from '$lib/elements/newlink.svelte';
 	import Grain from '$lib/elements/grain.svelte';
 	import List from "$lib/components/list.svelte";
 	import ListItem from "$lib/elements/listItem.svelte";
@@ -11,7 +10,7 @@
 </script>
 
 <section class="container" aria-labelledby="pricing_title">
-	<Grid>
+	<Grid customClass="-gap-vxl">
 		
 		<Tag label="Pricing" customClass="-nano col-1 col-start-1" />
 		<div class="pairing col-6 col-start-1 col-6 col-start-1 md:col-3 md:col-start-1 -spaced">
@@ -44,7 +43,7 @@
 							<p class="h1">10k €</p>
 							<p class="body_text -medium -contained-xl">50% upfront, 50% at handoff</p>
 						</div>
-						<LinkBoxed label="Get started" url="https://cal.com/mistaek/15min" type="external" customClass="col-6 col-start-1" />
+						<NewLink boxed variant="default" label="Get started" url="https://cal.com/mistaek/15min" type="external" customClass="col-6 col-start-1 -full" />
 					</Grid>
 					<Grid customClass="col-6 col-start-1 lg:col-3 lg:col-start-4 -padding-l -gap-vm">
 						<div class="pairing col-6 col-start-1">
@@ -64,7 +63,7 @@
 
 			</Box>
 
-			<List customClass="stages col-6 col-start-1">
+			<List customClass="stages col-6 col-start-1 -gap-none">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
 					<p class="body_text -large">Positioning Sprint</p>
 					<p class="body_text -small -subtle">Clarify your message for customers</p>
