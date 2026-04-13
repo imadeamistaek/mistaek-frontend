@@ -10,7 +10,7 @@ team:
   - With Company
 published: true
 cover: /cases/viaverde/cover.webp
-coverAlt: Decorative image of a green colibri, the bird that represents the brand, flying on top of a green background
+coverAlt: A green colibri, Via Verde's brand symbol, in flight against a green background.
 ---
 
 <script>
@@ -22,7 +22,7 @@ coverAlt: Decorative image of a green colibri, the bird that represents the bran
 
 <Image
   src="/cases/viaverde/cover.webp"
-  alt="Decorative image of a green colibri, the bird that represents the brand, flying on top of a green background"
+  alt="A green colibri, Via Verde's brand symbol, in flight against a green background."
   cover
   customClass="-aspect-16-9 col-6"
 />
@@ -185,7 +185,7 @@ That principle sits at the center of how I work. Design doesn't decide what peop
 
 <Image
   src="/cases/viaverde/concept8.webp"
-  alt="The Via Verde, With Company, and André Sequeira project team after two days of workshops in Lisbon"
+  alt="The full project team, Via Verde, With Company, and André Sequeira, at the end of two days of workshops in Lisbon."
   cover
   customClass="-aspect-4-3 col-6"
 />
