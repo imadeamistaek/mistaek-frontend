@@ -56,7 +56,7 @@ There were real constraints too. They didn't have full autonomy to change their 
 </section>
 <Image
   src="/cases/viaverde/concept7.webp"
-  alt="Diagram of Santander's team structure prior to Andre's arrival at the project"
+  alt="André Sequeira and the project team during a co-design workshop session with Via Verde."
   contain
   customClass="col-6"
 />
@@ -92,31 +92,31 @@ Alongside the concept work, I developed a UI Kit used across all screens in the 
 
 <Image
   src="/cases/viaverde/concept1.webp"
-  alt="Decorative image of people smiling while looking at each other"
+  alt="André and the project team during a co-design workshop session with Via Verde."
   cover
   customClass="-aspect-16-9 col-6"
 />
 <Image
   src="/cases/viaverde/concept2.webp"
-  alt="Representation of token naming structure for the project"
+  alt="People writing and using Lego pieces to prototype ideas"
   cover
   customClass="-aspect-4-3 col-6 col-start-1 md:col-3 md:col-start-1"
 />
 <Image
   src="/cases/viaverde/concept5.webp"
-  alt="Representation of tokens being applied to typography"
+  alt="André filming the outcome of prototypes for one of Via Verde's team"
   cover
   customClass="-aspect-4-3 col-6 col-start-1 md:col-3 md:col-start-4"
 />
 <Image
   src="/cases/viaverde/concept4.webp"
-  alt="Representation of the various grids and resolutions used on the project"
+  alt="Project teams spread across a big room, on their desks, ideating and prototyping"
   cover
   customClass="-aspect-16-9 col-6"
 />
 <Image
   src="/cases/viaverde/concept3.webp"
-  alt="Apresentation of several components built for Santander's Design System"
+  alt="Project team writing and discussing ideas with post-its"
   cover
   customClass="-aspect-4-3 col-6"
 />
@@ -126,7 +126,7 @@ Alongside the concept work, I developed a UI Kit used across all screens in the 
 ---
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
-<Tag label="04. What We Built" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<Tag label="04. What we built" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
 <div class="col-6 col-start-1 md:col-3 md:col-start-4">
 
 ##### A concept for intelligent mobility. And a clear path to get there.
@@ -143,25 +143,25 @@ The concept was presented to Via Verde and Brisa stakeholders and validated thro
 
 <Image
   src="/cases/viaverde/type.gif"
-  alt="Decorative image of people smiling while looking at each other"
+  alt="Animation showing the Via Verde app typography system in motion"
   cover
   customClass="-aspect-5-4 col-6 col-start-1 md:col-3 md:col-start-1"
 />
 <Image
   src="/cases/viaverde/colors.webp"
-  alt="Representation of tokens being applied to typography"
+  alt="Via Verde UI Kit color palette"
   cover
   customClass="-aspect-5-4 col-6 col-start-1 md:col-3 md:col-start-4"
 />
 <Image
   src="/cases/viaverde/screens2.webp"
-  alt="Representation of the various grids and resolutions used on the project"
+  alt="Via Verde intelligent mobility app prototype screens"
   cover
   customClass="-aspect-1-1 col-6"
 />
 <Image
   src="/cases/viaverde/screens1.webp"
-  alt="Apresentation of several components built for Santander's Design System"
+  alt="Two big screens to better highlight the prototype look and feel"
   cover
   customClass="-aspect-4-3 col-6"
 />
@@ -171,7 +171,7 @@ The concept was presented to Via Verde and Brisa stakeholders and validated thro
 ---
 
 <section class="text_block -cols-6 col-6 col-start-1 -gap-vxl">
-<Tag label="06. Key Insight" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
+<Tag label="05. Key Insight" customClass="-nano col-6 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1" />
 <div class="col-6 col-start-1 md:col-4 md:col-start-3 xlg:col-3 xlg:col-start-4">
 
 ###### The people in the room already know the answer. Your job is to help them say it.
