@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Cases</title>
+	<title>Cases | Mistaek</title>
 	<meta name="description" content="Cases" />
 </svelte:head>
 

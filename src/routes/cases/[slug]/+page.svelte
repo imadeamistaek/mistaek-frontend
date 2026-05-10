@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores'
 	/**
 	 * Renders a single blog post.
 	 * data.content is the compiled Markdown as a Svelte component.
@@ -17,8 +18,13 @@
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data.meta.title} | Mistaek</title>
 	<meta name="description" content={data.meta.description} />
+	<meta property="og:title" content={data.meta.title}>
+	<meta property="og:description" content={data.meta.description}>
+	<meta property="og:image" content="{data.meta.cover}">
+	<meta property="og:type" content="article" />
+  	<meta property="og:url" content={$page.url.href} />
 </svelte:head>
 
 <section class="container">

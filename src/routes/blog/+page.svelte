@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Blog | Mistaek</title>
 	<meta name="description" content="Articles and thoughts." />
 </svelte:head>
 
