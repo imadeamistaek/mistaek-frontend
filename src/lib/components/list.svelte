@@ -31,6 +31,10 @@
 		list-style: none;
 	}
 
+	ul :global(> *) {
+		flex-wrap: wrap;
+	}
+
 	/**
 	 * Grid mode: switches the list from flex to grid,
 	 * matching the same column structure as the Grid component.

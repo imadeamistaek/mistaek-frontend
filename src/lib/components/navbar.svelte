@@ -58,7 +58,7 @@
 >
 	<div class={`navbar-container ${full ? 'col-6 col-start-1' : 'col-4 col-start-2'}`}>
 
-		<div class="slot -left col-1 col-start-1">
+		<div class="slot -left col-1 col-start-1 md:col-2 md:col-start-1 lg:col-1 lg:col-start-1">
 			<Logo small={true} />
 		</div>
 
@@ -66,12 +66,12 @@
 			Desktop nav links: hidden on mobile via CSS.
 			Visible from tablet up.
 		-->
-		<div class="slot -middle col-1 col-start-2">
+		<div class="slot -middle col-1 col-start-2 md:col-2 md:col-start-3 lg:col-4 lg:col-start-2">
 			<Newlink showIcon={false} boxed variant="ghost" label="Cases" url="/cases" type="internal" />
 			<Newlink showIcon={false} boxed variant="ghost" label="Blog" url="/blog" type="internal" />
 		</div>
 
-		<div class="slot -right col-4 col-start-3 md:col-2 md:col-start-5">
+		<div class="slot -right col-4 col-start-3 md:col-2 md:col-start-5 lg:col-1 lg:col-start-6">
 			<Newlink
 				boxed
 				variant="subtle"
@@ -212,7 +212,7 @@
 	@media (min-width: 48rem) {
 		.navbar-container { padding: 0 var(--space-1000); }
 		.slot.-left { text-align: left; }
-		.slot.-middle { display: flex; }
+		.slot.-middle { display: flex; justify-content: flex-start; }
 	}
 
 	@media (min-width: 120rem) {

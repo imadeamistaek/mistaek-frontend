@@ -29,6 +29,7 @@
 					cover={item.cover}
 					coverAlt={item.coverAlt}
 					basePath="cases"
+					imageRatio="-aspect-square"
 				/>
 			</Box>
 		{:else}

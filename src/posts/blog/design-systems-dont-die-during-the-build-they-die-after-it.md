@@ -8,7 +8,7 @@ categories:
 team:
   - André Sequeira
 published: true
-cover: /blog/design-systems-dont-die-during-the-build-they-die-after-it/cover.webp
+cover: /blog/01-design-systems-dont-die-during-the-build-they-die-after-it/cover.webp
 ---
 
 ## Most design systems I've seen don't fail during the build. They fail three months after handoff, quietly, when nobody's looking.

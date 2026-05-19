@@ -19,6 +19,7 @@
 	export let basePath: 'blog' | 'cases' = 'blog';
 	export let date: string | null | undefined = null;
 	export let customClass: string | null | undefined = null;
+	export let imageRatio: string = '-aspect-4-3';
 
 	import Image from '$lib/elements/image.svelte';
 	import { formatDate } from '$lib/utils';
@@ -38,7 +39,7 @@
 			src={cover}
 			alt={coverAlt}
 			cover
-			customClass="-aspect-4-3"
+			customClass={imageRatio}
 		/>
 	{/if}
 

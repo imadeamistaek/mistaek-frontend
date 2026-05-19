@@ -20,6 +20,8 @@ export type Post = {
 	// Cover
 	cover?: string      // optional, not every post needs a cover
 	coverAlt?: string   // optional, defaults to empty string
+	hero?: string        // optional, for a larger image at the top of the post
+	heroAlt?: string     // optional, defaults to empty string
 }
 
 export type Case = {

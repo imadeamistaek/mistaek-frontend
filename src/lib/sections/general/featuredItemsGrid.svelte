@@ -61,6 +61,7 @@
 						slug={item.slug}
 						cover={item.cover}
 						coverAlt={item.coverAlt ?? ''}
+						imageRatio={basePath === 'cases' ? '-aspect-square' : '-aspect-4-5'}
 						{basePath}
 					/>
 				</Box>

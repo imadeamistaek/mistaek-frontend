@@ -30,6 +30,7 @@
 					coverAlt={post.coverAlt}
 					date={post.date}
 					basePath="blog"
+					imageRatio="-aspect-4-5"
 				/>
 			</Box>
 		{:else}

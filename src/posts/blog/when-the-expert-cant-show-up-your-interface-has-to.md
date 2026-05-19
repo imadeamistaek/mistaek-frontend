@@ -8,7 +8,7 @@ categories:
 team:
   - André Sequeira
 published: true
-cover: /blog/when-the-expert-cant-show-up-your-interface-has-to/cover.webp
+cover: /blog/02-when-the-expert-cant-show-up-your-interface-has-to/cover.webp
 ---
 
 ## Some sustainability tech platforms are built to be used by experts.

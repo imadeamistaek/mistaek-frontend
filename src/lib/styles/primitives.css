@@ -191,7 +191,7 @@
 
 /* Line Height */
 :root {
-	--typeface-line-height-display: 110%;
+	--typeface-line-height-display: 100%;
 	--typeface-line-height-heading: 120%;
 	--typeface-line-height-base: 140%;
 }
