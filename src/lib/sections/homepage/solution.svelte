@@ -25,19 +25,19 @@
 			<List customClass="col-6 col-start-1 -padding-none -gap-none" vertical divided hoverable>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(01)</p>
-					<p class="body_text -large">Complete design system in Figma your team owns permanently</p>
+					<p class="body_text -large">A complete design system your team runs without us</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(02)</p>
-					<p class="body_text -large">Design tokens, components, and data visualization patterns</p>
+					<p class="body_text -large">Components and patterns built for complex scientific data, not generic templates</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(03)</p>
-					<p class="body_text -large">Documentation and training for designers and developers</p>
+					<p class="body_text -large">Documentation and training so the handoff is real, not theoretical</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(04)</p>
-					<p class="body_text -large">Governance framework so the system stays consistent as you grow</p>
+					<p class="body_text -large">A governance framework that keeps the system consistent as your product grows</p>
 				</Box>
 			</List>
 		</Box>

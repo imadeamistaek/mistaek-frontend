@@ -16,8 +16,8 @@
 			</div>
 			<Grid customClass="col-6 col-start-1 -padding-l -gap-vl">
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
-					<p id="pricing_title" class="h2 col-6 col-start-1 lg:col-3 lg:col-start-1">Make your science matter</p>
-					<p class="body_text -medium -contained-xl">Not sure if this is what you need? Let’s talk. We’ll tell you honestly whether a design system sprint makes sense for where you are.</p>
+					<p id="pricing_title" class="h2 col-6 col-start-1 lg:col-3 lg:col-start-1">The door is there. Let's open it.</p>
+					<p class="body_text -medium -contained-xl">If you're a Series A sustainability tech company and design is starting to slow you down, let's talk. We'll tell you honestly whether a sprint makes sense for where you are.</p>
 				</div>
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
 					<div class="button_pairing">

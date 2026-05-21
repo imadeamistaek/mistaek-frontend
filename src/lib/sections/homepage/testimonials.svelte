@@ -9,10 +9,10 @@
 <section class="container" aria-labelledby="testimonials_title">
 	<Grid customClass="-cols-6 -gap-vm">
 		<Tag label="Testimonials" customClass="-nano col-1 col-start-1" />
-		<p id="testimonials_title" class="h4 col-6 col-start-1 md:col-3 md:col-start-1">Your sprints are fast because we’ve spent 10+ years building systems for complex data</p>
+		<p id="testimonials_title" class="h4 col-6 col-start-1 md:col-2 md:col-start-1">Built on a decade of complex data systems.</p>
 		<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-			<p class="body_text -small -contained-xl">We've built design systems for fintech, insurance, and education. Places where data accuracy matters and getting it wrong has consequences.</p>
-			<p class="body_text -small -contained-xl">Now we're applying that to sustainability tech.</p>
+			<p class="body_text -small -contained-xl">We've built design systems for fintech, insurance, and education. Environments where data accuracy isn't optional and design debt has real consequences.</p>
+			<p class="body_text -small -contained-xl">Sustainability tech has the same demands. Complex data, institutional buyers, high stakes. That's exactly what we built for.</p>
 		</div>
 
 		<List customClass="col-6 col-start-1 -padding-none -horizontal -gap-none">

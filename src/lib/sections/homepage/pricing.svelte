@@ -15,7 +15,7 @@
 		<Tag label="Pricing" customClass="-nano col-1 col-start-1" />
 		<div class="pairing col-6 col-start-1 col-6 col-start-1 md:col-3 md:col-start-1 -spaced">
 			<h6 id="pricing_title" class="h3 col-6 col-start-1">Clear Pricing. No surprises</h6>
-			<p class="body_text -large">One focused sprint. All the infrastructure you need. No hidden costs.</p>
+			<p class="body_text -large -contained-xl">One focused sprint. Everything your team needs to ship consistently. No hidden costs.</p>
 		</div>
 
 		<Box as="div" customClass="col-6 col-start-1 -space-none">
@@ -36,8 +36,8 @@
 					<Crosshair customClass="-br" />
 					<Grid customClass="col-6 col-start-1 lg:col-3 -padding-l -gap-vm">
 						<div class="pairing col-6 col-start-1">
-							<p class="h5">Systems Sprint</p>
-							<p class="body_text -medium -contained-xl">Transform complex science into trustworthy products</p>
+							<p class="h5">Unlock Sprint</p>
+							<p class="body_text -medium -contained-xl">Your design system, built for complex scientific data</p>
 						</div>
 						<div class="pairing col-6 col-start-1">
 							<p class="h1">10k €</p>
@@ -48,14 +48,14 @@
 					<Grid customClass="col-6 col-start-1 lg:col-3 lg:col-start-4 -padding-l -gap-vm">
 						<div class="pairing col-6 col-start-1">
 							<p class="body_text -medium -bold -contained-xl">What you’ll get</p>
-							<p class="body_text -medium -contained-xl">Complete design infrastructure your team owns permanently. Built specifically for complex scientific data. No retainers, no dependencies.</p>
+							<p class="body_text -medium -contained-xl">Complete design infrastructure your team owns permanently. Built specifically for your data. No retainers, no dependencies.</p>
 						</div>
 						<List customClass="col-6 col-start-1" vertical smallgap>
-							<ListItem as="li" icon="checkg" label="Complete design system in Figma" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Design tokens, components, data visualisation patterns" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Documentation for designers and developers" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Team training (2-3 sessions)" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Governance framework" customClass="-small"/>
+							<ListItem as="li" icon="checkg" label="Complete design system your team runs without us" customClass="-small"/>
+							<ListItem as="li" icon="checkg" label="Components and patterns built for scientific data" customClass="-small"/>
+							<ListItem as="li" icon="checkg" label="Documentation and training so the handoff sticks" customClass="-small"/>
+							<ListItem as="li" icon="checkg" label="Governance framework for long-term consistency" customClass="-small"/>
+							<ListItem as="li" icon="checkg" label="2-3 training sessions included" customClass="-small"/>
 							<ListItem as="li" icon="checkg" label="4-6 weeks, clear timeline" customClass="-small"/>
 						</List>
 					</Grid>
@@ -65,22 +65,22 @@
 
 			<List customClass="stages col-6 col-start-1 -gap-none">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Positioning Sprint</p>
-					<p class="body_text -small -subtle">Clarify your message for customers</p>
+					<p class="body_text -large">Find Sprint</p>
+					<p class="body_text -small -subtle">Clarify your positioning before you build</p>
 					<span class="spacer -small"></span>
-					<p class="h6">3-4 weeks, €6k</p>
+					<p class="h6">3-4 weeks, from €6,000</p>
 				</Box>
 				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Build Sprint</p>
-					<p class="body_text -small -subtle">Design product features that match your system</p>
+					<p class="body_text -large">Enter Sprint</p>
+					<p class="body_text -small -subtle">Expand your system as the product grows</p>
 					<span class="spacer -small"></span>
-					<p class="h6">2-3 weeks, €4k</p>
+					<p class="h6">2-3 weeks, from €4,000</p>
 				</Box>
 				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Launch Sprint</p>
-					<p class="body_text -small -subtle">Bring your digital presence up to product quality</p>
+					<p class="body_text -large">Open Sprint</p>
+					<p class="body_text -small -subtle">Bring your website and product up to system quality</p>
 					<span class="spacer -small"></span>
-					<p class="h6">3-4 weeks, €5k</p>
+					<p class="h6">3-4 weeks, from €5,000</p>
 				</Box>
 			</List>
 

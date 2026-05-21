@@ -15,9 +15,9 @@
 		<Grid customClass="col-6 col-start-1 -padding-l -gap-vxl">
 			<Tag label="Who this is for" customClass="-nano col-4 col-start-1 md:col-4 md:col-start-2" />
 			<div class="pairing col-6 col-start-1 md:col-4 md:col-start-2 -spaced">
-				<h3 id="whoisfor_title">Built for Series A sustainability tech companies</h3>
+				<h4 id="whoisfor_title">You have the science. You have the product. You have paying clients.</h4>
 				<span class="spacer -small"></span>
-				<p class="body_text -small -contained-xl">Ocean tech. Biodiversity. Climate data. Carbon and ESG platforms. Environmental data platforms. You have a product in market, paying customers, and a growing team.</p>
+				<p class="body_text -small -contained-xl">Ocean tech. Biodiversity. Climate data. Carbon and ESG platforms. Series A, with a growing team and design starting to slow you down.</p>
 				<p class="body_text -small -contained-xl -subtle">If that sounds like you:</p>
 				<NewLink variant="ghost" label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
 			</div>

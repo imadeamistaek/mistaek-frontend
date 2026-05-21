@@ -15,8 +15,8 @@
 
 <Hero />
 <Problem />
-<Whoisfor />
 <HowWeWork />
+<Whoisfor />
 <Solution />
 <Comparison />
 <Pricing />

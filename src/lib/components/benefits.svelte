@@ -16,11 +16,11 @@
 	import { onMount } from 'svelte';
 
 	const items: string[] = [
-		'Make science trustworthy',
-		'Scale without chaos',
-		'Speed up development',
-		'Win enterprise data',
-		'Own the infrastructure'
+		'Science that reads clearly',
+		'Enterprise-ready from day one',
+		'Developers ship faster',
+		'Teams that stay consistent',
+		'Infrastructure you own permanently'
 	];
 
 	let marquee: HTMLElement;

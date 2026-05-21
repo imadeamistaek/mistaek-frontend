@@ -10,9 +10,9 @@
 	<Grid customClass="-cols-6 -gap-vm">
 		<Grid customClass="col-6 col-start-1 -gap-vm">
 			<Tag label="How we work" customClass="-nano" />
-			<h4 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h4>
+			<h3 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h3>
 			<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-				<p class="body_text -medium">We run 4-6 week design system sprints built specifically for complex scientific data products. After the sprint, you own everything. No retainers. No dependencies.</p>
+				<p class="body_text -medium">Most design work creates ongoing dependency. We work differently. One focused sprint, a defined end date, and a system your team owns and runs without us. We come back only if you want to go deeper.</p>
 			</div>
 		</Grid>
 
@@ -23,30 +23,30 @@
 					<p class="body_text -large -subtle">Week 1-2</p>
 					<Crosshair customClass="-tl" />
 				</div>
-				<p class="h5">Discovery & Strategic Foundation</p>
-				<!-- <div class="box_body">
-					<p class="body_text -medium -subtle">Product and design audit. User research. Define system principles specific to your scientific domain. Map component hierarchy and data visualisation strategy.</p>
-				</div> -->
+				<p class="h5">Listen and map</p>
+				<div class="box_body">
+					<p class="body_text -medium -subtle">We map your product, your team, and the specific patterns your scientific data needs. No designing before the problem is named.</p>
+				</div>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>
 					<p class="body_text -large -subtle">Week 3-4</p>
 				</div>
-				<p class="h5">Core System Build</p>
-				<!-- <div class="box_body">
-					<p class="body_text -medium -subtle">Foundational components. Domain-specific data visualisation patterns. Design tokens. Figma library architecture. Documentation structure.</p>
-				</div> -->
+				<p class="h5">Build and refine</p>
+				<div class="box_body">
+					<p class="body_text -medium -subtle">We build the foundation. Components, tokens, data visualisation patterns built specifically for your domain, not generic templates.</p>
+				</div>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>
 					<p class="body_text -large -subtle">Week 5-6</p>
 				</div>
-				<p class="h5">Implementation & Handoff</p>
-				<!-- <div class="box_body">
-					<p class="body_text -medium -subtle">Work with your team to implement first components. Train designers and developers. Establish governance framework. Complete handoff and ownership transfer.</p>
-				</div> -->
+				<p class="h5">Hand over and train</p>
+				<div class="box_body">
+					<p class="body_text -medium -subtle">We hand over a system your team knows how to use. Training included. Thirty days after handoff, we check adoption is working.</p>
+				</div>
 			</Box>
 		</List>
 	</Grid>
