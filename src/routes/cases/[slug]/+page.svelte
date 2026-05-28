@@ -66,7 +66,7 @@
 <FeaturedItemsGrid
 	items={data.cases}
 	basePath="cases"
-	tag="More work"
+	tag="More cases"
 	title="Related cases"
 	colSpan="col-6 md:col-2"
 />

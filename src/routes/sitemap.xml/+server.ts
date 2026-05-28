@@ -9,8 +9,8 @@ export const GET: RequestHandler = async () => {
     // Add these as you build them:
     // { url: '/about', priority: '0.8', changefreq: 'monthly' },
     // { url: '/services', priority: '0.8', changefreq: 'monthly' },
-    // { url: '/work', priority: '0.8', changefreq: 'monthly' },
-    // { url: '/articles', priority: '0.6', changefreq: 'weekly' },
+    // { url: '/cases', priority: '0.8', changefreq: 'monthly' },
+    // { url: '/writing', priority: '0.6', changefreq: 'weekly' },
     // { url: '/contact', priority: '0.7', changefreq: 'monthly' },
     // { url: '/pricing-calculator', priority: '0.9', changefreq: 'monthly' },
   ];

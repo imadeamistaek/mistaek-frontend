@@ -9,14 +9,14 @@
 	 * @prop coverAlt - Alt text for the cover image. Defaults to empty string
 	 *                  which marks it as decorative. Pass a description when
 	 *                  the image adds context beyond the title.
-	 * @prop basePath - The base URL segment e.g. 'blog' or 'cases'
+	 * @prop basePath - The base URL segment e.g. 'writing' or 'cases'
 	 * @prop customClass - Optional helper classes
 	 */
 	export let title: string;
 	export let slug: string;
 	export let cover: string | null | undefined = null;
 	export let coverAlt: string = '';
-	export let basePath: 'blog' | 'cases' = 'blog';
+	export let basePath: 'writing' | 'cases' = 'writing';
 	export let date: string | null | undefined = null;
 	export let customClass: string | null | undefined = null;
 	export let imageRatio: string = '-aspect-4-3';

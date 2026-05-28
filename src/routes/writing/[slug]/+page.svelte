@@ -83,7 +83,7 @@
 
 <FeaturedItemsGrid
 	items={data.posts}
-	basePath="blog"
+	basePath="writing"
 	tag="More articles"
 	title="Related articles"
 	colSpan="col-6 md:col-2"

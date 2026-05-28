@@ -3,7 +3,7 @@ import type { Post } from '$lib/types'
 
 export async function load({ params, fetch }) {
 	try {
-		const post = await import(`../../../posts/blog/${params.slug}.md`)
+		const post = await import(`../../../posts/writing/${params.slug}.md`)
 
 		/**
 		 * Fetch all cases to find related ones.

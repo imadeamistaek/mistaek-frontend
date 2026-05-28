@@ -3,12 +3,11 @@ title: When the expert can't show up, your interface has to
 description: Some sustainability tech platforms are built around embedded domain expertise. That model works until the platform needs to operate in contexts where the expert isn't in the room.
 date: '2026-05-11'
 categories:
-  - Design Systems
-  - Product Strategy
+  - Science
 team:
   - André Sequeira
 published: true
-cover: /blog/02-when-the-expert-cant-show-up-your-interface-has-to/cover.webp
+cover: /writing/02-when-the-expert-cant-show-up-your-interface-has-to/cover.webp
 ---
 
 ## Some sustainability tech platforms are built to be used by experts.

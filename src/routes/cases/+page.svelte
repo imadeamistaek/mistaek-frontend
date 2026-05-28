@@ -16,7 +16,7 @@
 	<Grid customClass="-cols-6 -gap-vxl">
 
 		<Grid customClass="col-6 col-start-1 -padding-vxl -gap-vxxs">
-			<h1 class="col-6 col-start-1 md:col-3 md:col-start-1">Work</h1>
+			<h1 class="col-6 col-start-1 md:col-3 md:col-start-1">Cases</h1>
 			<p class="h6 col-6 col-start-1 md:col-3 md:col-start-1">Design systems for companies translating complex science into trusted products.</p>
 		</Grid>
 

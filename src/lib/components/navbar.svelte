@@ -18,8 +18,8 @@
 
 	const navLinks = [
 		{ label: 'Home', url: '/' },
-		{ label: 'Work', url: '/cases' },
-		{ label: 'Blog', url: '/blog' },
+		{ label: 'Cases', url: '/cases' },
+		{ label: 'Writing', url: '/writing' },
 	];
 
 	onMount(() => {
@@ -68,7 +68,7 @@
 		-->
 		<div class="slot -middle col-1 col-start-2 md:col-2 md:col-start-3 lg:col-4 lg:col-start-2">
 			<Newlink showIcon={false} boxed variant="ghost" label="Cases" url="/cases" type="internal" />
-			<Newlink showIcon={false} boxed variant="ghost" label="Blog" url="/blog" type="internal" />
+			<Newlink showIcon={false} boxed variant="ghost" label="Writing" url="/writing" type="internal" />
 		</div>
 
 		<div class="slot -right col-4 col-start-3 md:col-2 md:col-start-5 lg:col-1 lg:col-start-6">

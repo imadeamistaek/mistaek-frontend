@@ -3,12 +3,11 @@ title: Design Systems don't die during the build. They die after it.
 description: Why most design systems fail at adoption, not delivery. The three real reasons teams stop using them, and the question to ask before you build.
 date: '2026-05-04'
 categories:
-  - Design Systems
-  - DesignOps
+  - Systems
 team:
   - André Sequeira
 published: true
-cover: /blog/01-design-systems-dont-die-during-the-build-they-die-after-it/cover.webp
+cover: /writing/01-design-systems-dont-die-during-the-build-they-die-after-it/cover.webp
 ---
 
 ## Most design systems I've seen don't fail during the build. They fail three months after handoff, quietly, when nobody's looking.

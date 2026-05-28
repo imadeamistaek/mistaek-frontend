@@ -13,7 +13,7 @@ async function getPosts(): Promise<Post[]> {
 	 * matching a pattern at build time. eager: true means it
 	 * reads the contents immediately instead of lazily.
 	 */
-	const paths = import.meta.glob('/src/posts/blog/*.md', { eager: true })
+	const paths = import.meta.glob('/src/posts/writing/*.md', { eager: true })
 
 	for (const path in paths) {
 		const file = paths[path]

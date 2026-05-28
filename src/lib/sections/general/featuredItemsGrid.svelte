@@ -1,12 +1,12 @@
 <script lang="ts">
 	/**
 	 * ContentGrid Section
-	 * Reusable grid of PostCards for cases or blog posts.
-	 * Used on the homepage, case detail pages, and blog detail pages.
+	 * Reusable grid of PostCards for cases or writing posts.
+	 * Used on the homepage, case detail pages, and writing detail pages.
 	 *
 	 * @prop items - Array of Case or Post objects to display
-	 * @prop basePath - 'cases' or 'blog', passed to PostCard for correct URLs
-	 * @prop tag - Small label above the heading e.g. 'Cases' or 'Blog'
+	 * @prop basePath - 'cases' or 'writing', passed to PostCard for correct URLs
+	 * @prop tag - Small label above the heading e.g. 'Cases' or 'Writing'
 	 * @prop title - Main heading e.g. 'Work' or 'Latest Articles'
 	 * @prop linkLabel - Text for the view all link e.g. 'View all cases'
 	 * @prop linkUrl - URL for the view all link e.g. '/cases'
@@ -22,7 +22,7 @@
 	import NewLink from '$lib/elements/newlink.svelte';
 
 	export let items: Case[] | Post[] = [];
-	export let basePath: 'cases' | 'blog' = 'cases';
+	export let basePath: 'cases' | 'writing' = 'cases';
 	export let tag: string | null | undefined = null;
 	export let title: string;
 	export let linkLabel: string | null | undefined = null;
@@ -57,7 +57,7 @@
 				<Box as="li" customClass={`${colSpan} -align-top -padding-s`} boxed>
 					<PostCard
 						title={item.title}
-						date={basePath === 'blog' ? item.date : null}
+						date={basePath === 'writing' ? item.date : null}
 						slug={item.slug}
 						cover={item.cover}
 						coverAlt={item.coverAlt ?? ''}

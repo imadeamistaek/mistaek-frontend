@@ -24,7 +24,7 @@
 	items={data.cases}
 	basePath="cases"
 	tag="Cases"
-	title="Work"
+	title="Work we've done"
 	linkLabel="View all cases"
 	linkUrl="/cases"
 />

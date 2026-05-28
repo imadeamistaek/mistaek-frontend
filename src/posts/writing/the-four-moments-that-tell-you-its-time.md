@@ -3,13 +3,12 @@ title: The four moments that tell you it's time
 description: Most founders don't decide to invest in design because the logic convinced them. They decide because something specific happened. These four patterns show up before almost every decision.
 date: '2026-05-25'
 categories:
-  - Design Systems
-  - Sustainability tech
+  - Systems
 team:
   - André Sequeira
 published: true
-cover: /blog/04-the-four-moments-that-tell-you-its-time/cover.webp
-hero: /blog/04-the-four-moments-that-tell-you-its-time/hero.webp
+cover: /writing/04-the-four-moments-that-tell-you-its-time/cover.webp
+hero: /writing/04-the-four-moments-that-tell-you-its-time/hero.webp
 ---
 
 ## The four moments that tell you it's time
