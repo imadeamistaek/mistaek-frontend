@@ -274,9 +274,9 @@ a {
 	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
-	padding: var(--space-100) 0;
+	/* padding: var(--space-100) 0; */
 	color: var(--color-neutral-100);
-	text-decoration: none;
+	/* text-decoration: none; */
 }
 
 /* Better focus indicators for all interactive elements */
