@@ -28,5 +28,5 @@
 	linkLabel="View all cases"
 	linkUrl="/cases"
 />
-<Testimonials />
+<!-- <Testimonials /> -->
 <Cta />
