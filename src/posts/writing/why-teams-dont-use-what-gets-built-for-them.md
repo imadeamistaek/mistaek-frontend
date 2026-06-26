@@ -3,7 +3,7 @@ title: Why teams don't use what gets built for them
 description: The most common reason a design system fails isn't the components. It's that the team was never part of building it.
 date: '2026-05-18'
 categories:
-  - Founders
+  - Studio
 team:
   - André Sequeira
 published: true
