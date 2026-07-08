@@ -1,6 +1,6 @@
 ---
 title: The design debt you are carrying, and what it is costing per sprint
-description: Most Series A founders never see what design debt is costing them per sprint. Here is the actual calculation, with numbers, plus what to do about it.
+description: Most Startup founders never see what design debt is costing them per sprint. Here is the actual calculation, with numbers, plus what to do about it.
 date: '2026-06-10'
 categories:
   - Founders
@@ -24,7 +24,7 @@ What we are talking about is the accumulated cost of design decisions made under
 
 Say you have two developers. Each one loses around three hours per two-week sprint to decisions that a documented design system would have already resolved: which colour token, which spacing scale, which loading state pattern, which empty state, which error treatment. Three hours sounds modest. In my experience it is conservative.
 
-Two developers, three hours each, every two weeks. That is 156 engineering hours per year. At a fully loaded cost of around €70 per hour for a Series A engineer, you are looking at roughly €11,000 a year in pure rework time. And that is just the visible part.
+Two developers, three hours each, every two weeks. That is 156 engineering hours per year. At a fully loaded cost of around €70 per hour for an engineer, you are looking at roughly €11,000 a year in pure rework time. And that is just the visible part.
 
 Design debt is not a fixed line item. It grows. Every new feature built on the inconsistent foundation makes the next feature harder to build consistently. The dashboard that has three different chart components now will have four next quarter. The fourth will not be a deliberate choice. It will be the path of least resistance for whoever is shipping that feature on a Tuesday afternoon.
 

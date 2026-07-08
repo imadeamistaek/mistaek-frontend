@@ -13,7 +13,7 @@
 			<h1 id="hero_title">What your product says about your science before you say a word.</h1>
 		</div>
 		<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1">
-			<p class="body_text -medium -contained-l">We build design systems for Series A sustainability tech companies with complex data products.</p>
+			<p class="body_text -medium -contained-l">We build design systems for sustainability tech companies with complex data products.</p>
 			<p class="body_text -medium -contained-l -bold">Focused sprints. No retainers. Permanent ownership.</p>
 		</div>
 		<Benefits />
