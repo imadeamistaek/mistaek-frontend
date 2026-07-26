@@ -76,7 +76,7 @@
 				boxed
 				variant="subtle"
 				label="Book a call"
-				url="https://cal.com/mistaek/15min"
+				url="https://cal.com/mistaek/intro"
 				type="external"
 				customClass="-full"
 			/>

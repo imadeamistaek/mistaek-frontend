@@ -20,24 +20,24 @@
 					<div class="circle -niche"></div>
 				</div>
 				<Tag label="The solution" customClass="-nano col-1 col-start-1" />
-				<h5 id="solution_title" class="h3 col-6 col-start-1 lg:col-4 lg:col-start-1">Complete infrastructure. Permanent ownership.</h5>
+				<h5 id="solution_title" class="h3 col-6 col-start-1 lg:col-4 lg:col-start-1">From the first impression to the system underneath.</h5>
 			</Grid>
 			<List customClass="col-6 col-start-1 -padding-none -gap-none" vertical divided hoverable>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(01)</p>
-					<p class="body_text -large">A complete design system your team runs without us</p>
+					<p class="body_text -large">A brand and narrative that make your technology legible to the people who decide about it</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(02)</p>
-					<p class="body_text -large">Components and patterns built for complex scientific data, not generic templates</p>
+					<p class="body_text -large">A design foundation built for your product, not a generic template</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(03)</p>
-					<p class="body_text -large">Documentation and training so the handoff is real, not theoretical</p>
+					<p class="body_text -large">A live website and product your team owns and runs without us</p>
 				</Box>
 				<Box as="li" customClass="-horizontal -padding-hxl -padding-vs">
 					<p class="body_text -large">(04)</p>
-					<p class="body_text -large">A governance framework that keeps the system consistent as your product grows</p>
+					<p class="body_text -large">A system that holds together as you scale, so nothing gets rebuilt at the next stage</p>
 				</Box>
 			</List>
 		</Box>

@@ -164,7 +164,7 @@
 				
 				<div class="row_group">
 					<Button customClass="border" buttonLabel="Download PDF Checklist" tagLabel="" icon="downloadw" on:click={downloadPDF}/>
-					<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+					<Link url="https://cal.com/mistaek/intro" customClass="" label="Book an intro call" icon="arrow-out" />
 				</div>
 			</div>
 			{:else}

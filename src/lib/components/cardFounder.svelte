@@ -15,7 +15,7 @@
 			<p class="body_text -medium">I’ve spent over 10 years designing and building systems that actually work, not just look nice.</p>
 			<p class="body_text -medium">Whether you’re starting from scratch or scaling fast, I can help you make sense of what’s worth doing now, and what can wait.</p>
 		</div>
-		<Link url="https://cal.com/mistaek/15min" customClass="" label="Book a call with André" icon="arrow-out" />
+		<Link url="https://cal.com/mistaek/intro" customClass="" label="Book a call with André" icon="arrow-out" />
 	</div>
 </div>
 

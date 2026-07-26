@@ -16,10 +16,10 @@
 	import { onMount } from 'svelte';
 
 	const items: string[] = [
-		'Science that reads clearly',
-		'Enterprise-ready from day one',
-		'Developers ship faster',
-		'Teams that stay consistent',
+		'Legible to investors, not just experts',
+		'Clear to the buyer who was never in the room',
+		'Built to hold as you scale',
+		'One system, from brand to product',
 		'Infrastructure you own permanently'
 	];
 

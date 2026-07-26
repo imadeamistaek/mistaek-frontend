@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import '$lib/styles/main.css';
 	import { fade } from 'svelte/transition';
 	import { afterNavigate } from '$app/navigation';
@@ -14,6 +15,10 @@
 		window.scrollTo({ top: 0, behavior: 'instant' });
 	});
 </script>
+
+<svelte:head>
+	<link rel="canonical" href="https://www.mistaek.com{$page.url.pathname}" />
+</svelte:head>
 
 <Grid />
 <Grain fixed />

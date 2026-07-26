@@ -17,12 +17,12 @@
 			<Grid customClass="col-6 col-start-1 -padding-l -gap-vl">
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
 					<p id="pricing_title" class="h2 col-6 col-start-1 lg:col-3 lg:col-start-1">The door is there. Let's open it.</p>
-					<p class="body_text -medium -contained-xl">If you're a sustainability tech company and design is starting to slow you down, let's talk. We'll tell you honestly whether a sprint makes sense for where you are.</p>
+					<p class="body_text -medium -contained-xl">If your technology is harder to explain than it is to build, let's talk. We will tell you honestly whether a program makes sense for where you are.</p>
 				</div>
 				<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1 -spaced">
 					<div class="button_pairing">
 						<div class="slot -left">
-							<NewLink variant="default" label="Book a call with André" url="https://cal.com/mistaek/15min" type="external" />
+							<NewLink variant="default" label="Book a call with André" url="https://cal.com/mistaek/intro" type="external" />
 						</div>
 						<p class="body_text -micro -subtle -hidden-s">or</p>
 						<div class="slot -right">

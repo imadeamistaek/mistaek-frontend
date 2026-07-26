@@ -17,9 +17,9 @@
 			<div class="pairing col-6 col-start-1 md:col-4 md:col-start-2 -spaced">
 				<h4 id="whoisfor_title">You have the science. You have the product. You have paying clients.</h4>
 				<span class="spacer -small"></span>
-				<p class="body_text -small -contained-xl">Ocean tech. Biodiversity. Climate data. Carbon and ESG platforms. Sustainability tech companies, with a growing team and design starting to slow you down.</p>
+				<p class="body_text -small -contained-xl">Biotech. Climate and energy. Space. Robotics. Quantum and deep compute. Companies whose technology is genuinely hard to understand from outside, where the people who buy it are not the people who use it, and where the future depends on decisions made by people without direct access to the science.</p>
 				<p class="body_text -small -contained-xl -subtle">If that sounds like you:</p>
-				<NewLink variant="ghost" label="Let's talk" url="https://cal.com/mistaek/15min" type="external" />
+				<NewLink variant="ghost" label="Let's talk" url="https://cal.com/mistaek/intro" type="external" />
 			</div>
 		</Grid>
 	</Box>

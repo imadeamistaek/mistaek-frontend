@@ -12,7 +12,7 @@
 			<Tag label="How we work" customClass="-nano" />
 			<h3 id="howwework_title" class="h3 col-6 col-start-1 md:col-3 md:col-start-1">Focused sprints. Clear ownership. No dependencies.</h3>
 			<div class="pairing col-6 col-start-1 md:col-2 md:col-start-5 -spaced">
-				<p class="body_text -medium">Most design work creates ongoing dependency. We work differently. One focused sprint, a defined end date, and a system your team owns and runs without us. We come back only if you want to go deeper.</p>
+				<p class="body_text -medium">Most design work creates ongoing dependency. We work differently. One program, a defined end date, and everything owned by your team when we leave.</p>
 			</div>
 		</Grid>
 
@@ -20,32 +20,32 @@
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>
-					<p class="body_text -large -subtle">Week 1-2</p>
+					<p class="body_text -large -subtle">Step 1</p>
 					<Crosshair customClass="-tl" />
 				</div>
 				<p class="h5">Listen and map</p>
 				<div class="box_body">
-					<p class="body_text -medium -subtle">We map your product, your team, and the specific patterns your scientific data needs. No designing before the problem is named.</p>
+					<p class="body_text -medium -subtle">We talk to the people who decide about your technology, not only the people who built it. No designing before the problem is named.</p>
 				</div>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>
-					<p class="body_text -large -subtle">Week 3-4</p>
+					<p class="body_text -large -subtle">Step 2</p>
 				</div>
-				<p class="h5">Build and refine</p>
+				<p class="h5">Build</p>
 				<div class="box_body">
-					<p class="body_text -medium -subtle">We build the foundation. Components, tokens, data visualisation patterns built specifically for your domain, not generic templates.</p>
+					<p class="body_text -medium -subtle">Brand, narrative, system, product. Whatever the program covers, built to hold as you grow.</p>
 				</div>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s" boxed>
 				<div class="index">
 					<span class="dot"></span>
-					<p class="body_text -large -subtle">Week 5-6</p>
+					<p class="body_text -large -subtle">Step 3</p>
 				</div>
-				<p class="h5">Hand over and train</p>
+				<p class="h5">Hand over</p>
 				<div class="box_body">
-					<p class="body_text -medium -subtle">We hand over a system your team knows how to use. Training included. Thirty days after handoff, we check adoption is working.</p>
+					<p class="body_text -medium -subtle">Everything owned by your team. Training included. Then we leave.</p>
 				</div>
 			</Box>
 		</List>

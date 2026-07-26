@@ -15,74 +15,118 @@
 		<Tag label="Pricing" customClass="-nano col-1 col-start-1" />
 		<div class="pairing col-6 col-start-1 col-6 col-start-1 md:col-3 md:col-start-1 -spaced">
 			<h6 id="pricing_title" class="h3 col-6 col-start-1">Clear Pricing. No surprises</h6>
-			<p class="body_text -large -contained-xl">One focused sprint. Everything your team needs to ship consistently. No hidden costs.</p>
+			<p class="body_text -large -contained-xl">Two programs. Choose by where you are, not by assembling parts.</p>
+			<NewLink variant="ghost" label="Book a call" url="https://cal.com/mistaek/intro" type="external" />
 		</div>
 
 		<Box as="div" customClass="col-6 col-start-1 -space-none">
-			
-			<Box as="div" customClass="col-6 col-start-1 -space-l" boxed>
-			
-				<Grain absolute/>
-				
-				<div class="glass-container">
-					<div class="circle -brand -alt"></div>
-					<div class="circle -niche"></div>
-				</div>
-				
-				<Grid>
-					<Crosshair customClass="-tl" />
-					<Crosshair customClass="-tr" />
-					<Crosshair customClass="-bl" />
-					<Crosshair customClass="-br" />
-					<Grid customClass="col-6 col-start-1 lg:col-3 -padding-l -gap-vm">
-						<div class="pairing col-6 col-start-1">
-							<p class="h5">Unlock Sprint</p>
-							<p class="body_text -medium -contained-xl">Your design system, built for complex scientific data</p>
-						</div>
-						<div class="pairing col-6 col-start-1">
-							<p class="h1">10k €</p>
-							<p class="body_text -medium -contained-xl">50% upfront, 50% at handoff</p>
-						</div>
-						<NewLink boxed variant="default" label="Get started" url="https://cal.com/mistaek/15min" type="external" customClass="col-6 col-start-1 -full" />
-					</Grid>
-					<Grid customClass="col-6 col-start-1 lg:col-3 lg:col-start-4 -padding-l -gap-vm">
-						<div class="pairing col-6 col-start-1">
-							<p class="body_text -medium -bold -contained-xl">What you’ll get</p>
-							<p class="body_text -medium -contained-xl">Complete design infrastructure your team owns permanently. Built specifically for your data. No retainers, no dependencies.</p>
-						</div>
-						<List customClass="col-6 col-start-1" vertical smallgap>
-							<ListItem as="li" icon="checkg" label="Complete design system your team runs without us" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Components and patterns built for scientific data" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Documentation and training so the handoff sticks" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="Governance framework for long-term consistency" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="2-3 training sessions included" customClass="-small"/>
-							<ListItem as="li" icon="checkg" label="4-6 weeks, clear timeline" customClass="-small"/>
-						</List>
-					</Grid>
-				</Grid>
 
-			</Box>
+			<Grain absolute/>
+			
+			<div class="glass-container">
+				<div class="circle -brand -alt"></div>
+				<div class="circle -niche"></div>
+			</div>
+
+			<List customClass="stages col-6 col-start-1 -gap-none">
+				<Box as="div" customClass="-space-l" >
+					
+					<Grid>
+						<Crosshair customClass="-tl" />
+						<Crosshair customClass="-bl" />
+						<Grid customClass="col-6 col-start-1 -padding-l -gap-vm">
+							<div class="pairing col-6 col-start-1">
+								<p class="h5">Open (featured)</p>
+								<p class="body_text -medium -contained-xl">Your technology becomes legible to the people who decide about it.</p>
+							</div>
+							<div class="pairing col-6 col-start-1">
+								<p class="h1">32k €</p>
+								<p class="body_text -medium -contained-xl">8 weeks | 40% to start, 30% at design sign-off, 30% at launch.</p>
+							</div>
+						</Grid>
+						<Grid customClass="col-6 col-start-1 -padding-l -gap-vm">
+							<div class="pairing col-6 col-start-1">
+								<p class="body_text -medium -bold -contained-xl">What you’ll get</p>
+							</div>
+							<List customClass="col-6 col-start-1" vertical smallgap>
+								<ListItem as="li" icon="checkg" label="Workshops with your team, users, and buyers" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="Brand, narrative, positioning, and an investor and sales deck" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="Visual identity and a UI foundation built as a system" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="A website designed and shipped, five page templates" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="Everything owned by your team, documented and permanent" customClass="-small"/>
+							</List>
+						</Grid>
+					</Grid>
+
+				</Box>
+				<Box as="div" customClass="-space-l" >
+					
+					<Grid>
+						<Crosshair customClass="-tr" />
+						<Crosshair customClass="-br" />
+						<Grid customClass="col-6 col-start-1 -padding-l -gap-vm">
+							<div class="pairing col-6 col-start-1">
+								<p class="h5">Hold</p>
+								<p class="body_text -medium -contained-xl">It holds together as you scale.</p>
+							</div>
+							<div class="pairing col-6 col-start-1">
+								<p class="h1">48k €</p>
+								<p class="body_text -medium -contained-xl">12 weeks | 30% to start, 40% at the system build, 30% at handoff.</p>
+							</div>
+						</Grid>
+						<Grid customClass="col-6 col-start-1 -padding-l -gap-vm">
+							<div class="pairing col-6 col-start-1">
+								<p class="body_text -medium -bold -contained-xl">What you’ll get</p>
+							</div>
+							<List customClass="col-6 col-start-1" vertical smallgap>
+								<ListItem as="li" icon="checkg" label="Full audit and gap analysis" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="A complete design system with documentation and governance" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="Key product flows rebuilt on the system" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="DesignOps and training, plus a 30-day adoption check" customClass="-small"/>
+								<ListItem as="li" icon="checkg" label="Everything owned by your team, permanent" customClass="-small"/>
+							</List>
+						</Grid>
+					</Grid>
+
+				</Box>
+			</List>
 
 			<List customClass="stages col-6 col-start-1 -gap-none">
 				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Find Sprint</p>
-					<p class="body_text -small -subtle">Clarify your positioning before you build</p>
-					<span class="spacer -small"></span>
-					<p class="h6">3-4 weeks, from €6,000</p>
-				</Box>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Enter Sprint</p>
-					<p class="body_text -small -subtle">Expand your system as the product grows</p>
-					<span class="spacer -small"></span>
-					<p class="h6">2-3 weeks, from €4,000</p>
-				</Box>
-				<Box as="li" customClass="-align-top -padding-s" boxed>
-					<p class="body_text -large">Open Sprint</p>
-					<p class="body_text -small -subtle">Bring your website and product up to system quality</p>
-					<span class="spacer -small"></span>
-					<p class="h6">3-4 weeks, from €5,000</p>
+					<p class="body_text -large">Compare Open to a senior designer at €60,000 a year plus employment costs, who takes three to four months to reach this point and leaves with the knowledge. Or a brand studio that stops at brand, after which the work is rebuilt at the next stage of scale.</p>
 				</Box>
 			</List>
+
+		</Box>
+
+		<Box as="div" customClass="col-6 col-start-1 -space-none">
+
+			<Tag label="Add-ons" customClass="-nano col-1 col-start-1" />
+			
+			<List customClass="stages col-6 col-start-1 -gap-none">
+				<Box as="li" customClass="-align-top -padding-s" boxed>
+					<p class="body_text -small -subtle">Additional page, designed and developed</p>
+					<span class="spacer -small"></span>
+					<p class="h6">1.500 €</p>
+				</Box>
+				<Box as="li" customClass="-align-top -padding-s" boxed>
+					<p class="body_text -small -subtle">Additional workshop session</p>
+					<span class="spacer -small"></span>
+					<p class="h6">1.200 €</p>
+				</Box>
+				<Box as="li" customClass="-align-top -padding-s" boxed>
+					<p class="body_text -small -subtle">Additional deck</p>
+					<span class="spacer -small"></span>
+					<p class="h6">2.500 €</p>
+				</Box>
+				<Box as="li" customClass="-align-top -padding-s" boxed>
+					<p class="body_text -small -subtle">Extra revision round</p>
+					<span class="spacer -small"></span>
+					<p class="h6">1.000 €</p>
+				</Box>
+			</List>
+
+			<NewLink boxed variant="default" label="Book a call" url="https://cal.com/mistaek/intro" type="external" />
 
 		</Box>
 

@@ -5,7 +5,7 @@
 
 <div class="button_pairing">
 	<div class="slot -left">
-		<Link url="https://cal.com/mistaek/15min" customClass="" label="Book an intro call" icon="arrow-out" />
+		<Link url="https://cal.com/mistaek/intro" customClass="" label="Book an intro call" icon="arrow-out" />
 	</div>
 	<p class="body_text -micro -subtle">or</p>
 	<div class="slot -right">
