@@ -27,7 +27,7 @@
 				</List>
 			</Box>
 			<Box as="li" customClass="-align-top -padding-s -space-s" boxed>
-				<p class="h6">Other agencies</p>
+				<p class="h6">Brand Studios</p>
 				<List customClass="" vertical smallgap>
 					<ListItem as="li" icon="close-circle-r" label="Brand, then you are on your own" customClass="-small -subtle"/>
 					<ListItem as="li" icon="close-circle-r" label="Rebuilt at the next stage of growth" customClass="-small -subtle"/>

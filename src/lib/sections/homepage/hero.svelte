@@ -14,7 +14,7 @@
 		</div>
 		<div class="pairing col-6 col-start-1 lg:col-3 lg:col-start-1">
 			<p class="body_text -medium -contained-l">We make it legible to the people who fund it, buy it, and use it, and we build the foundation underneath so it holds as you grow.</p>
-			<p class="body_text -medium -contained-l -bold">Focused sprints. No retainers. Permanent ownership.</p>
+			<p class="body_text -medium -contained-l -bold">Focused programs. No retainers. Permanent ownership.</p>
 		</div>
 		<Benefits />
 	</Grid>
